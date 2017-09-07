@@ -48,12 +48,25 @@ extension WishListVC:UITableViewDataSource
     
      func numberOfSections(in tableView: UITableView) -> Int {
         
-        return 1
+        return 5
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return 1
+    }
+    
+    
+}
+
+extension WishListVC:UITableViewDelegate
+{
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 2
     }
     
 }
