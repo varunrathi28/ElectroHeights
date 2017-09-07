@@ -13,10 +13,13 @@ class WishListTableCell: UITableViewCell {
     @IBOutlet weak var ivProduct:UIImageView!
     @IBOutlet weak var lblProductName:UILabel!
     @IBOutlet weak var lblProductPrice:UILabel!
+    @IBOutlet weak var btnDelete:UIButton!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        ivProduct.image = UIImage(named: "Product")
         // Initialization code
     }
 

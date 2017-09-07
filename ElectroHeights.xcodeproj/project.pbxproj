@@ -20,6 +20,7 @@
 		374C04531F6142CA006B1E04 /* ShippingAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04521F6142CA006B1E04 /* ShippingAddressVC.swift */; };
 		374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04541F61430B006B1E04 /* OrderConfirmationViewController.swift */; };
 		374C04571F614ED5006B1E04 /* WishListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04561F614ED5006B1E04 /* WishListTableCell.swift */; };
+		374C045B1F615B8E006B1E04 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C045A1F615B8E006B1E04 /* StringConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		374C04521F6142CA006B1E04 /* ShippingAddressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingAddressVC.swift; sourceTree = "<group>"; };
 		374C04541F61430B006B1E04 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
 		374C04561F614ED5006B1E04 /* WishListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListTableCell.swift; sourceTree = "<group>"; };
+		374C045A1F615B8E006B1E04 /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		374C04591F615028006B1E04 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				374C045A1F615B8E006B1E04 /* StringConstants.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				374C04511F614289006B1E04 /* AddressFormVC.swift in Sources */,
+				374C045B1F615B8E006B1E04 /* StringConstants.swift in Sources */,
 				374C044F1F614227006B1E04 /* MyProfileVC.swift in Sources */,
 				374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */,
 				374C04531F6142CA006B1E04 /* ShippingAddressVC.swift in Sources */,
@@ -320,6 +324,7 @@
 				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DevelopmentEnv;
 				INFOPLIST_FILE = ElectroHeights/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrat28.ElectroHeights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -334,6 +339,7 @@
 				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = ProductionEnv;
 				INFOPLIST_FILE = ElectroHeights/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrat28.ElectroHeights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
