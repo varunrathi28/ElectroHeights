@@ -16,6 +16,7 @@ class MyAccountOptionTableCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        ivOption.image = UIImage(named: "MyAccOpt2")
         // Initialization code
     }
 

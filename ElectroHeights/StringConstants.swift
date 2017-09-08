@@ -10,14 +10,15 @@ import UIKit
 
 
 struct CellIdentifiers {
-    static let WishCellIdentifer = "WishCell"
-    static let MyAccountCellIdentifer = "MyAccOptionCell"
+    static let WishCellId = "WishCell"
+    static let MyAccountCellId = "MyAccOptionCell"
+    static let ProductListCellId = "ProductListCell"
 }
 
 struct MyAccountOptionStrings{
     static let MyAccOpt1 = "My Profile"
     static let MyAccOpt2 = "My Orders"
-    static let MyAccOpt1 = "Shipping Address"
-    static let MyAccOpt1 = "WishList"
+    static let MyAccOpt3 = "Shipping Address"
+    static let MyAccOpt4 = "WishList"
     
 }

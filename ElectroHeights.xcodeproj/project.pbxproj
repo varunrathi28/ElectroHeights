@@ -22,6 +22,8 @@
 		374C04571F614ED5006B1E04 /* WishListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04561F614ED5006B1E04 /* WishListTableCell.swift */; };
 		374C045B1F615B8E006B1E04 /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C045A1F615B8E006B1E04 /* StringConstants.swift */; };
 		374C045D1F6165B2006B1E04 /* MyAccountOptionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C045C1F6165B2006B1E04 /* MyAccountOptionTableCell.swift */; };
+		374C045F1F62840B006B1E04 /* ProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C045E1F62840B006B1E04 /* ProductListVC.swift */; };
+		374C04611F6284C6006B1E04 /* ProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04601F6284C6006B1E04 /* ProductListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		374C04561F614ED5006B1E04 /* WishListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListTableCell.swift; sourceTree = "<group>"; };
 		374C045A1F615B8E006B1E04 /* StringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		374C045C1F6165B2006B1E04 /* MyAccountOptionTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountOptionTableCell.swift; sourceTree = "<group>"; };
+		374C045E1F62840B006B1E04 /* ProductListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListVC.swift; sourceTree = "<group>"; };
+		374C04601F6284C6006B1E04 /* ProductListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				374C04501F614289006B1E04 /* AddressFormVC.swift */,
 				374C04521F6142CA006B1E04 /* ShippingAddressVC.swift */,
 				374C04541F61430B006B1E04 /* OrderConfirmationViewController.swift */,
+				374C045E1F62840B006B1E04 /* ProductListVC.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			children = (
 				374C04561F614ED5006B1E04 /* WishListTableCell.swift */,
 				374C045C1F6165B2006B1E04 /* MyAccountOptionTableCell.swift */,
+				374C04601F6284C6006B1E04 /* ProductListCell.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -198,7 +204,9 @@
 				374C04531F6142CA006B1E04 /* ShippingAddressVC.swift in Sources */,
 				374C045D1F6165B2006B1E04 /* MyAccountOptionTableCell.swift in Sources */,
 				374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */,
+				374C045F1F62840B006B1E04 /* ProductListVC.swift in Sources */,
 				374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */,
+				374C04611F6284C6006B1E04 /* ProductListCell.swift in Sources */,
 				3725F1241F2F5215006CDF0C /* ViewController.swift in Sources */,
 				374C04571F614ED5006B1E04 /* WishListTableCell.swift in Sources */,
 				374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */,

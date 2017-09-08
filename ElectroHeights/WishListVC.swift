@@ -41,7 +41,7 @@ extension WishListVC:UITableViewDataSource
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.WishCellIdentifer) as! WishListTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.WishCellId) as! WishListTableCell
         return cell
     }
     
