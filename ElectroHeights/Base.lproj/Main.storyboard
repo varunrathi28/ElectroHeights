@@ -488,6 +488,9 @@
                             <constraint firstItem="PFI-F5-xrF" firstAttribute="leading" secondItem="qOA-dl-Gtu" secondAttribute="leading" id="reG-1Y-grh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="PFI-F5-xrF" id="KHX-Mc-jkK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0zX-a7-OXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,11 +12,25 @@ class GenericListVC: UIViewController {
     
     @IBOutlet weak var tableview:UITableView!
 
+    
+    //MARK: - View Controller Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.register(UITableViewCell.self, forCellReuseIdentifier: "CategoryCell")
+        tableview.estimatedRowHeight = 50
+        tableview.rowHeight = UITableViewAutomaticDimension
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
