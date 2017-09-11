@@ -10,11 +10,13 @@ import UIKit
 
 class ShippingAddressVC: UIViewController {
 
+    @IBOutlet weak var tableView:UITableView!
     
     //MARK:-  View Controller Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.automaticallyAdjustsScrollViewInsets = false
 
         // Do any additional setup after loading the view.
     }
@@ -34,10 +36,39 @@ class ShippingAddressVC: UIViewController {
 
 }
 
-extension ShippingAddressVC:UITableViewControllerDataSource
+extension ShippingAddressVC:UITableViewDataSource
 {
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 1
+    }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.ShippingCellId, for: indexPath)
+        
+        return cell
+        
+    }
     
 }
+
+extension ShippingAddressVC:UITableViewDelegate
+{
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        
+        return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 5
+    }
+    
+}
+
 
