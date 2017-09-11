@@ -29,6 +29,7 @@
 		374C04671F62B019006B1E04 /* ShoppingCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04661F62B019006B1E04 /* ShoppingCartVC.swift */; };
 		374C04691F62B1EC006B1E04 /* CustomAccordianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04681F62B1EC006B1E04 /* CustomAccordianView.swift */; };
 		374C046C1F62B313006B1E04 /* CustomAccordianView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374C046B1F62B313006B1E04 /* CustomAccordianView.xib */; };
+		374C046E1F66705E006B1E04 /* ShippingAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		374C04661F62B019006B1E04 /* ShoppingCartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartVC.swift; sourceTree = "<group>"; };
 		374C04681F62B1EC006B1E04 /* CustomAccordianView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAccordianView.swift; sourceTree = "<group>"; };
 		374C046B1F62B313006B1E04 /* CustomAccordianView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAccordianView.xib; sourceTree = "<group>"; };
+		374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingAddressCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				374C04601F6284C6006B1E04 /* ProductListCell.swift */,
 				374C04641F62AFE6006B1E04 /* ShoppingCartCell.swift */,
 				374C04681F62B1EC006B1E04 /* CustomAccordianView.swift */,
+				374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				374C04671F62B019006B1E04 /* ShoppingCartVC.swift in Sources */,
 				374C04531F6142CA006B1E04 /* ShippingAddressVC.swift in Sources */,
 				374C045D1F6165B2006B1E04 /* MyAccountOptionTableCell.swift in Sources */,
+				374C046E1F66705E006B1E04 /* ShippingAddressCell.swift in Sources */,
 				374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */,
 				374C045F1F62840B006B1E04 /* ProductListVC.swift in Sources */,
 				374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */,
