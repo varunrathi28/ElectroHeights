@@ -19,6 +19,8 @@ class WishListVC: UIViewController {
         self.automaticallyAdjustsScrollViewInsets = false
         tableView.estimatedRowHeight = 150
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.tableFooterView = UIView()
+        setupViews()
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +34,33 @@ class WishListVC: UIViewController {
     }
     
 
+    
+  func  setupViews()
+    {
+        
+        setupNavBar()
+        tableView.backgroundColor = UIColor.clear
+        view.backgroundColor = AppTheme.kBackgroundColorLightGray
+    
+    }
+    
+    func setupNavBar()
+    {
+        navigationItem.title = StringConstants.WishListTitle
+        navigationController?.navigationBar.barTintColor = AppTheme.kNavigationBarColor
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping_cart"), style: .done, target: self, action: #selector(btnCartPressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_icon"), style: .done, target: self, action: #selector(btnCartPressed))
+        
+        navigationController?.navigationBar.isTranslucent = false
+    }
+
+    
+   @IBAction func btnCartPressed()
+    {
+        
+    }
   
 
 }

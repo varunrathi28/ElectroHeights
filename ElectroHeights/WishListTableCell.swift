@@ -19,7 +19,7 @@ class WishListTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        ivProduct.image = UIImage(named: "Product")
+        ivProduct.image = UIImage(named: "new")
         // Initialization code
     }
 

@@ -24,3 +24,8 @@ struct MyAccountOptionStrings{
     static let MyAccOpt4 = "WishList"
     
 }
+
+struct StringConstants
+{
+    static let WishListTitle = "WishList"
+}
