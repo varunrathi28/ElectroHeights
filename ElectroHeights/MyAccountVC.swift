@@ -15,38 +15,27 @@ class MyAccountVC: UIViewController {
     @IBOutlet weak var lblUserName:UILabel!
     @IBOutlet weak var tableView:UITableView!
     
-    var arrDatasource:[String] = []
-    
-    let footerButton:UIButton = {
-    
-        
-        
-        let button = UIButton()
-        button.backgroundColor = UIColor.red
-        button.titleLabel?.text = "Logout"
-        button.titleLabel?.textColor = UIColor.white
-        button.addTarget(self, action: #selector(buttonLogoutPressed), for: .touchUpInside)
-        
-        return button
-    
-    }()
+    var arrDatasource:[CellData] = []
 
     
     //MARK: - View Controller Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
-    
+        setUpDataSource()
         setUpDataSource()
         setUpViews()
         
         
+        setDummyText()
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tableView.reloadData()
+        
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -54,13 +43,25 @@ class MyAccountVC: UIViewController {
     }
     
     
+    func setDummyText()
+    {
+        lblUserName.text = "User"
+        ivProfileImage.image = UIImage(named: "new")
+    }
+    
     func setUpDataSource()
     {
         arrDatasource = []
-        arrDatasource.append(MyAccountOptionStrings.MyAccOpt1)
-        arrDatasource.append(MyAccountOptionStrings.MyAccOpt2)
-        arrDatasource.append(MyAccountOptionStrings.MyAccOpt3)
-        arrDatasource.append(MyAccountOptionStrings.MyAccOpt4)
+
+        let opt1 = CellData(text: MyAccountOptionStrings.MyAccOpt1, imageName: "acc_img1")
+        let opt2 = CellData(text: MyAccountOptionStrings.MyAccOpt2, imageName: "acc_img2")
+        let opt3 = CellData(text: MyAccountOptionStrings.MyAccOpt3, imageName: "acc_img3")
+        let opt4 = CellData(text: MyAccountOptionStrings.MyAccOpt4, imageName: "acc_img4")
+        arrDatasource.append(opt1)
+         arrDatasource.append(opt2)
+         arrDatasource.append(opt3)
+         arrDatasource.append(opt4)
+        
     }
     
     func setUpViews()
@@ -68,7 +69,24 @@ class MyAccountVC: UIViewController {
         ivProfileImage.layer.masksToBounds = true
         ivProfileImage.layer.cornerRadius = ivProfileImage.frame.size.height/2
         
-        tableView.tableFooterView = footerButton
+        tableView.tableFooterView = UIView()
+        
+        topContainerView.backgroundColor = AppTheme.kNavigationBarColor
+        
+        setupNavBar()
+    }
+    
+    func setupNavBar()
+    {
+        navigationItem.title = StringConstants.MyAccountTitle
+        navigationController?.navigationBar.barTintColor = AppTheme.kNavigationBarColor
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping_cart"), style: .plain, target: self, action: #selector(buttonLogoutPressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_icon"), style: .plain, target: self, action: #selector(buttonLogoutPressed))
+        
+        navigationController?.navigationBar.isTranslucent = false
     }
     
     
@@ -84,8 +102,7 @@ extension MyAccountVC:UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell  = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.MyAccountCellId) as! MyAccountOptionTableCell
-        let optionText = arrDatasource[indexPath.row]
-        cell.lblOptionName.text = optionText
+        cell.updateData(data: arrDatasource[indexPath.row])
         return cell
     }
     

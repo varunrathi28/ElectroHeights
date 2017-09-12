@@ -13,11 +13,20 @@ class MyAccountOptionTableCell: UITableViewCell {
     @IBOutlet weak var ivOption:UIImageView!
     @IBOutlet weak var lblOptionName:UILabel!
     
+    var indexPath:NSIndexPath!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        ivOption.image = UIImage(named: "MyAccOpt2")
+        //ivOption.image = UIImage(named: "MyAccOpt2")
         // Initialization code
+    }
+    
+    func updateData(data:CellData)
+    {
+        ivOption.image = UIImage(named: data.imageName)
+        lblOptionName.text = data.text
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
