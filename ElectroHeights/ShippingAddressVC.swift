@@ -17,6 +17,9 @@ class ShippingAddressVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
+        setUpViews()
+        setupNavBar()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -33,6 +36,38 @@ class ShippingAddressVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func setUpViews()
+    {
+        self.view.backgroundColor = AppTheme.kBackgroundColorLightGray
+        self.tableView.backgroundColor = UIColor.clear
+    }
+    
+    func setupNavBar()
+    {
+        navigationItem.title = StringConstants.ShippingAddressTitle
+        navigationController?.navigationBar.barTintColor = AppTheme.kNavigationBarColor
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(btnBackPressed))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Delete", style: .plain, target: self, action: #selector(btnDeletePressed))
+        
+        navigationController?.navigationBar.isTranslucent = false
+    }
+    
+    
+    func btnDeletePressed()
+    {
+        
+    }
+    
+    func btnBackPressed()
+    {
+        
+    }
+    
 
 }
 
@@ -61,8 +96,10 @@ extension ShippingAddressVC:UITableViewDataSource
 extension ShippingAddressVC:UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
         
-        return UIView()
+        return view
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

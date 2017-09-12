@@ -33,4 +33,5 @@ struct StringConstants
     static let MyAccountTitle = "My Account"
     static let CategotiesListTitle = "All Categories"
     static let OrderListTitle = "My Order"
+    static let ShippingAddressTitle = "Shipping Address"
 }
