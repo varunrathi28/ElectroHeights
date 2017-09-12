@@ -14,6 +14,7 @@ struct CellIdentifiers {
     static let MyAccountCellId = "MyAccOptionCell"
     static let ProductListCellId = "ProductListCell"
     static let ShippingCellId = "ShippingCell"
+    static let ShoppingCartCellId = "ShoppingCell"
 }
 
 struct MyAccountOptionStrings{

@@ -57,7 +57,7 @@ extension ShoppingCartVC:UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ShopCell", for: indexPath) as! ShoppingCartCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.ShoppingCartCellId, for: indexPath) as! ShoppingCartCell
         
         return cell
         
