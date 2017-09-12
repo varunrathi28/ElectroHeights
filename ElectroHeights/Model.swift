@@ -14,4 +14,9 @@ struct CellData
     var text:String!
     var imageName:String!
     
+    init(text:String!, imageName:String = "electro_heights") {
+        self.text = text
+        self.imageName = imageName
+    }
+    
 }

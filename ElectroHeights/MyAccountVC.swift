@@ -136,7 +136,7 @@ extension MyAccountVC : UITableViewDelegate
         loginButton.titleLabel?.text = "Sign Out"
         loginButton.titleLabel?.textColor = UIColor.white
         loginButton.addTarget(self, action: #selector(buttonLogoutPressed), for: .touchUpInside)
-        loginButton.backgroundColor = AppTheme.kSignOutButtonColor
+        loginButton.backgroundColor = UIColor.red
         loginButton.frame = footerView.frame
         
         loginButton.setTitle("Sign Out", for: .normal)
