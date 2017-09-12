@@ -16,6 +16,7 @@ struct CellIdentifiers {
     static let ShippingCellId = "ShippingCell"
     static let ShoppingCartCellId = "ShoppingCell"
     static let CategoryCellId = "CategoryCell"
+    static let OrderCellId = "OrderCell"
 }
 
 struct MyAccountOptionStrings{
@@ -31,4 +32,5 @@ struct StringConstants
     static let WishListTitle = "WishList"
     static let MyAccountTitle = "My Account"
     static let CategotiesListTitle = "All Categories"
+    static let OrderListTitle = "My Order"
 }

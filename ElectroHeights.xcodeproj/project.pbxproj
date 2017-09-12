@@ -17,6 +17,8 @@
 		3725F8871F67E97E00F2ED4B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F8861F67E97E00F2ED4B /* Model.swift */; };
 		3725F88A1F67F48100F2ED4B /* CategoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F8891F67F48100F2ED4B /* CategoryListVC.swift */; };
 		3725F88C1F67F4AE00F2ED4B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F88B1F67F4AE00F2ED4B /* CategoryCell.swift */; };
+		3725F88E1F68008C00F2ED4B /* OrderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F88D1F68008C00F2ED4B /* OrderListCell.swift */; };
+		3725F8901F6800A200F2ED4B /* OrderListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F88F1F6800A200F2ED4B /* OrderListVC.swift */; };
 		374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04481F6141CF006B1E04 /* WishListVC.swift */; };
 		374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044A1F6141E7006B1E04 /* MyAccountVC.swift */; };
 		374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */; };
@@ -50,6 +52,8 @@
 		3725F8861F67E97E00F2ED4B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3725F8891F67F48100F2ED4B /* CategoryListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListVC.swift; sourceTree = "<group>"; };
 		3725F88B1F67F4AE00F2ED4B /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		3725F88D1F68008C00F2ED4B /* OrderListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListCell.swift; sourceTree = "<group>"; };
+		3725F88F1F6800A200F2ED4B /* OrderListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListVC.swift; sourceTree = "<group>"; };
 		374C04481F6141CF006B1E04 /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		374C044A1F6141E7006B1E04 /* MyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
 		374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				374C04661F62B019006B1E04 /* ShoppingCartVC.swift */,
 				3725F85F1F67C3F400F2ED4B /* HomeCollectionViewController.swift */,
 				3725F8891F67F48100F2ED4B /* CategoryListVC.swift */,
+				3725F88F1F6800A200F2ED4B /* OrderListVC.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				374C04681F62B1EC006B1E04 /* CustomAccordianView.swift */,
 				374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */,
 				3725F88B1F67F4AE00F2ED4B /* CategoryCell.swift */,
+				3725F88D1F68008C00F2ED4B /* OrderListCell.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 				3725F88A1F67F48100F2ED4B /* CategoryListVC.swift in Sources */,
 				374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */,
 				374C045F1F62840B006B1E04 /* ProductListVC.swift in Sources */,
+				3725F8901F6800A200F2ED4B /* OrderListVC.swift in Sources */,
 				374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */,
 				3725F8601F67C3F400F2ED4B /* HomeCollectionViewController.swift in Sources */,
 				374C04611F6284C6006B1E04 /* ProductListCell.swift in Sources */,
+				3725F88E1F68008C00F2ED4B /* OrderListCell.swift in Sources */,
 				374C04631F62A4ED006B1E04 /* GenericListVC.swift in Sources */,
 				3725F1241F2F5215006CDF0C /* ViewController.swift in Sources */,
 				374C04571F614ED5006B1E04 /* WishListTableCell.swift in Sources */,
