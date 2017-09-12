@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KiB-rC-hg9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,11 +24,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="133" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="y1J-Z2-n37">
-                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WishCell" rowHeight="133" id="5Vq-nu-sOz" customClass="WishListTableCell" customModule="ElectroHeights" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="133"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Vq-nu-sOz" id="kK6-qI-Eck">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
@@ -93,18 +93,19 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="y1J-Z2-n37" secondAttribute="bottom" id="5ov-dV-OKr"/>
-                            <constraint firstItem="y1J-Z2-n37" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="EXm-Yl-5zv"/>
+                            <constraint firstItem="y1J-Z2-n37" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EXm-Yl-5zv"/>
                             <constraint firstItem="y1J-Z2-n37" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QcH-1O-l3R"/>
                             <constraint firstAttribute="trailing" secondItem="y1J-Z2-n37" secondAttribute="trailing" id="Qe6-ZS-vin"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XYb-rG-LcG"/>
                     <connections>
                         <outlet property="tableView" destination="y1J-Z2-n37" id="RSO-0A-j4a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
         <!--My AccountVC-->
         <scene sceneID="uWJ-fH-6qu">
@@ -361,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ieB-5Z-XSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="139"/>
+            <point key="canvasLocation" x="1732" y="138.98050974512745"/>
         </scene>
         <!--Wish List-->
         <scene sceneID="THW-9T-d4e">
@@ -400,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6x-ra-mbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1482" y="139"/>
+            <point key="canvasLocation" x="2420" y="138.98050974512745"/>
         </scene>
         <!--Shipping AddressVC-->
         <scene sceneID="XSu-Yd-I76">
@@ -544,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nk3-XA-F8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2154.4000000000001" y="144.3778110944528"/>
+            <point key="canvasLocation" x="3093.5999999999999" y="144.3778110944528"/>
         </scene>
         <!--Product ListVC-->
         <scene sceneID="MOJ-gp-vUH">
@@ -1043,6 +1044,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8w1-SE-5NZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2156" y="794.75262368815595"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wd0-17-iNo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KiB-rC-hg9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="app-vc-rwM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c1q-2a-fJH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGN-wg-OxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
     <resources>

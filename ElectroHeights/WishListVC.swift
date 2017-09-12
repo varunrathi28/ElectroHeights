@@ -48,10 +48,12 @@ class WishListVC: UIViewController {
     {
         navigationItem.title = StringConstants.WishListTitle
         navigationController?.navigationBar.barTintColor = AppTheme.kNavigationBarColor
+        navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping_cart"), style: .done, target: self, action: #selector(btnCartPressed))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_icon"), style: .done, target: self, action: #selector(btnCartPressed))
+      
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping_cart"), style: .plain, target: self, action: #selector(btnCartPressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_icon"), style: .plain, target: self, action: #selector(btnCartPressed))
         
         navigationController?.navigationBar.isTranslucent = false
     }
@@ -95,7 +97,7 @@ extension WishListVC:UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 2
+        return 1.0
     }
     
 }
