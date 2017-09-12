@@ -119,18 +119,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="85" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="TK1-q5-FAU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TK1-q5-FAU">
                                 <rect key="frame" x="5" y="169" width="365" height="498"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyAccOptionCell" rowHeight="85" id="Pab-fM-m0e" customClass="MyAccountOptionTableCell" customModule="ElectroHeights" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="365" height="85"/>
+                                        <rect key="frame" x="0.0" y="28" width="365" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pab-fM-m0e" id="a1U-Gr-iJY">
-                                            <rect key="frame" x="0.0" y="0.0" width="365" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyAccOpt1" translatesAutoresizingMaskIntoConstraints="NO" id="7hR-RZ-Syg">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7hR-RZ-Syg">
                                                     <rect key="frame" x="16" y="25" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="8fq-WM-Wq9"/>
@@ -152,8 +152,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="ivOption" destination="qTz-bu-6UQ" id="VWz-DV-r5x"/>
-                                            <outlet property="lblOptionName" destination="oyB-DF-Dfd" id="kBZ-cV-OJ8"/>
+                                            <outlet property="ivOption" destination="7hR-RZ-Syg" id="Koo-SK-oSs"/>
+                                            <outlet property="lblOptionName" destination="Og2-Ya-71R" id="suL-3o-Kmj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -202,7 +202,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7gl-1T-wIr"/>
                     <connections>
-                        <outlet property="ivProfileImage" destination="qTz-bu-6UQ" id="cXo-Lp-XCg"/>
+                        <outlet property="ivProfileImage" destination="qTz-bu-6UQ" id="Lir-8a-6p7"/>
                         <outlet property="lblUserName" destination="oyB-DF-Dfd" id="iFR-Pt-ca8"/>
                         <outlet property="tableView" destination="TK1-q5-FAU" id="Q1J-qp-8LX"/>
                         <outlet property="topContainerView" destination="ZKv-E5-78B" id="vbz-lT-8m0"/>
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbO-pX-2PT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="827"/>
+            <point key="canvasLocation" x="136.80000000000001" y="826.23688155922048"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2xP-tw-W3L">
@@ -1066,7 +1066,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MyAccOpt1" width="48" height="48"/>
         <image name="delete" width="50" height="50"/>
         <image name="new" width="64" height="64"/>
     </resources>

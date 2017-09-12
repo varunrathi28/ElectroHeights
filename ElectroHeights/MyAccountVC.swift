@@ -23,10 +23,8 @@ class MyAccountVC: UIViewController {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         setUpDataSource()
-        setUpDataSource()
+      
         setUpViews()
-        
-        
         setDummyText()
 
         // Do any additional setup after loading the view.
@@ -83,8 +81,8 @@ class MyAccountVC: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping_cart"), style: .plain, target: self, action: #selector(buttonLogoutPressed))
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_icon"), style: .plain, target: self, action: #selector(buttonLogoutPressed))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_icon"), style: .plain, target: self, action: #selector(buttonLogoutPressed))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping_cart"), style: .plain, target: self, action: #selector(buttonLogoutPressed))
         
         navigationController?.navigationBar.isTranslucent = false
     }
@@ -123,5 +121,30 @@ extension MyAccountVC : UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+      
+        let footerView = UIView(frame: CGRect(x: 0, y: 10, width: view.frame.size.width
+            , height: 50))
+        
+        let loginButton = UIButton(type: .custom)
+        loginButton.titleLabel?.text = "Sign Out"
+        loginButton.titleLabel?.textColor = UIColor.white
+        loginButton.addTarget(self, action: #selector(buttonLogoutPressed), for: .touchUpInside)
+        loginButton.backgroundColor = AppTheme.kSignOutButtonColor
+        loginButton.frame = footerView.frame
+        
+        loginButton.setTitle("Sign Out", for: .normal)
+        footerView.addSubview(loginButton)
+        return footerView
+    }
+    
+    
+    
     
 }

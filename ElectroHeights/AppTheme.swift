@@ -22,11 +22,15 @@ struct AppTheme
     static let kLoaderBackgroundColor = UIColor.clear
     static let kLoaderTextColor = UIColor.white
     
+    static let kSignOutButtonColor = UIColor(red: 150.0/255.0, green: 0 , blue: 0 , alpha: 1.0)
+    
     // MARK: Size
     static let kTextFieldBottomBorderWidth = CGFloat(2)
     static let kLoaderSize = CGSize(width: 100, height: 100)
     
     static let kOfferCellPadding:CGFloat = 10
+    
+    
     
 }
 
