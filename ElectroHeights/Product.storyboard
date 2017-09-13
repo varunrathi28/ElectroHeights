@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d8H-Ay-1Y6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="3fV-5D-8FW">
+            <objects>
+                <collectionViewController id="d8H-Ay-1Y6" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="llZ-MM-MVl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z6d-Rn-KGK">
+                            <size key="itemSize" width="164" height="169"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kMO-SE-XoK">
+                                <rect key="frame" x="0.0" y="0.0" width="164" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="164" height="169"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y8x-Rh-KtQ">
+                                            <rect key="frame" x="8" y="8" width="148" height="123"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRN-dJ-tcu">
+                                            <rect key="frame" x="8" y="133" width="138" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="yRN-dJ-tcu" secondAttribute="bottom" constant="7" id="Aa0-3i-H6C"/>
+                                    <constraint firstItem="y8x-Rh-KtQ" firstAttribute="top" secondItem="kMO-SE-XoK" secondAttribute="topMargin" id="FsP-Uk-3XZ"/>
+                                    <constraint firstItem="yRN-dJ-tcu" firstAttribute="top" secondItem="y8x-Rh-KtQ" secondAttribute="bottom" constant="2" id="NSc-ue-VjQ"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="y8x-Rh-KtQ" secondAttribute="trailing" id="Tbn-qn-tle"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="yRN-dJ-tcu" secondAttribute="trailing" constant="10" id="Unh-hY-lnb"/>
+                                    <constraint firstItem="yRN-dJ-tcu" firstAttribute="leading" secondItem="kMO-SE-XoK" secondAttribute="leadingMargin" id="aCd-28-HGw"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="y8x-Rh-KtQ" secondAttribute="bottom" priority="999" constant="30" id="kF5-14-ySa"/>
+                                    <constraint firstItem="y8x-Rh-KtQ" firstAttribute="leading" secondItem="kMO-SE-XoK" secondAttribute="leadingMargin" id="pXW-XD-Ru3"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="d8H-Ay-1Y6" id="Jnc-Xx-cnv"/>
+                            <outlet property="delegate" destination="d8H-Ay-1Y6" id="rDR-TY-NTl"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85n-rM-fs9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765.60000000000002" y="141.67916041979012"/>
+        </scene>
+    </scenes>
+</document>
