@@ -40,6 +40,9 @@
 		378A4AFC1F692F6500E04E25 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFB1F692F6500E04E25 /* LoginVC.swift */; };
 		378A4AFE1F692F8300E04E25 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFD1F692F8300E04E25 /* SignUpVC.swift */; };
 		378A4B001F692F9E00E04E25 /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */; };
+		378A4B031F693E4600E04E25 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378A4B021F693E4600E04E25 /* Product.storyboard */; };
+		378A4B051F69444A00E04E25 /* SubCategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B041F69444A00E04E25 /* SubCategoryCollectionCell.swift */; };
+		378A4B071F6944E900E04E25 /* SubCategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B061F6944E900E04E25 /* SubCategoryCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +81,9 @@
 		378A4AFB1F692F6500E04E25 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		378A4AFD1F692F8300E04E25 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
+		378A4B021F693E4600E04E25 /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		378A4B041F69444A00E04E25 /* SubCategoryCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryCollectionCell.swift; sourceTree = "<group>"; };
+		378A4B061F6944E900E04E25 /* SubCategoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 		3725F1201F2F5214006CDF0C /* ElectroHeights */ = {
 			isa = PBXGroup;
 			children = (
+				378A4B011F693E2500E04E25 /* IB */,
 				3725F8881F67E98500F2ED4B /* Model */,
 				374C046A1F62B2FD006B1E04 /* CustomView XIB */,
 				374C04591F615028006B1E04 /* Constants */,
@@ -117,7 +124,6 @@
 				374C04471F6141B0006B1E04 /* View Controllers */,
 				3725F1211F2F5215006CDF0C /* AppDelegate.swift */,
 				3725F1231F2F5215006CDF0C /* ViewController.swift */,
-				3725F1251F2F5215006CDF0C /* Main.storyboard */,
 				3725F1281F2F5215006CDF0C /* Assets.xcassets */,
 				3725F12A1F2F5215006CDF0C /* LaunchScreen.storyboard */,
 				3725F12D1F2F5215006CDF0C /* Info.plist */,
@@ -152,6 +158,7 @@
 				378A4AFB1F692F6500E04E25 /* LoginVC.swift */,
 				378A4AFD1F692F8300E04E25 /* SignUpVC.swift */,
 				378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */,
+				378A4B061F6944E900E04E25 /* SubCategoryCollectionViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 				374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */,
 				3725F88B1F67F4AE00F2ED4B /* CategoryCell.swift */,
 				3725F88D1F68008C00F2ED4B /* OrderListCell.swift */,
+				378A4B041F69444A00E04E25 /* SubCategoryCollectionCell.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -186,6 +194,15 @@
 				374C046B1F62B313006B1E04 /* CustomAccordianView.xib */,
 			);
 			name = "CustomView XIB";
+			sourceTree = "<group>";
+		};
+		378A4B011F693E2500E04E25 /* IB */ = {
+			isa = PBXGroup;
+			children = (
+				3725F1251F2F5215006CDF0C /* Main.storyboard */,
+				378A4B021F693E4600E04E25 /* Product.storyboard */,
+			);
+			name = IB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3725F12C1F2F5215006CDF0C /* LaunchScreen.storyboard in Resources */,
+				378A4B031F693E4600E04E25 /* Product.storyboard in Resources */,
 				3725F1291F2F5215006CDF0C /* Assets.xcassets in Resources */,
 				374C046C1F62B313006B1E04 /* CustomAccordianView.xib in Resources */,
 				3725F1271F2F5215006CDF0C /* Main.storyboard in Resources */,
@@ -264,6 +282,7 @@
 			files = (
 				378A4AFE1F692F8300E04E25 /* SignUpVC.swift in Sources */,
 				3725F8851F67DC8A00F2ED4B /* AppTheme.swift in Sources */,
+				378A4B071F6944E900E04E25 /* SubCategoryCollectionViewController.swift in Sources */,
 				374C04511F614289006B1E04 /* AddressFormVC.swift in Sources */,
 				378A4B001F692F9E00E04E25 /* PasswordResetVC.swift in Sources */,
 				374C045B1F615B8E006B1E04 /* StringConstants.swift in Sources */,
@@ -276,6 +295,7 @@
 				374C045D1F6165B2006B1E04 /* MyAccountOptionTableCell.swift in Sources */,
 				374C046E1F66705E006B1E04 /* ShippingAddressCell.swift in Sources */,
 				3725F88C1F67F4AE00F2ED4B /* CategoryCell.swift in Sources */,
+				378A4B051F69444A00E04E25 /* SubCategoryCollectionCell.swift in Sources */,
 				3725F88A1F67F48100F2ED4B /* CategoryListVC.swift in Sources */,
 				374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */,
 				374C045F1F62840B006B1E04 /* ProductListVC.swift in Sources */,
