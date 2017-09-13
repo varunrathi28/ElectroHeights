@@ -43,6 +43,10 @@
 		378A4B031F693E4600E04E25 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 378A4B021F693E4600E04E25 /* Product.storyboard */; };
 		378A4B051F69444A00E04E25 /* SubCategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B041F69444A00E04E25 /* SubCategoryCollectionCell.swift */; };
 		378A4B071F6944E900E04E25 /* SubCategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B061F6944E900E04E25 /* SubCategoryCollectionViewController.swift */; };
+		378A4B0A1F69489900E04E25 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B091F69489900E04E25 /* Utility.swift */; };
+		378A4B0D1F69494C00E04E25 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B0C1F69494C00E04E25 /* RestApiManager.swift */; };
+		378A4B0F1F6949F900E04E25 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B0E1F6949F900E04E25 /* URLConstants.swift */; };
+		C9236D5C0819CEA174F463C9 /* Pods_ElectroHeights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8565E8271D10B37C2979A57A /* Pods_ElectroHeights.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,12 @@
 		378A4B021F693E4600E04E25 /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
 		378A4B041F69444A00E04E25 /* SubCategoryCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryCollectionCell.swift; sourceTree = "<group>"; };
 		378A4B061F6944E900E04E25 /* SubCategoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryCollectionViewController.swift; sourceTree = "<group>"; };
+		378A4B091F69489900E04E25 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		378A4B0C1F69494C00E04E25 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		378A4B0E1F6949F900E04E25 /* URLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		6E1F89D16B8E7B8AD63DBDFC /* Pods-ElectroHeights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectroHeights.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.release.xcconfig"; sourceTree = "<group>"; };
+		8565E8271D10B37C2979A57A /* Pods_ElectroHeights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectroHeights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB96D2613A7CAB5F69176957 /* Pods-ElectroHeights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectroHeights.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9236D5C0819CEA174F463C9 /* Pods_ElectroHeights.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +113,8 @@
 			children = (
 				3725F1201F2F5214006CDF0C /* ElectroHeights */,
 				3725F11F1F2F5214006CDF0C /* Products */,
+				F408C1CB1271413EDD4DB6C9 /* Pods */,
+				E51D1EA51E22C567C31AA81C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,10 +129,12 @@
 		3725F1201F2F5214006CDF0C /* ElectroHeights */ = {
 			isa = PBXGroup;
 			children = (
+				374C04591F615028006B1E04 /* Constants */,
+				378A4B0B1F69491C00E04E25 /* Network */,
+				378A4B081F69488500E04E25 /* Helpers */,
 				378A4B011F693E2500E04E25 /* IB */,
 				3725F8881F67E98500F2ED4B /* Model */,
 				374C046A1F62B2FD006B1E04 /* CustomView XIB */,
-				374C04591F615028006B1E04 /* Constants */,
 				374C04581F61501B006B1E04 /* Custom Views */,
 				374C04471F6141B0006B1E04 /* View Controllers */,
 				3725F1211F2F5215006CDF0C /* AppDelegate.swift */,
@@ -184,6 +199,7 @@
 			children = (
 				374C045A1F615B8E006B1E04 /* StringConstants.swift */,
 				3725F8841F67DC8A00F2ED4B /* AppTheme.swift */,
+				378A4B0E1F6949F900E04E25 /* URLConstants.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -205,6 +221,39 @@
 			name = IB;
 			sourceTree = "<group>";
 		};
+		378A4B081F69488500E04E25 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				378A4B091F69489900E04E25 /* Utility.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		378A4B0B1F69491C00E04E25 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				378A4B0C1F69494C00E04E25 /* RestApiManager.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		E51D1EA51E22C567C31AA81C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8565E8271D10B37C2979A57A /* Pods_ElectroHeights.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F408C1CB1271413EDD4DB6C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB96D2613A7CAB5F69176957 /* Pods-ElectroHeights.debug.xcconfig */,
+				6E1F89D16B8E7B8AD63DBDFC /* Pods-ElectroHeights.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3725F1301F2F5215006CDF0C /* Build configuration list for PBXNativeTarget "ElectroHeights" */;
 			buildPhases = (
+				BC003478BE4B51A895442B40 /* [CP] Check Pods Manifest.lock */,
 				3725F11A1F2F5214006CDF0C /* Sources */,
 				3725F11B1F2F5214006CDF0C /* Frameworks */,
 				3725F11C1F2F5214006CDF0C /* Resources */,
+				0E703AAF887BAD8BF2F75F0D /* [CP] Embed Pods Frameworks */,
+				1E6E7CB9749C92B0836932BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +327,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E703AAF887BAD8BF2F75F0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E6E7CB9749C92B0836932BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC003478BE4B51A895442B40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3725F11A1F2F5214006CDF0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -283,6 +383,7 @@
 				378A4AFE1F692F8300E04E25 /* SignUpVC.swift in Sources */,
 				3725F8851F67DC8A00F2ED4B /* AppTheme.swift in Sources */,
 				378A4B071F6944E900E04E25 /* SubCategoryCollectionViewController.swift in Sources */,
+				378A4B0F1F6949F900E04E25 /* URLConstants.swift in Sources */,
 				374C04511F614289006B1E04 /* AddressFormVC.swift in Sources */,
 				378A4B001F692F9E00E04E25 /* PasswordResetVC.swift in Sources */,
 				374C045B1F615B8E006B1E04 /* StringConstants.swift in Sources */,
@@ -308,6 +409,8 @@
 				3725F1241F2F5215006CDF0C /* ViewController.swift in Sources */,
 				374C04571F614ED5006B1E04 /* WishListTableCell.swift in Sources */,
 				378A4AFC1F692F6500E04E25 /* LoginVC.swift in Sources */,
+				378A4B0A1F69489900E04E25 /* Utility.swift in Sources */,
+				378A4B0D1F69494C00E04E25 /* RestApiManager.swift in Sources */,
 				3725F8871F67E97E00F2ED4B /* Model.swift in Sources */,
 				374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */,
 				3725F1221F2F5215006CDF0C /* AppDelegate.swift in Sources */,
@@ -431,6 +534,7 @@
 		};
 		3725F1311F2F5215006CDF0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB96D2613A7CAB5F69176957 /* Pods-ElectroHeights.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
@@ -446,6 +550,7 @@
 		};
 		3725F1321F2F5215006CDF0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1F89D16B8E7B8AD63DBDFC /* Pods-ElectroHeights.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
