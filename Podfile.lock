@@ -1,0 +1,18 @@
+PODS:
+  - CountryPickerSwift (1.4.4)
+  - SkyFloatingLabelTextField (3.1.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - CountryPickerSwift
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CountryPickerSwift: e31e67f2b95eb1fa6ad230e9eb0b49b020526d99
+  SkyFloatingLabelTextField: 26a92ad407044dd5a7c3e4e348738ff0991514fe
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: ef4675387b3f2423752381760f5e58cb9a3429ab
+
+COCOAPODS: 1.2.0

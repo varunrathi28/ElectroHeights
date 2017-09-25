@@ -8,6 +8,10 @@
 
 import UIKit
 
+struct StoryBoardID
+{
+    static let SubCategoryList = "SubCatList"
+}
 
 struct CellIdentifiers {
     static let WishCellId = "WishCell"

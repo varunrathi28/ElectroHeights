@@ -1,0 +1,6 @@
+framework module Pods_ElectroHeights {
+  umbrella header "Pods-ElectroHeights-umbrella.h"
+
+  export *
+  module * { export * }
+}

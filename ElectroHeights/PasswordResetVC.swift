@@ -116,6 +116,11 @@ class PasswordResetVC: UIViewController {
         showPicker()
         
     }
+    
+    @IBAction func submitButtonClicked(sender:AnyObject)
+    {
+        
+    }
 
 }
 
