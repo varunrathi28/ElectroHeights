@@ -30,11 +30,12 @@ public class URLEndPoints :NSObject
     
     // GET
     static let kGetLoginEndPoint = "Login?"
+    static let kForgotPasswordEndPoint = "ForgotPassword"
     
     static let kGetOtpEndPoint = "GetSendTP"
     static let kMobileVerificationEndPoint = "GetMobileVerification"
     static let kGetUserDetailsEndPoint = "GetCustomer_Infos"
-    static let kForgotPasswordEndPoint = "GetForgetonPassword"
+
     static let kUpdateUserProfile = "putuserprofile"
     static let kGetProductType = "getproducttype"
     static let kGetCollection = "getcollection"

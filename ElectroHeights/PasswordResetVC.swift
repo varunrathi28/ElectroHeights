@@ -25,6 +25,9 @@ class PasswordResetVC: UIViewController {
     @IBOutlet weak var tfMobile:SkyFloatingLabelTextField!
     @IBOutlet weak var btnPickerAction:UIButton!
     
+    @IBOutlet weak var ivLogo:UIImageView!
+    
+    var phoneCd:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +41,7 @@ class PasswordResetVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         picker.countryPickerDelegate = self
-         hidePickerWithoutAnimation()
+         hidePicker()
        
     }
     
@@ -64,7 +67,8 @@ class PasswordResetVC: UIViewController {
     
     @IBAction func showPicker(sender:AnyObject)
     {
-               
+        self.view.endEditing(true)
+        showPicker()
         
     }
     
@@ -113,12 +117,39 @@ class PasswordResetVC: UIViewController {
 
     @IBAction func showPickerClicked(sender:AnyObject)
     {
+        self.view.endEditing(true)
         showPicker()
         
     }
     
     @IBAction func submitButtonClicked(sender:AnyObject)
     {
+        guard let mobile = tfMobile.text ,
+        var code = phoneCd
+        else
+        {
+            return
+        }
+        
+        code = code.replacingOccurrences(of: "+", with: "")
+        let apiManager = RestApiManager()
+        var reqDic = [String:String]()
+        reqDic["MobileNo"] = code + mobile
+        
+        let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: reqDic as [String:AnyObject])
+        
+        apiManager.post(urlString: URLConstant.kBaseURL + URLEndPoints.kForgotPasswordEndPoint, parameters: bodyStr) { (data, error, status) in
+            
+            if status == true
+            {
+                
+            }
+            else
+            {
+                
+            }
+        }
+        
         
     }
 
@@ -132,5 +163,19 @@ extension PasswordResetVC:CountryPickerDelegate
         lblCountryCode.text = countryCode
         lblPhCode.text = phoneCode
         ivCountry.image = flag
+        phoneCd = phoneCode
+    }
+}
+
+extension PasswordResetVC:UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        hidePicker()
     }
 }
