@@ -16,16 +16,9 @@ public struct APIResponse
 public struct URLConstant
 {
     
-    static let kBaseURL = "http://ticketmgt.kapishgroup.co.in/api/kapishAPI/"
-    
-    static let kParameterAuthTypeToken = "uSTWwebQqsO9ZdOIpRqnGvP2wLVwVuN4W75uBdVUZLTd17Ibk31c9bczvxS09iqL"
-    static let kParameterProjectType = "FDGGArxYK23bHe+LG0UJKs14P0vt2ajxJjxbXrD/2UWZQ5WxF1zlPuN/QBbI194F"
-    
-    static let kParameterApiUserName = "KapishGroup"
-    
-    static let RegistrationURL:String = "http://ticketmgt.kapishgroup.co.in/api/kapishAPI/postcreate"
-    
-    static let ImageBaseURL = "http://kps.kapishgroup.co.in/images/Kapish/"
+    static let BasicAuth = "UmFodWw6MTIz"
+    static let kBaseURL = "http://50.63.12.86:8003/ElectroHeightAPI/"
+    static let FCMID = "123"
 }
 
 // MARK: - API Service End Points
@@ -36,7 +29,8 @@ public class URLEndPoints :NSObject
     static let kRegistrationEndPont = "postcreate"
     
     // GET
-    static let kGetLoginEndPoint = "GetLogin"
+    static let kGetLoginEndPoint = "Login?"
+    
     static let kGetOtpEndPoint = "GetSendTP"
     static let kMobileVerificationEndPoint = "GetMobileVerification"
     static let kGetUserDetailsEndPoint = "GetCustomer_Infos"

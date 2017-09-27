@@ -41,6 +41,24 @@ public class Utility:NSObject
         return toolBar
     }
     
+    static func getStringForRequestBodyWithPararmeters(dict:[String:AnyObject])->String
+    {
+        var string:String = ""
+        
+       if dict.values.count > 0
+        {
+            for (key , value) in dict
+            {
+                string = string + key + "=" + (value as! String) + "&"
+            }
+            
+            string = string.substring(to: string.index(before: string.endIndex))
+        }
+
+        return string
+    }
+    
+    
   //  var indicator:NVActivityIndicatorView = ProgressHUDManager.sharedInstance
     
     // MARK: - Main Story board helpers

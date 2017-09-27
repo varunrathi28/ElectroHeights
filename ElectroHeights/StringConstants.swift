@@ -11,6 +11,7 @@ import UIKit
 struct StoryBoardID
 {
     static let SubCategoryList = "SubCatList"
+    static let HomeController = "HomeCollectionController"
 }
 
 struct CellIdentifiers {
@@ -21,6 +22,7 @@ struct CellIdentifiers {
     static let ShoppingCartCellId = "ShoppingCell"
     static let CategoryCellId = "CategoryCell"
     static let OrderCellId = "OrderCell"
+    static let SubProductCell = "ProductCell"
 }
 
 struct MyAccountOptionStrings{

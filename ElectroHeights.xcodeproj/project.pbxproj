@@ -19,6 +19,7 @@
 		3725F88C1F67F4AE00F2ED4B /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F88B1F67F4AE00F2ED4B /* CategoryCell.swift */; };
 		3725F88E1F68008C00F2ED4B /* OrderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F88D1F68008C00F2ED4B /* OrderListCell.swift */; };
 		3725F8901F6800A200F2ED4B /* OrderListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F88F1F6800A200F2ED4B /* OrderListVC.swift */; };
+		3747EB1E1F7B97C90038DB6C /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3747EB1D1F7B97C90038DB6C /* CheckBox.swift */; };
 		374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04481F6141CF006B1E04 /* WishListVC.swift */; };
 		374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044A1F6141E7006B1E04 /* MyAccountVC.swift */; };
 		374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */; };
@@ -46,6 +47,7 @@
 		378A4B0A1F69489900E04E25 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B091F69489900E04E25 /* Utility.swift */; };
 		378A4B0D1F69494C00E04E25 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B0C1F69494C00E04E25 /* RestApiManager.swift */; };
 		378A4B0F1F6949F900E04E25 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4B0E1F6949F900E04E25 /* URLConstants.swift */; };
+		37F87F981F7939200081AE00 /* ProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F87F971F79391F0081AE00 /* ProductCollectionCell.swift */; };
 		C9236D5C0819CEA174F463C9 /* Pods_ElectroHeights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8565E8271D10B37C2979A57A /* Pods_ElectroHeights.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,7 @@
 		3725F88B1F67F4AE00F2ED4B /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		3725F88D1F68008C00F2ED4B /* OrderListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListCell.swift; sourceTree = "<group>"; };
 		3725F88F1F6800A200F2ED4B /* OrderListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListVC.swift; sourceTree = "<group>"; };
+		3747EB1D1F7B97C90038DB6C /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		374C04481F6141CF006B1E04 /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		374C044A1F6141E7006B1E04 /* MyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
 		374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		378A4B091F69489900E04E25 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		378A4B0C1F69494C00E04E25 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		378A4B0E1F6949F900E04E25 /* URLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
+		37F87F971F79391F0081AE00 /* ProductCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionCell.swift; sourceTree = "<group>"; };
 		6E1F89D16B8E7B8AD63DBDFC /* Pods-ElectroHeights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectroHeights.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.release.xcconfig"; sourceTree = "<group>"; };
 		8565E8271D10B37C2979A57A /* Pods_ElectroHeights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectroHeights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB96D2613A7CAB5F69176957 /* Pods-ElectroHeights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectroHeights.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				3725F88B1F67F4AE00F2ED4B /* CategoryCell.swift */,
 				3725F88D1F68008C00F2ED4B /* OrderListCell.swift */,
 				378A4B041F69444A00E04E25 /* SubCategoryCollectionCell.swift */,
+				37F87F971F79391F0081AE00 /* ProductCollectionCell.swift */,
+				3747EB1D1F7B97C90038DB6C /* CheckBox.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -400,9 +406,11 @@
 				3725F88A1F67F48100F2ED4B /* CategoryListVC.swift in Sources */,
 				374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */,
 				374C045F1F62840B006B1E04 /* ProductListVC.swift in Sources */,
+				3747EB1E1F7B97C90038DB6C /* CheckBox.swift in Sources */,
 				3725F8901F6800A200F2ED4B /* OrderListVC.swift in Sources */,
 				374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */,
 				3725F8601F67C3F400F2ED4B /* HomeCollectionViewController.swift in Sources */,
+				37F87F981F7939200081AE00 /* ProductCollectionCell.swift in Sources */,
 				374C04611F6284C6006B1E04 /* ProductListCell.swift in Sources */,
 				3725F88E1F68008C00F2ED4B /* OrderListCell.swift in Sources */,
 				374C04631F62A4ED006B1E04 /* GenericListVC.swift in Sources */,

@@ -33,15 +33,17 @@ class RestApiManager: NSObject {
         task.resume()
     }
     
-    func post(urlString:String,parameters:[String:Any],onCompletion:@escaping ServiceResponse)
+    func post(urlString:String,parameters:String,onCompletion:@escaping ServiceResponse)
     {
-        let request = NSMutableURLRequest(url: URL(string: urlString)!)
-        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")  // the request is JSON
-        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
+        
+        let fullURL = URLConstant.kBaseURL + urlString
+        let request = NSMutableURLRequest(url: URL(string: fullURL)!)
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")  // the request is JSON
+        request.setValue(URLConstant.BasicAuth, forHTTPHeaderField: "Basic")
         request.httpMethod = "POST"
         do
         {
-            let httpData = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+            let httpData =  parameters.data(using: .utf8)
             request.httpBody = httpData
         }
             
