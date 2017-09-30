@@ -32,6 +32,7 @@ class MyAccountVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.setNavigationBarItem()
         tableView.reloadData()
         
     }
@@ -71,7 +72,7 @@ class MyAccountVC: UIViewController {
         
         topContainerView.backgroundColor = AppTheme.kNavigationBarColor
         
-        setupNavBar()
+      //  setupNavBar()
     }
     
     func setupNavBar()

@@ -21,6 +21,7 @@ class WishListVC: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
         setupViews()
+        self.setNavigationBarItem()
 
         // Do any additional setup after loading the view.
     }

@@ -8,17 +8,82 @@
 
 import UIKit
 
+
+enum LeftMenu: Int {
+    case home = 0
+    case account
+    case orders
+    case shoppingCart
+    case wish
+    case settings
+    case suggestions
+    case help
+    case contact
+}
+
 class LeftMenuController: UIViewController {
     
-    @IBOutlet weak var tableView:UITableView!
-     var mainViewController: UIViewController!
+        @IBOutlet weak var tableView:UITableView!
+        var mainViewController: UIViewController!
+        var  accountsVC:UIViewController!
+        var myOrdersVc:UIViewController!
+        var shoppingCartVC:UIViewController!
+        var wishListVC:UIViewController!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
+        
+        setUpMenuViewControllers()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    func setUpMenuViewControllers()
+    {
+        
+        let orderVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.OrdersListController) as! OrderListVC
+        
+        let accountsVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.MyAccountsController) as! MyAccountVC
+        
+        let shoppingCartVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.ShoppingCartController) as! ShoppingCartVC
+        
+        let wishVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.WishListController) as! WishListVC
+        
+        self.myOrdersVc = UINavigationController(rootViewController: orderVC)
+        self.accountsVC =  UINavigationController(rootViewController: accountsVC)
+        self.shoppingCartVC = UINavigationController(rootViewController: shoppingCartVC)
+        self.wishListVC = UINavigationController(rootViewController: wishVC)
+        
+    }
+    
+    func changeViewController(_ menu: LeftMenu) {
+        
+        switch menu {
+        case .home:
+           self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
+
+            
+        case .account:
+             self.slideMenuController()?.changeMainViewController(self.accountsVC, close: true)
+            
+        case .orders:
+             self.slideMenuController()?.changeMainViewController(self.myOrdersVc, close: true)
+        
+        case .shoppingCart:
+             self.slideMenuController()?.changeMainViewController(self.shoppingCartVC, close: true)
+            
+        case .wish:
+             self.slideMenuController()?.changeMainViewController(self.wishListVC, close: true)
+            
+        default:
+             self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
+        }
+        
     }
     
 
@@ -59,6 +124,18 @@ extension LeftMenuController:UITableViewDataSource
 
 extension LeftMenuController : UITableViewDelegate
 {
+    
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let menu = LeftMenu(rawValue: indexPath.row)
+        {
+            self.changeViewController(menu)
+            
+        }
+        
+        
+    }
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50

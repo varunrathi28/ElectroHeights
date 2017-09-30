@@ -12,13 +12,6 @@ import SkyFloatingLabelTextField
 import SlideMenuControllerSwift
 
 
-enum LeftMenu: Int {
-    case main = 0
-    case swift
-    case java
-    case go
-    case nonMenu
-}
 
 protocol LeftMenuProtocol : class {
     func changeViewController(_ menu: LeftMenu)
@@ -149,15 +142,13 @@ class LoginVC: UIViewController , LeftMenuProtocol {
             
             if status == true
             {
-                self.openHomeCollection()
-                
-               if let userData = json.dictionary
+                let user = User(with: json)
+                    
+               if let userid = user.CustomerID
                {
-                
-                
+                    self.openHomeCollection()
                 
                 }
-                
                 
             }
             else

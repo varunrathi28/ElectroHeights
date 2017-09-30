@@ -13,6 +13,10 @@ struct StoryBoardID
     static let SubCategoryList = "SubCatList"
     static let HomeController = "HomeCollectionController"
     static let LeftMenuController = "LeftMenu"
+    static let MyAccountsController = "MyAccounts"
+    static let OrdersListController = "MyOrders"
+    static let ShoppingCartController = "ShoppingCart"
+    static let WishListController = "WishList"
 }
 
 struct CellIdentifiers {

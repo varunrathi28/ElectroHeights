@@ -23,6 +23,7 @@ class ShoppingCartVC: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         //tableView.register(UI, forCellReuseIdentifier: <#T##String#>)
         
+        self.setNavigationBarItem()
         
         
 

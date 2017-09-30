@@ -20,8 +20,10 @@ class OrderListVC: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         setUpViews()
-        setupNavBar()
+        //setupNavBar()
         setUpDataSource()
+        
+        self.setNavigationBarItem()
 
 
         // Do any additional setup after loading the view.
