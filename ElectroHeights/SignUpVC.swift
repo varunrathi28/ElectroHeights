@@ -8,15 +8,27 @@
 
 import UIKit
 import CountryPicker
+import SkyFloatingLabelTextField
 
 class SignUpVC: UIViewController {
     
+    //Picker
     @IBOutlet weak var ivCountry:UIImageView!
     @IBOutlet weak var lblCountryCode:UILabel!
     @IBOutlet weak var lblPhCode:UILabel!
     @IBOutlet weak var viewPicker:UIView!
     @IBOutlet weak var picker:CountryPicker!
-
+    
+    // Screen
+    @IBOutlet weak var ivLogo:UIImageView!
+    @IBOutlet weak var btnSubmit:UIButton!
+    @IBOutlet weak var tfName: SkyFloatingLabelTextField!
+    @IBOutlet weak var tfMobNo: SkyFloatingLabelTextField!
+    @IBOutlet weak var tfPassword: SkyFloatingLabelTextField!
+    
+    
+    var phoneCd:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,7 +41,7 @@ class SignUpVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         picker.countryPickerDelegate = self
-        hidePickerWithoutAnimation()
+        hidePicker()
         
     }
     
@@ -101,7 +113,58 @@ class SignUpVC: UIViewController {
         showPicker()
         
     }
+    
+    @IBAction func btnSubmitClicked(sender:AnyObject)
+    {
+        guard let mobile = tfMobNo.text,
+        let password = tfPassword.text,
+        let name = tfName.text
+        else
+        {
+            return
+        }
+        
+        var reqDic = [String:String]()
+        reqDic["MobileNo"] = mobile
+        reqDic["Password"] = password
+        reqDic["Name"] = name
+        
+        callWebServiceForValidatingPhone(with: reqDic as [String : AnyObject])
 
+    }
+    
+    
+    
+   func  callWebServiceForInserting(with details:[String:AnyObject])
+    {
+    let parameterStr = Utility.getStringForRequestBodyWithPararmeters(dict: details)
+    let apiManager = RestApiManager()
+    apiManager.post(urlString: URLConstant.kBaseURL + URLEndPoints.kInsertCustomer, parameters: parameterStr) { (json, error, status) in
+    
+        }
+        
+    }
+
+    
+    func callWebServiceForValidatingPhone(with info:[String:AnyObject])
+    {
+        var dic = [String:String]()
+        dic["MobileNo"] = info["MobileNo"] as! String
+        
+        let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: dic as [String : AnyObject])
+        let apiManager = RestApiManager()
+        apiManager.post(urlString: URLConstant.kBaseURL + URLEndPoints.kValidateMobile, parameters: bodyStr) { (json, error, status) in
+            
+            let status = json.boolValue
+            
+            if status
+            {
+                self.callWebServiceForInserting(with: info)
+            }
+        }
+        
+    }
+    
 
 }
 
@@ -113,5 +176,19 @@ extension SignUpVC:CountryPickerDelegate
         lblCountryCode.text = countryCode
         lblPhCode.text = phoneCode
         ivCountry.image = flag
+    }
+}
+
+extension SignUpVC:UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
+        hidePicker()
+        return true
     }
 }

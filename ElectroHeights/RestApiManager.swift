@@ -18,7 +18,6 @@ class RestApiManager: NSObject {
     func get(query:String,endPoint:String,onCompletion:@escaping ServiceResponse)
     {
         let urlStr = URLConstant.kBaseURL + endPoint + query
-        
         let request = NSMutableURLRequest(url:URL(string: urlStr)!)
         request.httpMethod = "GET"
         let session = URLSession.shared
@@ -36,8 +35,7 @@ class RestApiManager: NSObject {
     func post(urlString:String,parameters:String,onCompletion:@escaping ServiceResponse)
     {
         
-        let fullURL = URLConstant.kBaseURL + urlString
-        let request = NSMutableURLRequest(url: URL(string: fullURL)!)
+        let request = NSMutableURLRequest(url: URL(string: urlString)!)
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")  // the request is JSON
         request.setValue(URLConstant.BasicAuth, forHTTPHeaderField: "Basic")
         request.httpMethod = "POST"

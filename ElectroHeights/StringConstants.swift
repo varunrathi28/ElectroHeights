@@ -12,6 +12,7 @@ struct StoryBoardID
 {
     static let SubCategoryList = "SubCatList"
     static let HomeController = "HomeCollectionController"
+    static let LeftMenuController = "LeftMenu"
 }
 
 struct CellIdentifiers {

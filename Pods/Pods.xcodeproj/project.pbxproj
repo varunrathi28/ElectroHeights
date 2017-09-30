@@ -7,51 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A125976FDEB18C9128019E1376FC3F0 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B7FDCB4CACDC4A21B5443CFAB736BF /* SkyFloatingLabelTextFieldWithIcon.swift */; };
-		0EB579FACF51C8E9262C550520B417B3 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = E7E8F2440D3313538455FE282F29C2F8 /* Data */; };
-		182E811184BF03448A390B2DC385A4BF /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6FE5635DE9F91608D4CEEDC4DA83B0 /* SwiftyJSON-dummy.m */; };
-		1E00BAF47C771C9874C560C291E0736E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		23AF2D6DA80480B21E3FCE2EB0AB5250 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF1E20825493FDF8FDE563345358F89 /* SkyFloatingLabelTextField.swift */; };
-		2F50D0976F8D78F519D4A9E03982C3C2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD99669109EAAA9FC4F58F64359C8FA /* SwiftyJSON.swift */; };
-		632BE81261D171BB8D06412C37BDF5F9 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCAD8A57017BE16BA25D2E46C9655AB8 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		681EB0F5D9D084F048BE9671180A974F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6EC9566670A495905D9177EF70E641AF /* CountryPickerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C0C0C73973479F16615F501AA48617A /* CountryPickerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72BDBC5C3293B4AF0B121E9FD27E4FD1 /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70615155940982B741034E8A9A381615 /* CountryView.swift */; };
-		7A2505CE706504238316375E3AAE528A /* CountryView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 264626FDFBBCCE4E97A1E0E9993E6F3E /* CountryView.xib */; };
-		7AAD81F54C596A4175151FD7B25A90B1 /* Pods-ElectroHeights-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C9A0F1ECD3C61E5E35E0CB6FF659AF /* Pods-ElectroHeights-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82B1AFADFB310B7F7DA6F4BB56791065 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 967E35BA9C7C0C88E1A87D6DD750B6AC /* Images */; };
-		82D8D05A9371BEA2CF7FAA44CA725328 /* CountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 817FDA36A8914BCDC366FB40A68DC094 /* CountryPicker.bundle */; };
+		05B5A24B496E15ED9771AD6E5721AC42 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5C7916C0980C85564136003845D59 /* SlideMenuController.swift */; };
+		0A615D546C89D336611737A063C94548 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 484ACB8292B6FFF3E7D00EA27C78E1D7 /* SwiftyJSON-dummy.m */; };
+		0EB579FACF51C8E9262C550520B417B3 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 84410F15DFF17AB2E7DD1B1210E8C2CE /* Data */; };
+		123E4ED9D907ED562055F46865851995 /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9259C244E425885A0C9B0832FBAB76F /* UITextField+fixCaretPosition.swift */; };
+		1718A1898ADC5E780A3E54522BE9C4CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2D8490A159C33DD802C3238EFC2E404F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		33F7CE09D1F613B084628F752CE8BB33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		41BB7F3EDD2C7838D3223A60FC77BBBF /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7ECB1FF8D6BDA358B7BC85CDDDEC9F /* SkyFloatingLabelTextField.swift */; };
+		64533ED9A9881E41EF703F820300AA78 /* SlideMenuControllerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 166B9724D58146C1F52889F8B1B803CD /* SlideMenuControllerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69CE66308D0BB1CEB9409AC651EA5C5C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7461C48BE8E642C0FB4668C7686BC8F6 /* SwiftyJSON.swift */; };
+		6C6035DFC6AE8AE095FC9FA3B3BB4D57 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B10824B62B91864CE3A323CB26F1458 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EC9566670A495905D9177EF70E641AF /* CountryPickerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DCE87121E357B075B53EADBCFE28D47 /* CountryPickerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72BDBC5C3293B4AF0B121E9FD27E4FD1 /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0FC69FAC12152B901D6327C4DF36A /* CountryView.swift */; };
+		7378522F2A239473B7A4F86A7E174B63 /* SlideMenuControllerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5916088AEC2E0BFD20EE869EB970DCE9 /* SlideMenuControllerSwift-dummy.m */; };
+		7508522C00740438A00E1312E0F78B21 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF81634E6BF677624531E08EC209F0 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		7A2505CE706504238316375E3AAE528A /* CountryView.xib in Sources */ = {isa = PBXBuildFile; fileRef = EFA2819CA65366210AE71C8FF9BB3505 /* CountryView.xib */; };
+		82B1AFADFB310B7F7DA6F4BB56791065 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 3881D12B7FB1ADEB588C0740CBC09EC3 /* Images */; };
+		82D8D05A9371BEA2CF7FAA44CA725328 /* CountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60D619CEA55EAFD91B986C1F3200B8FF /* CountryPicker.bundle */; };
 		874D04D1491FF0D91D6701CC7F6EC74A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		949E8A7CFA24E8186291DF7F69E13C54 /* CountryPickerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB29219E3D4EC0FECE657D5C96840250 /* CountryPickerSwift-dummy.m */; };
-		D5C3832EA3BDD8DBCB3A004C7D340179 /* Pods-ElectroHeights-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 807260DF017DCC911442D3B339DDADC2 /* Pods-ElectroHeights-dummy.m */; };
-		DC4415C9024AEF448E7B9D31B78E4755 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC2084094D426B644024532CC389FD2 /* SkyFloatingLabelTextField-dummy.m */; };
-		DF93149F959F779B2F7AE50E8EAD1C26 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1787715F336A0EDA694C3E93FBB6A4 /* CountryPicker.swift */; };
-		F2A27C54D3BA5045AA174AE390BF2A5A /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5899813086339CB7299FDB5E339D8C6 /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F31CDA8FD79202D1B54D2CC15CDD7F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		FB6F79D09F05D865BA736F5A2F3F1F5F /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123BF369DB51DBAD42DAD21F1C40F303 /* UITextField+fixCaretPosition.swift */; };
+		949E8A7CFA24E8186291DF7F69E13C54 /* CountryPickerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CF34D1E7BB4598C7D9B8A20F2BBECE /* CountryPickerSwift-dummy.m */; };
+		AD259C4EE086A74A15E26DF631A4E110 /* Pods-ElectroHeights-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C9A0F1ECD3C61E5E35E0CB6FF659AF /* Pods-ElectroHeights-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C863A4549E5FCA388B014A60C01CB04A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DF93149F959F779B2F7AE50E8EAD1C26 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A521AD0D44E20D50934C507BA818B31A /* CountryPicker.swift */; };
+		E0BDBD275CB1A7CD6E060B165D5CB788 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA66539D19485227087FE24EB234546D /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA69488AA5EFD446508997FA6D957F2E /* Pods-ElectroHeights-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 807260DF017DCC911442D3B339DDADC2 /* Pods-ElectroHeights-dummy.m */; };
+		F0F754710DECC3E7B9605C1927EDF8D4 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADA0F60C588275641E78D06E2F8AD53 /* SkyFloatingLabelTextField-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C3CD9334B21DF0875F5E8DC87090E09 /* PBXContainerItemProxy */ = {
+		07F285B4F0E70D3138756D889D38C4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB602DC79AC2CC1B079A6E517ED6E03;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+		0F2B1D535DB8BC806C6BD4FA0124B6A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA36E79EF7A82F535FA4C13424FA986B;
+			remoteInfo = SwiftyJSON;
+		};
+		59C2BDB68903923723D111570630E497 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5B9A544927D9ED12AD3F9525E2E37D39;
 			remoteInfo = CountryPickerSwift;
 		};
-		390CE7CDE3E0A6AC9B43AB4D13934195 /* PBXContainerItemProxy */ = {
+		9CD4080DDEF5F1AF5BE6EA7FECDF1642 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C71173D040E154A61EE79F936FDE573D;
-			remoteInfo = SwiftyJSON;
-		};
-		B3A3DFB77197A28A17FB34186011607E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8BDFFDB63FBF2A2CD5B80C6E3DBB4F7C;
-			remoteInfo = SkyFloatingLabelTextField;
+			remoteGlobalIDString = ABCE7FE8C4E91375B0C38DFAE3E940ED;
+			remoteInfo = SlideMenuControllerSwift;
 		};
 		DC6774386D49D019B6588977C84D0F41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -63,67 +74,83 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04C110158C157F7BFE7B16F6FFDBBBD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04E2978BDD1EF846EF4EB028AB506C27 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A366A541966C106E438C21F4605B7BC /* CountryPickerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CountryPickerSwift.modulemap; sourceTree = "<group>"; };
+		0E8CA39CD5DD079055446879FCA57E59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11FDE22EE8210BBA7A1F68065A6513DA /* Pods-ElectroHeights-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElectroHeights-acknowledgements.markdown"; sourceTree = "<group>"; };
-		123BF369DB51DBAD42DAD21F1C40F303 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
-		1CC2084094D426B644024532CC389FD2 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
-		264626FDFBBCCE4E97A1E0E9993E6F3E /* CountryView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CountryView.xib; path = CountryPicker/Classes/CountryView.xib; sourceTree = "<group>"; };
+		122F57EB7D2699B2D656BD63981D3E70 /* ResourceBundle-CountryPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CountryPicker-Info.plist"; sourceTree = "<group>"; };
+		166B9724D58146C1F52889F8B1B803CD /* SlideMenuControllerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-umbrella.h"; sourceTree = "<group>"; };
+		18D5CFC6B0609D220B14224D3B52F225 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		23D33153675D39639BAAC9D3E89D5491 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C9A0F1ECD3C61E5E35E0CB6FF659AF /* Pods-ElectroHeights-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElectroHeights-umbrella.h"; sourceTree = "<group>"; };
-		26F5087F34BECC6BDF436B85D04146E2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29489ECE8297FE678EBADFEBFA0242EC /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		405DBEF19E6B442389DE216D110A88B5 /* CountryPickerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountryPickerSwift.xcconfig; sourceTree = "<group>"; };
-		47B7FDCB4CACDC4A21B5443CFAB736BF /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
-		4833649B661216966E61370C12A8ECCD /* Pods_ElectroHeights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElectroHeights.framework; path = "Pods-ElectroHeights.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E098529E9C904FBE2D656554D5823DA /* ResourceBundle-CountryPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CountryPicker-Info.plist"; sourceTree = "<group>"; };
-		548D1D74C8A31AB574B39DA79A8AAA7D /* CountryPickerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerSwift-prefix.pch"; sourceTree = "<group>"; };
+		2806AA5051284808ED27C73477C97510 /* Pods_ElectroHeights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElectroHeights.framework; path = "Pods-ElectroHeights.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35CF81634E6BF677624531E08EC209F0 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		3881D12B7FB1ADEB588C0740CBC09EC3 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = CountryPicker/Assets/CountryPicker.bundle/Images; sourceTree = "<group>"; };
+		396DD154A34E0EA6DDBB18CDED96CF1F /* CountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountryPicker.framework; path = CountryPickerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC0FC69FAC12152B901D6327C4DF36A /* CountryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryView.swift; path = CountryPicker/Classes/CountryView.swift; sourceTree = "<group>"; };
+		3F729AEC33B2EE78320E94433DEA8046 /* CountryPickerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountryPickerSwift.xcconfig; sourceTree = "<group>"; };
+		484ACB8292B6FFF3E7D00EA27C78E1D7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		4ADA0F60C588275641E78D06E2F8AD53 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		4C7ECB1FF8D6BDA358B7BC85CDDDEC9F /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		553904B9FDCE60597795AD6F9AD1315C /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		5916088AEC2E0BFD20EE869EB970DCE9 /* SlideMenuControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SlideMenuControllerSwift-dummy.m"; sourceTree = "<group>"; };
+		5CB75418D9F64A76EEE47D75EF33951F /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SlideMenuControllerSwift.framework; path = SlideMenuControllerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D619CEA55EAFD91B986C1F3200B8FF /* CountryPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CountryPicker.bundle; path = CountryPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		70615155940982B741034E8A9A381615 /* CountryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryView.swift; path = CountryPicker/Classes/CountryView.swift; sourceTree = "<group>"; };
+		6AFCB224DF03A30CBBCEA6D9F55890BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DCE87121E357B075B53EADBCFE28D47 /* CountryPickerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerSwift-umbrella.h"; sourceTree = "<group>"; };
+		6FC086130BA52EE9E0489111428E1DB9 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7461C48BE8E642C0FB4668C7686BC8F6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		751A9DB24CD10CCD5B242F36E486E10E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78B8653EC7B9D0A24C837C684CE86382 /* Pods-ElectroHeights-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElectroHeights-acknowledgements.plist"; sourceTree = "<group>"; };
-		7C0C0C73973479F16615F501AA48617A /* CountryPickerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerSwift-umbrella.h"; sourceTree = "<group>"; };
+		7B10824B62B91864CE3A323CB26F1458 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		7BDDF38DAF8E166806E2D034F7EA4AB9 /* SlideMenuControllerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SlideMenuControllerSwift.xcconfig; sourceTree = "<group>"; };
 		807260DF017DCC911442D3B339DDADC2 /* Pods-ElectroHeights-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElectroHeights-dummy.m"; sourceTree = "<group>"; };
-		817FDA36A8914BCDC366FB40A68DC094 /* CountryPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CountryPicker.bundle; path = CountryPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		84410F15DFF17AB2E7DD1B1210E8C2CE /* Data */ = {isa = PBXFileReference; includeInIndex = 1; name = Data; path = CountryPicker/Assets/CountryPicker.bundle/Data; sourceTree = "<group>"; };
 		88B40BF0B696539669172B30DAD07877 /* Pods-ElectroHeights-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElectroHeights-resources.sh"; sourceTree = "<group>"; };
-		8DF1E20825493FDF8FDE563345358F89 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
-		8EB041CD82A100888E52A8262BD995E9 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		8D3B41AC7880BF44F5EF0DDBC3B37294 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		967E35BA9C7C0C88E1A87D6DD750B6AC /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = CountryPicker/Assets/CountryPicker.bundle/Images; sourceTree = "<group>"; };
-		9E652CE62AD51E91A0D89943EF070828 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		A0C01CDCC1BD821021E10BB0B4C5A878 /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		95DD390C4F3BBE662D04A5059FEED510 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
 		A43659D414C7F3E4CBAF4F28B0E0F416 /* Pods-ElectroHeights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElectroHeights.release.xcconfig"; sourceTree = "<group>"; };
-		B1BD957D360CF5A2ADC04B66C9A23F6D /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
-		B79989A7B63702333F35F4937C924118 /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		A521AD0D44E20D50934C507BA818B31A /* CountryPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPicker.swift; path = CountryPicker/Classes/CountryPicker.swift; sourceTree = "<group>"; };
+		A822B7C0B4F9C0E8E26028958BB2ED6C /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		B2CF34D1E7BB4598C7D9B8A20F2BBECE /* CountryPickerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountryPickerSwift-dummy.m"; sourceTree = "<group>"; };
 		B913B798F84E194F7ABD48478C35A535 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA1787715F336A0EDA694C3E93FBB6A4 /* CountryPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPicker.swift; path = CountryPicker/Classes/CountryPicker.swift; sourceTree = "<group>"; };
-		BE6FE5635DE9F91608D4CEEDC4DA83B0 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		BFD99669109EAAA9FC4F58F64359C8FA /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		C1B64AAD4DB1C43746750D904A1E3300 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5899813086339CB7299FDB5E339D8C6 /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		B9259C244E425885A0C9B0832FBAB76F /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		BAF7DAF8B25F67F7FDFE2A0B2323B06D /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		BC8B5A4A003AEED0B3EC0CE78DDB9920 /* SlideMenuControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SlideMenuControllerSwift.modulemap; sourceTree = "<group>"; };
 		C7F4A1F0358735D55BD09940855F33A3 /* Pods-ElectroHeights.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ElectroHeights.modulemap"; sourceTree = "<group>"; };
-		CB29219E3D4EC0FECE657D5C96840250 /* CountryPickerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountryPickerSwift-dummy.m"; sourceTree = "<group>"; };
-		CCAD8A57017BE16BA25D2E46C9655AB8 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		DC7E3C15B5CF342A613BEDC1E4D0D20F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6827B5965065E92B15457F8B0181673 /* CountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountryPicker.framework; path = CountryPickerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7E8F2440D3313538455FE282F29C2F8 /* Data */ = {isa = PBXFileReference; includeInIndex = 1; name = Data; path = CountryPicker/Assets/CountryPicker.bundle/Data; sourceTree = "<group>"; };
+		CA66539D19485227087FE24EB234546D /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		CDA5C7916C0980C85564136003845D59 /* SlideMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideMenuController.swift; path = Source/SlideMenuController.swift; sourceTree = "<group>"; };
+		DDBC5850EFBCC8730846F4450F508BE5 /* CountryPickerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerSwift-prefix.pch"; sourceTree = "<group>"; };
+		DECEC6ADEF16823D22424B581F462E3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E62D4C97D9DC5C488DB70F07F623765E /* SlideMenuControllerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SlideMenuControllerSwift-prefix.pch"; sourceTree = "<group>"; };
 		E9767DB0EA23AA9E0F461E08043AA3BF /* Pods-ElectroHeights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElectroHeights.debug.xcconfig"; sourceTree = "<group>"; };
 		EC14B1C68C70CA10A258002EB62FC5CE /* Pods-ElectroHeights-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElectroHeights-frameworks.sh"; sourceTree = "<group>"; };
-		F376ECBEB7BEF87B0ABC547561819FFF /* CountryPickerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CountryPickerSwift.modulemap; sourceTree = "<group>"; };
+		EFA2819CA65366210AE71C8FF9BB3505 /* CountryView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CountryView.xib; path = CountryPicker/Classes/CountryView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		525018B7A4171E1E86A6FEC612AC4716 /* Frameworks */ = {
+		672F709BA1E30EC0F624915DB02E1BF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F31CDA8FD79202D1B54D2CC15CDD7F9F /* Foundation.framework in Frameworks */,
+				33F7CE09D1F613B084628F752CE8BB33 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79624F08F99FDC4CEDF58B6A6ACDEAD4 /* Frameworks */ = {
+		9A0D0860E00B95A4AE58390CBF49A13B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681EB0F5D9D084F048BE9671180A974F /* Foundation.framework in Frameworks */,
+				1718A1898ADC5E780A3E54522BE9C4CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7207469A1CF01B6074B66C1D30142F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8490A159C33DD802C3238EFC2E404F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +158,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14D1728F9F0CFC3B10D7381A210EC8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C863A4549E5FCA388B014A60C01CB04A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,30 +177,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1D8914EC774FF340CFBBF6311FC9E2D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E00BAF47C771C9874C560C291E0736E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00166713721B844415F4E14EFB58D95C /* CountryPickerSwift */ = {
-			isa = PBXGroup;
-			children = (
-				BA1787715F336A0EDA694C3E93FBB6A4 /* CountryPicker.swift */,
-				70615155940982B741034E8A9A381615 /* CountryView.swift */,
-				264626FDFBBCCE4E97A1E0E9993E6F3E /* CountryView.xib */,
-				7FEFE5F86E27E756692F86A29CA98970 /* Resources */,
-				249846D2FA790B6BA8D3009CBDD54312 /* Support Files */,
-			);
-			name = CountryPickerSwift;
-			path = CountryPickerSwift;
-			sourceTree = "<group>";
-		};
 		0F4BCD10859FC7C64BB5ECD9BB168019 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,57 +188,68 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		249846D2FA790B6BA8D3009CBDD54312 /* Support Files */ = {
+		114DF76AD0BACD6C9E5282116C6A1025 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F376ECBEB7BEF87B0ABC547561819FFF /* CountryPickerSwift.modulemap */,
-				405DBEF19E6B442389DE216D110A88B5 /* CountryPickerSwift.xcconfig */,
-				CB29219E3D4EC0FECE657D5C96840250 /* CountryPickerSwift-dummy.m */,
-				548D1D74C8A31AB574B39DA79A8AAA7D /* CountryPickerSwift-prefix.pch */,
-				7C0C0C73973479F16615F501AA48617A /* CountryPickerSwift-umbrella.h */,
-				DC7E3C15B5CF342A613BEDC1E4D0D20F /* Info.plist */,
-				4E098529E9C904FBE2D656554D5823DA /* ResourceBundle-CountryPicker-Info.plist */,
+				0E8CA39CD5DD079055446879FCA57E59 /* Info.plist */,
+				BC8B5A4A003AEED0B3EC0CE78DDB9920 /* SlideMenuControllerSwift.modulemap */,
+				7BDDF38DAF8E166806E2D034F7EA4AB9 /* SlideMenuControllerSwift.xcconfig */,
+				5916088AEC2E0BFD20EE869EB970DCE9 /* SlideMenuControllerSwift-dummy.m */,
+				E62D4C97D9DC5C488DB70F07F623765E /* SlideMenuControllerSwift-prefix.pch */,
+				166B9724D58146C1F52889F8B1B803CD /* SlideMenuControllerSwift-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CountryPickerSwift";
+			path = "../Target Support Files/SlideMenuControllerSwift";
 			sourceTree = "<group>";
 		};
-		35BFBF2CA360D1B141F8BE24A67AF7B7 /* SkyFloatingLabelTextField */ = {
+		5033EF2B3B25068FABB013B47ACFBCD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DF1E20825493FDF8FDE563345358F89 /* SkyFloatingLabelTextField.swift */,
-				47B7FDCB4CACDC4A21B5443CFAB736BF /* SkyFloatingLabelTextFieldWithIcon.swift */,
-				123BF369DB51DBAD42DAD21F1C40F303 /* UITextField+fixCaretPosition.swift */,
-				4EBAED588C6B14FEBE972FE980E3D9B4 /* Support Files */,
+				60D619CEA55EAFD91B986C1F3200B8FF /* CountryPicker.bundle */,
+				396DD154A34E0EA6DDBB18CDED96CF1F /* CountryPicker.framework */,
+				2806AA5051284808ED27C73477C97510 /* Pods_ElectroHeights.framework */,
+				6FC086130BA52EE9E0489111428E1DB9 /* SkyFloatingLabelTextField.framework */,
+				5CB75418D9F64A76EEE47D75EF33951F /* SlideMenuControllerSwift.framework */,
+				23D33153675D39639BAAC9D3E89D5491 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5181390B2204AA7E33E532920B83DC98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C880235360F6E719616594FB4EB799A /* CountryPickerSwift */,
+				67E8C0138718D5CC8CA17CA50F24AB84 /* SkyFloatingLabelTextField */,
+				8524235F0CBC315FF12289B88E46A74A /* SlideMenuControllerSwift */,
+				AD0DD71CF1CC5525D1622CFF63069BFB /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59D233284C2FEFFBD7135567CB5EFD42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AFCB224DF03A30CBBCEA6D9F55890BD /* Info.plist */,
+				8D3B41AC7880BF44F5EF0DDBC3B37294 /* SwiftyJSON.modulemap */,
+				95DD390C4F3BBE662D04A5059FEED510 /* SwiftyJSON.xcconfig */,
+				484ACB8292B6FFF3E7D00EA27C78E1D7 /* SwiftyJSON-dummy.m */,
+				A822B7C0B4F9C0E8E26028958BB2ED6C /* SwiftyJSON-prefix.pch */,
+				7B10824B62B91864CE3A323CB26F1458 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		67E8C0138718D5CC8CA17CA50F24AB84 /* SkyFloatingLabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				4C7ECB1FF8D6BDA358B7BC85CDDDEC9F /* SkyFloatingLabelTextField.swift */,
+				35CF81634E6BF677624531E08EC209F0 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				B9259C244E425885A0C9B0832FBAB76F /* UITextField+fixCaretPosition.swift */,
+				A5B0355FD9A328CEE2CA0032D20A3115 /* Support Files */,
 			);
 			name = SkyFloatingLabelTextField;
 			path = SkyFloatingLabelTextField;
-			sourceTree = "<group>";
-		};
-		4EBAED588C6B14FEBE972FE980E3D9B4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				26F5087F34BECC6BDF436B85D04146E2 /* Info.plist */,
-				A0C01CDCC1BD821021E10BB0B4C5A878 /* SkyFloatingLabelTextField.modulemap */,
-				B79989A7B63702333F35F4937C924118 /* SkyFloatingLabelTextField.xcconfig */,
-				1CC2084094D426B644024532CC389FD2 /* SkyFloatingLabelTextField-dummy.m */,
-				B1BD957D360CF5A2ADC04B66C9A23F6D /* SkyFloatingLabelTextField-prefix.pch */,
-				C5899813086339CB7299FDB5E339D8C6 /* SkyFloatingLabelTextField-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SkyFloatingLabelTextField";
-			sourceTree = "<group>";
-		};
-		5FE2826B9904EF1BBA39ECF3899C56A4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				817FDA36A8914BCDC366FB40A68DC094 /* CountryPicker.bundle */,
-				E6827B5965065E92B15457F8B0181673 /* CountryPicker.framework */,
-				4833649B661216966E61370C12A8ECCD /* Pods_ElectroHeights.framework */,
-				C1B64AAD4DB1C43746750D904A1E3300 /* SkyFloatingLabelTextField.framework */,
-				04E2978BDD1EF846EF4EB028AB506C27 /* SwiftyJSON.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		68D7ED3C19061F9A3DF05B963271E6D0 /* Pods-ElectroHeights */ = {
@@ -245,24 +270,86 @@
 			path = "Target Support Files/Pods-ElectroHeights";
 			sourceTree = "<group>";
 		};
+		7C880235360F6E719616594FB4EB799A /* CountryPickerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A521AD0D44E20D50934C507BA818B31A /* CountryPicker.swift */,
+				3EC0FC69FAC12152B901D6327C4DF36A /* CountryView.swift */,
+				EFA2819CA65366210AE71C8FF9BB3505 /* CountryView.xib */,
+				A9CB67EB1237CF096D368F18E31B611C /* Resources */,
+				AE346D70060D6DBB60512A9C0ADAF785 /* Support Files */,
+			);
+			name = CountryPickerSwift;
+			path = CountryPickerSwift;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D1FA856A859EA147F17A63D2629B11B6 /* Pods */,
-				5FE2826B9904EF1BBA39ECF3899C56A4 /* Products */,
+				5181390B2204AA7E33E532920B83DC98 /* Pods */,
+				5033EF2B3B25068FABB013B47ACFBCD4 /* Products */,
 				0F4BCD10859FC7C64BB5ECD9BB168019 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7FEFE5F86E27E756692F86A29CA98970 /* Resources */ = {
+		8524235F0CBC315FF12289B88E46A74A /* SlideMenuControllerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				E7E8F2440D3313538455FE282F29C2F8 /* Data */,
-				967E35BA9C7C0C88E1A87D6DD750B6AC /* Images */,
+				CDA5C7916C0980C85564136003845D59 /* SlideMenuController.swift */,
+				114DF76AD0BACD6C9E5282116C6A1025 /* Support Files */,
+			);
+			name = SlideMenuControllerSwift;
+			path = SlideMenuControllerSwift;
+			sourceTree = "<group>";
+		};
+		A5B0355FD9A328CEE2CA0032D20A3115 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				751A9DB24CD10CCD5B242F36E486E10E /* Info.plist */,
+				18D5CFC6B0609D220B14224D3B52F225 /* SkyFloatingLabelTextField.modulemap */,
+				553904B9FDCE60597795AD6F9AD1315C /* SkyFloatingLabelTextField.xcconfig */,
+				4ADA0F60C588275641E78D06E2F8AD53 /* SkyFloatingLabelTextField-dummy.m */,
+				BAF7DAF8B25F67F7FDFE2A0B2323B06D /* SkyFloatingLabelTextField-prefix.pch */,
+				CA66539D19485227087FE24EB234546D /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
+			sourceTree = "<group>";
+		};
+		A9CB67EB1237CF096D368F18E31B611C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84410F15DFF17AB2E7DD1B1210E8C2CE /* Data */,
+				3881D12B7FB1ADEB588C0740CBC09EC3 /* Images */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		AD0DD71CF1CC5525D1622CFF63069BFB /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				7461C48BE8E642C0FB4668C7686BC8F6 /* SwiftyJSON.swift */,
+				59D233284C2FEFFBD7135567CB5EFD42 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		AE346D70060D6DBB60512A9C0ADAF785 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A366A541966C106E438C21F4605B7BC /* CountryPickerSwift.modulemap */,
+				3F729AEC33B2EE78320E94433DEA8046 /* CountryPickerSwift.xcconfig */,
+				B2CF34D1E7BB4598C7D9B8A20F2BBECE /* CountryPickerSwift-dummy.m */,
+				DDBC5850EFBCC8730846F4450F508BE5 /* CountryPickerSwift-prefix.pch */,
+				6DCE87121E357B075B53EADBCFE28D47 /* CountryPickerSwift-umbrella.h */,
+				DECEC6ADEF16823D22424B581F462E3B /* Info.plist */,
+				122F57EB7D2699B2D656BD63981D3E70 /* ResourceBundle-CountryPicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CountryPickerSwift";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -273,26 +360,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C2DBE0081C8B0DDC68F3840EE16080F8 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				BFD99669109EAAA9FC4F58F64359C8FA /* SwiftyJSON.swift */,
-				F362BAADB80E8C76076A6FA1712CDEF2 /* Support Files */,
-			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		D1FA856A859EA147F17A63D2629B11B6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				00166713721B844415F4E14EFB58D95C /* CountryPickerSwift */,
-				35BFBF2CA360D1B141F8BE24A67AF7B7 /* SkyFloatingLabelTextField */,
-				C2DBE0081C8B0DDC68F3840EE16080F8 /* SwiftyJSON */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,44 +368,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F362BAADB80E8C76076A6FA1712CDEF2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				04C110158C157F7BFE7B16F6FFDBBBD8 /* Info.plist */,
-				29489ECE8297FE678EBADFEBFA0242EC /* SwiftyJSON.modulemap */,
-				8EB041CD82A100888E52A8262BD995E9 /* SwiftyJSON.xcconfig */,
-				BE6FE5635DE9F91608D4CEEDC4DA83B0 /* SwiftyJSON-dummy.m */,
-				9E652CE62AD51E91A0D89943EF070828 /* SwiftyJSON-prefix.pch */,
-				CCAD8A57017BE16BA25D2E46C9655AB8 /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		183E2A49649F0CE0D66D276555BA9B92 /* Headers */ = {
+		068164E25D9AAA5C2ADD185D062D94B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632BE81261D171BB8D06412C37BDF5F9 /* SwiftyJSON-umbrella.h in Headers */,
+				6C6035DFC6AE8AE095FC9FA3B3BB4D57 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C9AFC8E2E3E3E9F503CBDB2812A456A /* Headers */ = {
+		197ABADF0964F9675B22F5F350A41B1E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AAD81F54C596A4175151FD7B25A90B1 /* Pods-ElectroHeights-umbrella.h in Headers */,
+				64533ED9A9881E41EF703F820300AA78 /* SlideMenuControllerSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		750640A1E98F37373D278D16D64D2142 /* Headers */ = {
+		25EB6E977097B92DAEC27AD7A899A20A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A27C54D3BA5045AA174AE390BF2A5A /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+				E0BDBD275CB1A7CD6E060B165D5CB788 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +403,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC3F020B339C29AE1E47D9BE57B75D83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD259C4EE086A74A15E26DF631A4E110 /* Pods-ElectroHeights-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		01B77EA17648814083FCBA0F0ADA0766 /* Pods-ElectroHeights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38901FBCC852F6CFADC1ED0902C2539A /* Build configuration list for PBXNativeTarget "Pods-ElectroHeights" */;
+			buildPhases = (
+				C75698398153CD50759B2A544ED496BE /* Sources */,
+				A7207469A1CF01B6074B66C1D30142F8 /* Frameworks */,
+				BC3F020B339C29AE1E47D9BE57B75D83 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A9EB997E24F67C675DA483515A6D7FF /* PBXTargetDependency */,
+				876160CC7DC4432B6CE21DCF5B2D1E14 /* PBXTargetDependency */,
+				302299EAA944E910D88B256091F9969C /* PBXTargetDependency */,
+				E62BD4D5C959ED489C42824A0F3AEE73 /* PBXTargetDependency */,
+			);
+			name = "Pods-ElectroHeights";
+			productName = "Pods-ElectroHeights";
+			productReference = 2806AA5051284808ED27C73477C97510 /* Pods_ElectroHeights.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5B9A544927D9ED12AD3F9525E2E37D39 /* CountryPickerSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38FE797B3D87A6B248F218A2A5B8561F /* Build configuration list for PBXNativeTarget "CountryPickerSwift" */;
@@ -369,16 +451,33 @@
 			);
 			name = CountryPickerSwift;
 			productName = CountryPickerSwift;
-			productReference = E6827B5965065E92B15457F8B0181673 /* CountryPicker.framework */;
+			productReference = 396DD154A34E0EA6DDBB18CDED96CF1F /* CountryPicker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8BDFFDB63FBF2A2CD5B80C6E3DBB4F7C /* SkyFloatingLabelTextField */ = {
+		AA36E79EF7A82F535FA4C13424FA986B /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAAAFE61BEDBF729AF289594E3FE7A50 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildConfigurationList = 095C72804F3525568BC7042BB1D035CB /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				93A803156ECCCCC205F241BF895CA3D3 /* Sources */,
-				525018B7A4171E1E86A6FEC612AC4716 /* Frameworks */,
-				750640A1E98F37373D278D16D64D2142 /* Headers */,
+				17FFCA53D13A8AEB269D23AACBA55508 /* Sources */,
+				9A0D0860E00B95A4AE58390CBF49A13B /* Frameworks */,
+				068164E25D9AAA5C2ADD185D062D94B5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 23D33153675D39639BAAC9D3E89D5491 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAB602DC79AC2CC1B079A6E517ED6E03 /* SkyFloatingLabelTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32268BC0F42E0F0F8D17234625370BC0 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildPhases = (
+				AA52E23692B3F9442C50DED9CB6F670C /* Sources */,
+				D14D1728F9F0CFC3B10D7381A210EC8B /* Frameworks */,
+				25EB6E977097B92DAEC27AD7A899A20A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -386,27 +485,24 @@
 			);
 			name = SkyFloatingLabelTextField;
 			productName = SkyFloatingLabelTextField;
-			productReference = C1B64AAD4DB1C43746750D904A1E3300 /* SkyFloatingLabelTextField.framework */;
+			productReference = 6FC086130BA52EE9E0489111428E1DB9 /* SkyFloatingLabelTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ADFFC87B6C1BAE29D3B390B2306E1716 /* Pods-ElectroHeights */ = {
+		ABCE7FE8C4E91375B0C38DFAE3E940ED /* SlideMenuControllerSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F4B6BF61DE2BEA0F070EBD175E9C1C2 /* Build configuration list for PBXNativeTarget "Pods-ElectroHeights" */;
+			buildConfigurationList = 95133EA2D180FBE9BC936D511180CF5D /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */;
 			buildPhases = (
-				B41522284BDF9E5FEF123D50E4B68CB7 /* Sources */,
-				E1D8914EC774FF340CFBBF6311FC9E2D /* Frameworks */,
-				1C9AFC8E2E3E3E9F503CBDB2812A456A /* Headers */,
+				7FDEC8BE714BBF32B30481B153A2B483 /* Sources */,
+				672F709BA1E30EC0F624915DB02E1BF7 /* Frameworks */,
+				197ABADF0964F9675B22F5F350A41B1E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50482856AA233AECF6A411EE2673BD2D /* PBXTargetDependency */,
-				E558F63E5DB21C719A3779DE3D3908C0 /* PBXTargetDependency */,
-				12AF3493944B038AA7DE029375C769A4 /* PBXTargetDependency */,
 			);
-			name = "Pods-ElectroHeights";
-			productName = "Pods-ElectroHeights";
-			productReference = 4833649B661216966E61370C12A8ECCD /* Pods_ElectroHeights.framework */;
+			name = SlideMenuControllerSwift;
+			productName = SlideMenuControllerSwift;
+			productReference = 5CB75418D9F64A76EEE47D75EF33951F /* SlideMenuControllerSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C0E5A851C6CE6EF8E4966C457FDE009D /* CountryPickerSwift-CountryPicker */ = {
@@ -423,25 +519,8 @@
 			);
 			name = "CountryPickerSwift-CountryPicker";
 			productName = "CountryPickerSwift-CountryPicker";
-			productReference = 817FDA36A8914BCDC366FB40A68DC094 /* CountryPicker.bundle */;
+			productReference = 60D619CEA55EAFD91B986C1F3200B8FF /* CountryPicker.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		C71173D040E154A61EE79F936FDE573D /* SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 76CA0719CA7C9EC9A2C4674897789DE1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
-			buildPhases = (
-				35C79F171C9ED77EAED7617C86DCAE51 /* Sources */,
-				79624F08F99FDC4CEDF58B6A6ACDEAD4 /* Frameworks */,
-				183E2A49649F0CE0D66D276555BA9B92 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftyJSON;
-			productName = SwiftyJSON;
-			productReference = 04E2978BDD1EF846EF4EB028AB506C27 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -460,15 +539,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5FE2826B9904EF1BBA39ECF3899C56A4 /* Products */;
+			productRefGroup = 5033EF2B3B25068FABB013B47ACFBCD4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5B9A544927D9ED12AD3F9525E2E37D39 /* CountryPickerSwift */,
 				C0E5A851C6CE6EF8E4966C457FDE009D /* CountryPickerSwift-CountryPicker */,
-				ADFFC87B6C1BAE29D3B390B2306E1716 /* Pods-ElectroHeights */,
-				8BDFFDB63FBF2A2CD5B80C6E3DBB4F7C /* SkyFloatingLabelTextField */,
-				C71173D040E154A61EE79F936FDE573D /* SwiftyJSON */,
+				01B77EA17648814083FCBA0F0ADA0766 /* Pods-ElectroHeights */,
+				AAB602DC79AC2CC1B079A6E517ED6E03 /* SkyFloatingLabelTextField */,
+				ABCE7FE8C4E91375B0C38DFAE3E940ED /* SlideMenuControllerSwift */,
+				AA36E79EF7A82F535FA4C13424FA986B /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
@@ -494,12 +574,12 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		35C79F171C9ED77EAED7617C86DCAE51 /* Sources */ = {
+		17FFCA53D13A8AEB269D23AACBA55508 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182E811184BF03448A390B2DC385A4BF /* SwiftyJSON-dummy.m in Sources */,
-				2F50D0976F8D78F519D4A9E03982C3C2 /* SwiftyJSON.swift in Sources */,
+				0A615D546C89D336611737A063C94548 /* SwiftyJSON-dummy.m in Sources */,
+				69CE66308D0BB1CEB9409AC651EA5C5C /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +587,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FDEC8BE714BBF32B30481B153A2B483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B5A24B496E15ED9771AD6E5721AC42 /* SlideMenuController.swift in Sources */,
+				7378522F2A239473B7A4F86A7E174B63 /* SlideMenuControllerSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,96 +610,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93A803156ECCCCC205F241BF895CA3D3 /* Sources */ = {
+		AA52E23692B3F9442C50DED9CB6F670C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4415C9024AEF448E7B9D31B78E4755 /* SkyFloatingLabelTextField-dummy.m in Sources */,
-				23AF2D6DA80480B21E3FCE2EB0AB5250 /* SkyFloatingLabelTextField.swift in Sources */,
-				0A125976FDEB18C9128019E1376FC3F0 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
-				FB6F79D09F05D865BA736F5A2F3F1F5F /* UITextField+fixCaretPosition.swift in Sources */,
+				F0F754710DECC3E7B9605C1927EDF8D4 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				41BB7F3EDD2C7838D3223A60FC77BBBF /* SkyFloatingLabelTextField.swift in Sources */,
+				7508522C00740438A00E1312E0F78B21 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				123E4ED9D907ED562055F46865851995 /* UITextField+fixCaretPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B41522284BDF9E5FEF123D50E4B68CB7 /* Sources */ = {
+		C75698398153CD50759B2A544ED496BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C3832EA3BDD8DBCB3A004C7D340179 /* Pods-ElectroHeights-dummy.m in Sources */,
+				EA69488AA5EFD446508997FA6D957F2E /* Pods-ElectroHeights-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		12AF3493944B038AA7DE029375C769A4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = C71173D040E154A61EE79F936FDE573D /* SwiftyJSON */;
-			targetProxy = 390CE7CDE3E0A6AC9B43AB4D13934195 /* PBXContainerItemProxy */;
-		};
 		291AD05882739C6C5DA2E191BCB62402 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CountryPickerSwift-CountryPicker";
 			target = C0E5A851C6CE6EF8E4966C457FDE009D /* CountryPickerSwift-CountryPicker */;
 			targetProxy = DC6774386D49D019B6588977C84D0F41 /* PBXContainerItemProxy */;
 		};
-		50482856AA233AECF6A411EE2673BD2D /* PBXTargetDependency */ = {
+		302299EAA944E910D88B256091F9969C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SlideMenuControllerSwift;
+			target = ABCE7FE8C4E91375B0C38DFAE3E940ED /* SlideMenuControllerSwift */;
+			targetProxy = 9CD4080DDEF5F1AF5BE6EA7FECDF1642 /* PBXContainerItemProxy */;
+		};
+		3A9EB997E24F67C675DA483515A6D7FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CountryPickerSwift;
 			target = 5B9A544927D9ED12AD3F9525E2E37D39 /* CountryPickerSwift */;
-			targetProxy = 0C3CD9334B21DF0875F5E8DC87090E09 /* PBXContainerItemProxy */;
+			targetProxy = 59C2BDB68903923723D111570630E497 /* PBXContainerItemProxy */;
 		};
-		E558F63E5DB21C719A3779DE3D3908C0 /* PBXTargetDependency */ = {
+		876160CC7DC4432B6CE21DCF5B2D1E14 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SkyFloatingLabelTextField;
-			target = 8BDFFDB63FBF2A2CD5B80C6E3DBB4F7C /* SkyFloatingLabelTextField */;
-			targetProxy = B3A3DFB77197A28A17FB34186011607E /* PBXContainerItemProxy */;
+			target = AAB602DC79AC2CC1B079A6E517ED6E03 /* SkyFloatingLabelTextField */;
+			targetProxy = 07F285B4F0E70D3138756D889D38C4DB /* PBXContainerItemProxy */;
+		};
+		E62BD4D5C959ED489C42824A0F3AEE73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = AA36E79EF7A82F535FA4C13424FA986B /* SwiftyJSON */;
+			targetProxy = 0F2B1D535DB8BC806C6BD4FA0124B6A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1D2311E9D74B7E9C1D792EEEFED1EA07 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A43659D414C7F3E4CBAF4F28B0E0F416 /* Pods-ElectroHeights.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ElectroHeights/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ElectroHeights;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		3F1FF09388254B26DEE499620F1E2DD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 405DBEF19E6B442389DE216D110A88B5 /* CountryPickerSwift.xcconfig */;
+			baseConfigurationReference = 3F729AEC33B2EE78320E94433DEA8046 /* CountryPickerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -642,9 +699,9 @@
 			};
 			name = Release;
 		};
-		6283AA305A73F2F49AFD06C383B44E5B /* Release */ = {
+		42A4EED2BC98216CA06FDC6230EE33D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B79989A7B63702333F35F4937C924118 /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = A43659D414C7F3E4CBAF4F28B0E0F416 /* Pods-ElectroHeights.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -658,14 +715,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElectroHeights/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SkyFloatingLabelTextField;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ElectroHeights;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -724,9 +785,9 @@
 			};
 			name = Debug;
 		};
-		6AA97654475082E0A546840706E7AAFB /* Debug */ = {
+		6D9C580E8A9F894CD64FF553CC434072 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B79989A7B63702333F35F4937C924118 /* SkyFloatingLabelTextField.xcconfig */;
+			baseConfigurationReference = 553904B9FDCE60597795AD6F9AD1315C /* SkyFloatingLabelTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -759,9 +820,78 @@
 			};
 			name = Debug;
 		};
+		6E199730C73928828932CCA57C1FAF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DD390C4F3BBE662D04A5059FEED510 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76B022F10612DAE606090079E77B3369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DD390C4F3BBE662D04A5059FEED510 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7BE9827D1CE28C57221E42AB4796DD2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 405DBEF19E6B442389DE216D110A88B5 /* CountryPickerSwift.xcconfig */;
+			baseConfigurationReference = 3F729AEC33B2EE78320E94433DEA8046 /* CountryPickerSwift.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerSwift";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -778,7 +908,7 @@
 		};
 		84A826BF782AE54CE9A4F29935D46FEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 405DBEF19E6B442389DE216D110A88B5 /* CountryPickerSwift.xcconfig */;
+			baseConfigurationReference = 3F729AEC33B2EE78320E94433DEA8046 /* CountryPickerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -811,9 +941,48 @@
 			};
 			name = Debug;
 		};
+		97B78A1AAD31C19FA80362C38DE1541E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9767DB0EA23AA9E0F461E08043AA3BF /* Pods-ElectroHeights.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ElectroHeights/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ElectroHeights;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9E4805B7D783E1C6620A0C0A2C39528D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 405DBEF19E6B442389DE216D110A88B5 /* CountryPickerSwift.xcconfig */;
+			baseConfigurationReference = 3F729AEC33B2EE78320E94433DEA8046 /* CountryPickerSwift.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerSwift";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -827,6 +996,40 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
+		};
+		B61FD353C9B24404489B665B9F598472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 553904B9FDCE60597795AD6F9AD1315C /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		C03B8870130C98D1B02B59D003687524 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -872,9 +1075,9 @@
 			};
 			name = Release;
 		};
-		C9BDE8522DD68A08E3068309A8CC60FF /* Debug */ = {
+		EEE12C12D99D1DFB81903496920BA916 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9767DB0EA23AA9E0F461E08043AA3BF /* Pods-ElectroHeights.debug.xcconfig */;
+			baseConfigurationReference = 7BDDF38DAF8E166806E2D034F7EA4AB9 /* SlideMenuControllerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -888,53 +1091,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ElectroHeights/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ElectroHeights;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E35F4E782BA5618C7D452315E10C4A5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EB041CD82A100888E52A8262BD995E9 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_NAME = SlideMenuControllerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -946,9 +1110,9 @@
 			};
 			name = Debug;
 		};
-		F5E17878FACA03484CA9105C57B0890D /* Release */ = {
+		FA3929155F41B2CE934689A311A3A84C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EB041CD82A100888E52A8262BD995E9 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 7BDDF38DAF8E166806E2D034F7EA4AB9 /* SlideMenuControllerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -962,14 +1126,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SlideMenuControllerSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SlideMenuControllerSwift/SlideMenuControllerSwift.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_NAME = SlideMenuControllerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -992,11 +1156,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		095C72804F3525568BC7042BB1D035CB /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E199730C73928828932CCA57C1FAF03 /* Debug */,
+				76B022F10612DAE606090079E77B3369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				643C76AA582046977B7877822ED7A258 /* Debug */,
 				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32268BC0F42E0F0F8D17234625370BC0 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D9C580E8A9F894CD64FF553CC434072 /* Debug */,
+				B61FD353C9B24404489B665B9F598472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38901FBCC852F6CFADC1ED0902C2539A /* Build configuration list for PBXNativeTarget "Pods-ElectroHeights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B78A1AAD31C19FA80362C38DE1541E /* Debug */,
+				42A4EED2BC98216CA06FDC6230EE33D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1010,29 +1201,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76CA0719CA7C9EC9A2C4674897789DE1 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		95133EA2D180FBE9BC936D511180CF5D /* Build configuration list for PBXNativeTarget "SlideMenuControllerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E35F4E782BA5618C7D452315E10C4A5E /* Debug */,
-				F5E17878FACA03484CA9105C57B0890D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F4B6BF61DE2BEA0F070EBD175E9C1C2 /* Build configuration list for PBXNativeTarget "Pods-ElectroHeights" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9BDE8522DD68A08E3068309A8CC60FF /* Debug */,
-				1D2311E9D74B7E9C1D792EEEFED1EA07 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DAAAFE61BEDBF729AF289594E3FE7A50 /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6AA97654475082E0A546840706E7AAFB /* Debug */,
-				6283AA305A73F2F49AFD06C383B44E5B /* Release */,
+				EEE12C12D99D1DFB81903496920BA916 /* Debug */,
+				FA3929155F41B2CE934689A311A3A84C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

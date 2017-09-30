@@ -9,10 +9,26 @@
 import UIKit
 import CountryPicker
 import SkyFloatingLabelTextField
+import SlideMenuControllerSwift
 
-class LoginVC: UIViewController {
-    
-    
+
+enum LeftMenu: Int {
+    case main = 0
+    case swift
+    case java
+    case go
+    case nonMenu
+}
+
+protocol LeftMenuProtocol : class {
+    func changeViewController(_ menu: LeftMenu)
+}
+
+class LoginVC: UIViewController , LeftMenuProtocol {
+    func changeViewController(_ menu: LeftMenu) {
+        
+    }
+
     // Picker
     @IBOutlet weak var ivCountry:UIImageView!
     @IBOutlet weak var lblCountryCode:UILabel!
@@ -129,10 +145,19 @@ class LoginVC: UIViewController {
         
         let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: bodyDic as [String : AnyObject])
         let apiManager =  RestApiManager()
-        apiManager.post(urlString: URLEndPoints.kGetLoginEndPoint, parameters: bodyStr) { (json, error, status) in
+        apiManager.post(urlString: URLConstant.kBaseURL + URLEndPoints.kGetLoginEndPoint, parameters: bodyStr) { (json, error, status) in
             
             if status == true
             {
+                self.openHomeCollection()
+                
+               if let userData = json.dictionary
+               {
+                
+                
+                
+                }
+                
                 
             }
             else
@@ -150,6 +175,26 @@ class LoginVC: UIViewController {
     
     @IBAction func btnGoogleLoginClicked(sender:AnyObject)
     {
+        
+    }
+    
+    func openHomeCollection()
+    {
+        
+        let mainVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.HomeController) as! HomeCollectionViewController
+        let leftVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.LeftMenuController) as! LeftMenuController
+        let navVC = UINavigationController(rootViewController: mainVC)
+        let slideMenu = ExSlideMenuController(mainViewController: navVC, leftMenuViewController: leftVC)
+        
+        leftVC.mainViewController = navVC
+        slideMenu.automaticallyAdjustsScrollViewInsets = false
+        slideMenu.delegate = mainVC
+        
+        DispatchQueue.main.async(execute: {
+            // work Needs to be done
+            self.present(slideMenu, animated: true, completion: nil)
+        })
+        
         
     }
 }
@@ -172,6 +217,11 @@ extension LoginVC:UITextFieldDelegate
 {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        
         return true
     }
 }

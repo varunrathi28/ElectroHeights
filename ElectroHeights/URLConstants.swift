@@ -25,17 +25,18 @@ public struct URLConstant
 
 public class URLEndPoints :NSObject
 {
-    // POST
-    static let kRegistrationEndPont = "postcreate"
+
     
-    // GET
+
     static let kGetLoginEndPoint = "Login?"
     static let kForgotPasswordEndPoint = "ForgotPassword"
+    static let kValidateMobile = "ValidateMobileNo"
+    static let kSendOtpEndPoint = "SendOTP"
+    static let kInsertCustomer = "InsertCustomer"
     
-    static let kGetOtpEndPoint = "GetSendTP"
-    static let kMobileVerificationEndPoint = "GetMobileVerification"
-    static let kGetUserDetailsEndPoint = "GetCustomer_Infos"
 
+    // To be checked
+    static let kGetUserDetailsEndPoint = "GetCustomer_Infos"
     static let kUpdateUserProfile = "putuserprofile"
     static let kGetProductType = "getproducttype"
     static let kGetCollection = "getcollection"

@@ -60,7 +60,6 @@ class PasswordResetVC: UIViewController {
     {
         let locale = Locale.current
         let code = (locale as NSLocale).object(forKey: NSLocale.Key.countryCode) as! String?
-        
         picker.showPhoneNumbers = true
         picker.setCountry(code!)
     }
@@ -75,13 +74,9 @@ class PasswordResetVC: UIViewController {
     func showPicker()
     {
         let pickerHeight = viewPicker.frame.size.height
-        
         let screenHeight = view.frame.size.height
-        
         let offset = screenHeight - pickerHeight
-        
-        UIView.animate(withDuration: 0.2) { 
-            
+        UIView.animate(withDuration: 0.2) {
             self.viewPicker.frame = CGRect(x: 0, y: offset, width: self.viewPicker.frame.size.width, height: self.viewPicker.frame.size.height)
         }
         
@@ -124,12 +119,15 @@ class PasswordResetVC: UIViewController {
     
     @IBAction func submitButtonClicked(sender:AnyObject)
     {
+        
         guard let mobile = tfMobile.text ,
         var code = phoneCd
         else
         {
             return
         }
+        
+        closeKeyBoard()
         
         code = code.replacingOccurrences(of: "+", with: "")
         let apiManager = RestApiManager()
@@ -151,6 +149,12 @@ class PasswordResetVC: UIViewController {
         }
         
         
+    }
+    
+    func closeKeyBoard()
+    {
+        self.view.endEditing(true)
+        hidePicker()
     }
 
 }
