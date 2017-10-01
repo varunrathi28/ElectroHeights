@@ -8,6 +8,7 @@ target 'ElectroHeights' do
  pod 'SkyFloatingLabelTextField', '~> 3.0'
  pod 'CountryPickerSwift'
  pod 'SlideMenuControllerSwift'
+ pod 'SwiftyOnboard'
   # Pods for ElectroHeights
 
   

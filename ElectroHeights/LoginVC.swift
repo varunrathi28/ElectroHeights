@@ -43,6 +43,7 @@ class LoginVC: UIViewController , LeftMenuProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.isHidden = true
 
         // Do any additional setup after loading the view.
     }
@@ -50,13 +51,22 @@ class LoginVC: UIViewController , LeftMenuProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         picker.countryPickerDelegate = self
-        hidePicker()
+        hidePickerWithoutAnimation()
         
+       
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+      //  hidePicker()
+        picker.isHidden = false
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         picker.countryPickerDelegate = nil
+          picker.isHidden = true
     }
     
     
@@ -94,10 +104,8 @@ class LoginVC: UIViewController , LeftMenuProtocol {
     
     func hidePickerWithoutAnimation()
     {
-        UIView.animate(withDuration: 0.1) {
+    
             self.viewPicker.frame = CGRect(x: 0, y: self.view.frame.size.height, width: self.viewPicker.frame.size.width, height: self.viewPicker.frame.size.height)
-        }
-        
     }
     
     //MARK: - Action Handlers
@@ -142,11 +150,12 @@ class LoginVC: UIViewController , LeftMenuProtocol {
             
             if status == true
             {
+                self.openHomeCollection()
                 let user = User(with: json)
                     
                if let userid = user.CustomerID
                {
-                    self.openHomeCollection()
+                
                 
                 }
                 
