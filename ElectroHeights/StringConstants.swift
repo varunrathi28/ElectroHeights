@@ -17,6 +17,7 @@ struct StoryBoardID
     static let OrdersListController = "MyOrders"
     static let ShoppingCartController = "ShoppingCart"
     static let WishListController = "WishList"
+    static let LoginController = "Login"
 }
 
 struct CellIdentifiers {

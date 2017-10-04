@@ -9,6 +9,7 @@ target 'ElectroHeights' do
  pod 'CountryPickerSwift'
  pod 'SlideMenuControllerSwift'
  pod 'SwiftyOnboard'
+ pod 'Kingfisher', '~> 3.0'
   # Pods for ElectroHeights
 
   

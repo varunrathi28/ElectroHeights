@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ProductCollectionCell: UICollectionViewCell {
     
@@ -19,6 +20,26 @@ class ProductCollectionCell: UICollectionViewCell {
         super.awakeFromNib()
         
         setUp()
+    }
+    
+    
+    func updateData(with product:FeaturedProduct)
+    {
+        if let productname = product.ProductSubTitle
+        {
+            lblProductName.text = productname
+        }
+        
+        if let desc = product.ProductDescription
+        {
+            lblProductDetail.text = desc
+        }
+        
+        if let url = product.ImageLocation
+        {
+            imageView.kf.setImage(with: URL(string: url))
+        }
+        
     }
     
     func setUp()

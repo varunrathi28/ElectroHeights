@@ -152,7 +152,7 @@ class SignUpVC: UIViewController {
         dic["MobileNo"] = info["MobileNo"] as! String
         
         let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: dic as [String : AnyObject])
-        let apiManager = RestApiManager()
+        let apiManager = RestApiManager.sharedInstance
         apiManager.post(urlString: URLConstant.kBaseURL + URLEndPoints.kValidateMobile, parameters: bodyStr) { (json, error, status) in
             
             let status = json.boolValue

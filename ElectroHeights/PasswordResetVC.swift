@@ -130,7 +130,7 @@ class PasswordResetVC: UIViewController {
         closeKeyBoard()
         
         code = code.replacingOccurrences(of: "+", with: "")
-        let apiManager = RestApiManager()
+        let apiManager = RestApiManager.sharedInstance
         var reqDic = [String:String]()
         reqDic["MobileNo"] = code + mobile
         

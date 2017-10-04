@@ -25,30 +25,12 @@ struct CellData
     
 }
 
-/*
- {
- "MobileNo" : "919816157194",
- "ServiceTaxNo" : "0",
- "OpeningBalance" : 0,
- "AlternativeMobileNo2" : "",
- "Name" : "varun",
- "EmailAddress" : "",
- "CityID" : 0,
- "TINNo" : "",
- "CustomerID" : 5253,
- "AlternativeMobileNo3" : "",
- "CompanyName" : "",
- "Address" : "",
- "Gender" : "",
- "WhatsappNo" : "",
- "PostalCode" : "",
- "CTSNo" : "",
- "AlternativeMobileNo1" : "",
- "CreditLimit" : 0,
- "StateID" : 0
- }
- 
- */
+
+struct Banner {
+    var BannerUrl:String!
+    var ImageLocation:String!
+}
+
 
 class User : NSObject
 {
