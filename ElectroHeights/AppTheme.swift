@@ -24,6 +24,10 @@ struct AppTheme
     
     static let kSignOutButtonColor = UIColor(red: 150.0/255.0, green: 0 , blue: 0 , alpha: 1.0)
     
+    static let kStrikeThroughLineColor:UIColor = UIColor.gray
+    static let kStrikeThroughTextColor:UIColor = UIColor.gray
+
+    
     // MARK: Size
     static let kTextFieldBottomBorderWidth = CGFloat(2)
     static let kLoaderSize = CGSize(width: 100, height: 100)

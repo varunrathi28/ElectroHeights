@@ -30,9 +30,29 @@ class ProductCollectionCell: UICollectionViewCell {
             lblProductName.text = productname
         }
         
-        if let desc = product.ProductDescription
+        if let mrp = product.DiscountMRP , let price = product.ProductMRP
         {
-            lblProductDetail.text = desc
+            
+            var priceAttrStr:NSMutableAttributedString = NSMutableAttributedString()
+            
+            if mrp != price
+            {
+                
+                let mrpStr = String(format: "%.1f",mrp)
+                let priceStr = String(format: "%.1f", price)
+                let  str1 =  "Rs " + mrpStr + "   " + priceStr
+               
+                priceAttrStr = Utility.getAttributedStringWithStrikeThrough(for: str1, with: priceStr)
+            }
+            else
+            {
+                let mrpStr = String(format: "%.1f",mrp)
+                let  str1 =  "Rs " + mrpStr
+                priceAttrStr = Utility.getAttributedStringWithStrikeThrough(for: str1, with: "")
+            }
+            
+            
+            lblProductDetail.attributedText = priceAttrStr
         }
         
         if let url = product.ImageLocation

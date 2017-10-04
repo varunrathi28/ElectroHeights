@@ -98,6 +98,25 @@ public class Utility:NSObject
         
     }
     
+    class func getAttributedStringWithStrikeThrough(for text:String ,with strikeText:String)->NSMutableAttributedString
+    {
+        var attrString = NSMutableAttributedString(string: text)
+        
+         let strikeThroughRange  = (text as NSString).range(of: strikeText)
+        
+        // Strike Stype
+        attrString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: strikeThroughRange)
+        
+        // Strike Color
+        attrString.addAttribute(NSStrikethroughColorAttributeName, value: AppTheme.kStrikeThroughLineColor, range:strikeThroughRange)
+        
+        // Srtike Text Color
+        
+         attrString.addAttribute(NSForegroundColorAttributeName, value:AppTheme.kStrikeThroughTextColor, range:strikeThroughRange)
+        
+        return attrString
+    }
+    
     
 //    func startIndicator()
 //    {
