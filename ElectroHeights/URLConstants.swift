@@ -33,6 +33,12 @@ public class URLEndPoints :NSObject
     static let kValidateMobile = "ValidateMobileNo"
     static let kSendOtpEndPoint = "SendOTP"
     static let kInsertCustomer = "InsertCustomer"
+    static let kFetchShopByCategory = "FetchShopByCategory"
+    static let kFetchFeaturedProducts = "FetchFeaturedProducts"
+    static let kFetchNewProducts = "FetchNewProducts"
+    static let kFetchProductCategories = "FetchProductCategories"
+    static let kFetchBanners = "FetchBanners"
+    static let kFetchCartProducts = "FetchCartProducts"
     
 
     // To be checked

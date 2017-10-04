@@ -145,7 +145,7 @@ class LoginVC: UIViewController , LeftMenuProtocol {
         bodyDic["FCMID"] = URLConstant.FCMID
         
         let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: bodyDic as [String : AnyObject])
-        let apiManager =  RestApiManager()
+        let apiManager =  RestApiManager.sharedInstance
         apiManager.post(urlString: URLConstant.kBaseURL + URLEndPoints.kGetLoginEndPoint, parameters: bodyStr) { (json, error, status) in
             
             if status == true

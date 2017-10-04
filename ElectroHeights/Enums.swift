@@ -8,3 +8,8 @@
 
 import UIKit
 
+
+
+enum ProductType:Int {
+    case FeaturedProduct = 0, NewProducts , SubCategory
+}
