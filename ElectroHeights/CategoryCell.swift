@@ -19,7 +19,7 @@ class CategoryCell: UITableViewCell {
         // Initialization code
     }
     
-    func updateCategory(with category:CategoryData)
+    func updateCategory(with category:Category)
     {
         lblTitle.text = category.CategoryName
         

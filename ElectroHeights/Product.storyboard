@@ -12,14 +12,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Sub Category Collection View Controller-->
         <scene sceneID="3fV-5D-8FW">
             <objects>
-                <collectionViewController id="d8H-Ay-1Y6" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="llZ-MM-MVl">
+                <collectionViewController storyboardIdentifier="SubCatList" id="d8H-Ay-1Y6" customClass="SubCategoryCollectionViewController" customModule="ElectroHeights" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="llZ-MM-MVl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z6d-Rn-KGK">
                             <size key="itemSize" width="164" height="169"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -27,7 +28,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="kMO-SE-XoK">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubCatCell" id="kMO-SE-XoK" customClass="SubCategoryCollectionCell" customModule="ElectroHeights" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="164" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -35,11 +36,11 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y8x-Rh-KtQ">
-                                            <rect key="frame" x="8" y="8" width="148" height="123"/>
+                                            <rect key="frame" x="8" y="8" width="148" height="127"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRN-dJ-tcu">
-                                            <rect key="frame" x="8" y="133" width="138" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="8" y="137" width="148" height="17"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -50,11 +51,14 @@
                                     <constraint firstItem="y8x-Rh-KtQ" firstAttribute="top" secondItem="kMO-SE-XoK" secondAttribute="topMargin" id="FsP-Uk-3XZ"/>
                                     <constraint firstItem="yRN-dJ-tcu" firstAttribute="top" secondItem="y8x-Rh-KtQ" secondAttribute="bottom" constant="2" id="NSc-ue-VjQ"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="y8x-Rh-KtQ" secondAttribute="trailing" id="Tbn-qn-tle"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="yRN-dJ-tcu" secondAttribute="trailing" constant="10" id="Unh-hY-lnb"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="yRN-dJ-tcu" secondAttribute="trailing" id="Unh-hY-lnb"/>
                                     <constraint firstItem="yRN-dJ-tcu" firstAttribute="leading" secondItem="kMO-SE-XoK" secondAttribute="leadingMargin" id="aCd-28-HGw"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="y8x-Rh-KtQ" secondAttribute="bottom" priority="999" constant="30" id="kF5-14-ySa"/>
                                     <constraint firstItem="y8x-Rh-KtQ" firstAttribute="leading" secondItem="kMO-SE-XoK" secondAttribute="leadingMargin" id="pXW-XD-Ru3"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="ivSubcategory" destination="y8x-Rh-KtQ" id="YnE-dg-hL8"/>
+                                    <outlet property="lblSubCategoryTitle" destination="yRN-dJ-tcu" id="DCz-p1-fLf"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

@@ -12,7 +12,7 @@ class CategoryListVC: UIViewController {
 
     @IBOutlet weak var tableView:UITableView!
     
-    var arrDataSource:[CategoryData] = []
+    var arrDataSource:[Category] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +41,43 @@ class CategoryListVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func fetchAllSubCategories(forCategory: Category)
+    {
+        let ApiManager = RestApiManager.sharedInstance
+        let url = URLConstant.kBaseURL + URLEndPoints.kFetchProductSubCategories
+        
+        let parameterStr = "ProductCategoryID=" + String(forCategory.ProductCategoryID)
+        ApiManager.post(urlString: url, parameters: parameterStr) { (json, error, status) in
+            
+            if status == true
+            {
+               if  let subCategories = json.array
+               {
+                    let subCatList = subCategories.map({ (json) -> SubCategory in
+                        return SubCategory(with:json)
+                    })
+                
+                    let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.SubCategoryList) as! SubCategoryCollectionViewController
+                    vc.arrSubCategoryList = subCatList
+                
+                DispatchQueue.main.async {
+                      self.navigationController?.pushViewController(vc, animated: true)
+                    }
+                
+                
+                
+                }
+                
+                
+            }
+            else
+            {
+                
+            }
+        }
+        
+    }
     
     //MARK: - Views Setup
     
@@ -103,6 +140,13 @@ extension CategoryListVC:UITableViewDelegate
         let view = UIView()
         view.backgroundColor = UIColor.clear
         return view
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = arrDataSource[indexPath.section]
+        fetchAllSubCategories(forCategory: category)
+        
+        
     }
     
 }

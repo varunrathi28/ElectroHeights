@@ -8,20 +8,21 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+
 
 class SubCategoryCollectionViewController: UICollectionViewController {
 
+    var arrSubCategoryList:[SubCategory] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.automaticallyAdjustsScrollViewInsets = false
         
+        
+        collectionView?.backgroundColor = AppTheme.kBackgroundColorLightGray
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(SubCategoryCollectionCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -31,15 +32,6 @@ class SubCategoryCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     // MARK: UICollectionViewDataSource
 
@@ -51,16 +43,20 @@ class SubCategoryCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 5
+        return arrSubCategoryList.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SubCategoryCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.SubCategoryCell, for: indexPath) as! SubCategoryCollectionCell
     
+        let subCategory = arrSubCategoryList[indexPath.item]
+        cell.updateSubCategory(with: subCategory)
         // Configure the cell
     
         return cell
     }
+    
+    
     
     
 
@@ -95,4 +91,19 @@ class SubCategoryCollectionViewController: UICollectionViewController {
     }
     */
 
+}
+
+extension SubCategoryCollectionViewController:UICollectionViewDelegateFlowLayout
+{
+
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return AppTheme.kCollectionViewPadding
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return AppTheme.kCollectionViewPadding
+    }
+    
 }

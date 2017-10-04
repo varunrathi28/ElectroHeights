@@ -30,6 +30,8 @@ struct CellIdentifiers {
     static let CategoryCellId = "CategoryCell"
     static let OrderCellId = "OrderCell"
     static let SubProductCell = "ProductCell"
+    
+    static let SubCategoryCell = "SubCatCell"
 }
 
 struct MyAccountOptionStrings{

@@ -18,11 +18,11 @@ class HomeCollectionViewController: UIViewController {
     
     var arrNewProducts:[FeaturedProduct] = []
     var arrFeaturedProducts:[FeaturedProduct] = []
-    var arrAllCategories:[CategoryData] = []
+    var arrAllCategories:[Category] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.automaticallyAdjustsScrollViewInsets = false
         
         collectionView.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         callWebServicesToFetchData()
@@ -71,9 +71,9 @@ class HomeCollectionViewController: UIViewController {
             {
                 if let categoryArray = json.array
                 {
-                    self.arrAllCategories = categoryArray.map({ (json) -> CategoryData in
+                    self.arrAllCategories = categoryArray.map({ (json) -> Category in
                         
-                        return CategoryData(with: json)
+                        return Category(with: json)
                     })
                 }
                 

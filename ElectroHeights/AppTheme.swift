@@ -34,8 +34,9 @@ struct AppTheme
     
     static let kOfferCellPadding:CGFloat = 10
     
-    
     static let kImageHeaderHeight:CGFloat = 100.0
+    
+    static let kCollectionViewPadding:CGFloat = 5.0
     
     
 }

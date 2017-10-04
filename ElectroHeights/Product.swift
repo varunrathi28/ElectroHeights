@@ -9,11 +9,6 @@
 import UIKit
 import SwiftyJSON
 
-struct Category {
-    var ProductCategoryID:String!
-    var CategoryName:String!
-    
-}
 
 
 class BaseProduct

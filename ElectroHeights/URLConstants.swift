@@ -25,9 +25,6 @@ public struct URLConstant
 
 public class URLEndPoints :NSObject
 {
-
-    
-
     static let kGetLoginEndPoint = "Login?"
     static let kForgotPasswordEndPoint = "ForgotPassword"
     static let kValidateMobile = "ValidateMobileNo"
@@ -39,6 +36,7 @@ public class URLEndPoints :NSObject
     static let kFetchProductCategories = "FetchProductCategories"
     static let kFetchBanners = "FetchBanners"
     static let kFetchCartProducts = "FetchCartProducts"
+    static let kFetchProductSubCategories = "FetchProductSubCategories"
    
     
 

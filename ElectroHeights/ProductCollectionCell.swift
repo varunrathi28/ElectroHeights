@@ -37,7 +37,6 @@ class ProductCollectionCell: UICollectionViewCell {
             
             if mrp != price
             {
-                
                 let mrpStr = String(format: "%.1f",mrp)
                 let priceStr = String(format: "%.1f", price)
                 let  str1 =  "Rs " + mrpStr + "   " + priceStr
