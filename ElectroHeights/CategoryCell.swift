@@ -15,15 +15,15 @@ class CategoryCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        ivCategory.image = UIImage(named:"electro_heights")
         // Initialization code
     }
     
-    func updateData(data:CellData)
+    func updateCategory(with category:CategoryData)
     {
-        lblTitle.text = data.text
-        ivCategory.image = UIImage(named: data.imageName)
+        lblTitle.text = category.CategoryName
+        
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

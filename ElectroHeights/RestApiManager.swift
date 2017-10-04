@@ -32,7 +32,7 @@ class RestApiManager: NSObject {
         task.resume()
     }
     
-    func post(urlString:String,parameters:String,onCompletion:@escaping ServiceResponse)
+    func post(urlString:String,parameters:String? = nil ,onCompletion:@escaping ServiceResponse)
     {
         
         let request = NSMutableURLRequest(url: URL(string: urlString)!)
@@ -41,7 +41,7 @@ class RestApiManager: NSObject {
         request.httpMethod = "POST"
         do
         {
-            let httpData =  parameters.data(using: .utf8)
+            let httpData =  parameters?.data(using: .utf8)
             request.httpBody = httpData
         }
             

@@ -12,7 +12,7 @@ class CategoryListVC: UIViewController {
 
     @IBOutlet weak var tableView:UITableView!
     
-    var arrDataSource:[CellData] = []
+    var arrDataSource:[CategoryData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,6 @@ class CategoryListVC: UIViewController {
         
         setUpViews()
         setupNavBar()
-        setUpDataSource()
         
         // Do any additional setup after loading the view.
     }
@@ -63,29 +62,9 @@ class CategoryListVC: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
     }
     
-    
-    func setUpDataSource()
-    {
-        arrDataSource = []
-        
-        let opt1 = CellData(text: "Electrical")
-        let opt2 = CellData(text: "Electronics")
-        let opt3 = CellData(text: "Hardware")
-        let opt4 = CellData(text: "Electronics")
-        let opt5 = CellData(text: "Switchgear")
-
-        arrDataSource.append(opt1)
-        arrDataSource.append(opt2)
-        arrDataSource.append(opt3)
-        arrDataSource.append(opt4)
-        arrDataSource.append(opt5)
-        
-    }
-    
-    
-    
     @IBAction func btnBackPressed(sender:AnyObject)
     {
+        self.navigationController?.popViewController(animated: true)
         
     }
     
@@ -106,7 +85,8 @@ extension CategoryListVC : UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.CategoryCellId, for: indexPath) as! CategoryCell
         
-        cell.updateData(data: arrDataSource[indexPath.section])
+        let category = arrDataSource[indexPath.section]
+        cell.updateCategory(with: category)
         return cell
     }
     

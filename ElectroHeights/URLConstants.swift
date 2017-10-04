@@ -39,6 +39,7 @@ public class URLEndPoints :NSObject
     static let kFetchProductCategories = "FetchProductCategories"
     static let kFetchBanners = "FetchBanners"
     static let kFetchCartProducts = "FetchCartProducts"
+   
     
 
     // To be checked

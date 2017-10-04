@@ -26,6 +26,26 @@ struct CellData
 }
 
 
+struct CategoryData
+{
+    var ProductCategoryID:Int!
+    var CategoryName:String!
+    
+    init(categoryId:Int, categoryName:String) {
+        self.CategoryName = categoryName
+        self.ProductCategoryID = categoryId
+        
+        
+    }
+    
+    init(with json:JSON) {
+        self.ProductCategoryID = json["ProductCategoryID"].intValue
+        self.CategoryName = json["CategoryName"].stringValue
+    }
+    
+}
+
+
 struct Banner {
     var BannerUrl:String!
     var ImageLocation:String!

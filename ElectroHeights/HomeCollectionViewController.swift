@@ -18,13 +18,14 @@ class HomeCollectionViewController: UIViewController {
     
     var arrNewProducts:[FeaturedProduct] = []
     var arrFeaturedProducts:[FeaturedProduct] = []
+    var arrAllCategories:[CategoryData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-
-         callWebServiceToFetchProducts(type: .FeaturedProduct)
+        collectionView.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        callWebServicesToFetchData()
         
         // Do any additional setup after loading the view.
     }
@@ -40,9 +41,52 @@ class HomeCollectionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    //MARK: - Actions
+    
+    @IBAction func openAllCategoriesClicked(sender:AnyObject)
+    {
+        let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.CategoryListController) as! CategoryListVC
+        vc.arrDataSource = self.arrAllCategories
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
     
+    //MARK:- Network Requests
     
+    func callWebServicesToFetchData()
+    {
+        callWebServiceToFetchAllCategories()
+        callWebServiceToFetchProducts(type: .FeaturedProduct)
+    
+    }
+    
+    func callWebServiceToFetchAllCategories()
+    {
+        let apiManager = RestApiManager.sharedInstance
+        
+        apiManager.post(urlString: URLConstant.kBaseURL + URLEndPoints.kFetchProductCategories, parameters: nil) { (json, error,status ) in
+        
+            if status == true
+            {
+                if let categoryArray = json.array
+                {
+                    self.arrAllCategories = categoryArray.map({ (json) -> CategoryData in
+                        
+                        return CategoryData(with: json)
+                    })
+                }
+                
+            }
+            else
+            {
+                
+            }
+        }
+        
+    }
+    
+
     func callWebServiceToFetchProducts(type:ProductType)
     {
         let url = getUrlForProductType(type: type)

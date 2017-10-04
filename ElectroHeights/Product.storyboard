@@ -435,6 +435,9 @@
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdt-VG-t8X">
                                                                 <rect key="frame" x="274" y="0.0" width="61" height="50"/>
                                                                 <state key="normal" image="home_icon_4"/>
+                                                                <connections>
+                                                                    <action selector="openAllCategoriesClickedWithSender:" destination="ElI-Dm-a3J" eventType="touchUpInside" id="j03-ME-do6"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1459,7 +1462,7 @@
         <!--Category ListVC-->
         <scene sceneID="Xwq-O7-WkV">
             <objects>
-                <viewController id="AZy-kD-JSa" customClass="CategoryListVC" customModule="ElectroHeights" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoryList" id="AZy-kD-JSa" customClass="CategoryListVC" customModule="ElectroHeights" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iA0-qy-yTK"/>
                         <viewControllerLayoutGuide type="bottom" id="e3A-Uf-jkm"/>
