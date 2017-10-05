@@ -28,6 +28,8 @@
 		3747EB271F7F95820038DB6C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3747EB261F7F95820038DB6C /* DataManager.swift */; };
 		3747EB291F7FAFF60038DB6C /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3747EB281F7FAFF60038DB6C /* ImageHeaderView.swift */; };
 		3747EB2B1F7FB9DB0038DB6C /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3747EB2A1F7FB9DB0038DB6C /* Enums.swift */; };
+		3749D0231F862BFD002EA3DB /* HomeCollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0221F862BFD002EA3DB /* HomeCollectionHeader.swift */; };
+		3749D0251F866542002EA3DB /* ProductDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3749D0241F866542002EA3DB /* ProductDetailsCell.xib */; };
 		374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04481F6141CF006B1E04 /* WishListVC.swift */; };
 		374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044A1F6141E7006B1E04 /* MyAccountVC.swift */; };
 		374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */; };
@@ -83,6 +85,8 @@
 		3747EB261F7F95820038DB6C /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		3747EB281F7FAFF60038DB6C /* ImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHeaderView.swift; sourceTree = "<group>"; };
 		3747EB2A1F7FB9DB0038DB6C /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		3749D0221F862BFD002EA3DB /* HomeCollectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionHeader.swift; sourceTree = "<group>"; };
+		3749D0241F866542002EA3DB /* ProductDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailsCell.xib; sourceTree = "<group>"; };
 		374C04481F6141CF006B1E04 /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		374C044A1F6141E7006B1E04 /* MyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
 		374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 				37F87F971F79391F0081AE00 /* ProductCollectionCell.swift */,
 				3747EB1D1F7B97C90038DB6C /* CheckBox.swift */,
 				3747EB281F7FAFF60038DB6C /* ImageHeaderView.swift */,
+				3749D0221F862BFD002EA3DB /* HomeCollectionHeader.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				374C046B1F62B313006B1E04 /* CustomAccordianView.xib */,
+				3749D0241F866542002EA3DB /* ProductDetailsCell.xib */,
 			);
 			name = "CustomView XIB";
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 			files = (
 				3725F12C1F2F5215006CDF0C /* LaunchScreen.storyboard in Resources */,
 				378A4B031F693E4600E04E25 /* Product.storyboard in Resources */,
+				3749D0251F866542002EA3DB /* ProductDetailsCell.xib in Resources */,
 				3725F1291F2F5215006CDF0C /* Assets.xcassets in Resources */,
 				374C046C1F62B313006B1E04 /* CustomAccordianView.xib in Resources */,
 				3725F1271F2F5215006CDF0C /* Main.storyboard in Resources */,
@@ -455,6 +462,7 @@
 				3747EB1E1F7B97C90038DB6C /* CheckBox.swift in Sources */,
 				3725F8901F6800A200F2ED4B /* OrderListVC.swift in Sources */,
 				374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */,
+				3749D0231F862BFD002EA3DB /* HomeCollectionHeader.swift in Sources */,
 				3725F8601F67C3F400F2ED4B /* HomeCollectionViewController.swift in Sources */,
 				37F87F981F7939200081AE00 /* ProductCollectionCell.swift in Sources */,
 				374C04611F6284C6006B1E04 /* ProductListCell.swift in Sources */,

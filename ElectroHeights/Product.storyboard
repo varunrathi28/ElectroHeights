@@ -347,13 +347,13 @@
                                     <constraint firstAttribute="height" constant="80" id="rTJ-4A-JIw"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="01z-AU-ReC">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="01z-AU-ReC">
                                 <rect key="frame" x="0.0" y="100" width="375" height="567"/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mIg-U3-igl">
                                     <size key="itemSize" width="167" height="135"/>
                                     <size key="headerReferenceSize" width="50" height="64"/>
-                                    <size key="footerReferenceSize" width="50" height="120"/>
+                                    <size key="footerReferenceSize" width="50" height="142"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
@@ -444,63 +444,71 @@
                                     </connections>
                                 </collectionReusableView>
                                 <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FooterView" id="Fjr-ub-dzn">
-                                    <rect key="frame" x="0.0" y="199" width="375" height="120"/>
+                                    <rect key="frame" x="0.0" y="199" width="375" height="142"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow us on :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sff-LB-KbB">
-                                            <rect key="frame" x="135.5" y="18" width="104" height="20.5"/>
+                                            <rect key="frame" x="136" y="18" width="104" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xxe-UH-bco">
-                                            <rect key="frame" x="132.5" y="48.5" width="110" height="25"/>
+                                            <rect key="frame" x="118" y="48.5" width="140" height="40"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqk-5a-vja">
-                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="25"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                    <state key="normal" image="icon-Facebook"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJB-o3-s2u">
-                                                    <rect key="frame" x="40" y="0.0" width="30" height="25"/>
+                                                    <rect key="frame" x="50" y="0.0" width="40" height="40"/>
+                                                    <state key="normal" image="icon-Twitter"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovt-gI-Fvs">
-                                                    <rect key="frame" x="80" y="0.0" width="30" height="25"/>
+                                                    <rect key="frame" x="100" y="0.0" width="40" height="40"/>
+                                                    <state key="normal" image="icon-YouTube"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="25" id="BGA-y1-4Kg"/>
+                                                <constraint firstAttribute="height" constant="40" id="BGA-y1-4Kg"/>
                                             </constraints>
                                         </stackView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="dx5-uL-ExH">
-                                            <rect key="frame" x="0.0" y="83.5" width="375" height="26.5"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmq-zU-TBg">
-                                                    <rect key="frame" x="0.0" y="0.0" width="71.5" height="26.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <state key="normal" title="About us"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crB-3e-Qrd">
-                                                    <rect key="frame" x="71.5" y="0.0" width="128" height="26.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <state key="normal" title="Privacy &amp; Policy"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuG-ay-bxS">
-                                                    <rect key="frame" x="199.5" y="0.0" width="175.5" height="26.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <state key="normal" title="Terms and Conditions"/>
-                                                </button>
-                                            </subviews>
-                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMc-89-zPr">
+                                            <rect key="frame" x="244" y="93.5" width="112" height="40.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                            <state key="normal" title="Terms &amp; Conditions">
+                                                <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRf-YK-BJZ">
+                                            <rect key="frame" x="74" y="93.5" width="58" height="40.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                            <state key="normal" title="About Us">
+                                                <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHN-8v-uxF">
+                                            <rect key="frame" x="142" y="93.5" width="92" height="40.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                            <state key="normal" title="Privacy &amp; Policy">
+                                                <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="dx5-uL-ExH" firstAttribute="top" secondItem="Xxe-UH-bco" secondAttribute="bottom" constant="10" id="04z-lG-eqr"/>
-                                        <constraint firstAttribute="bottom" secondItem="dx5-uL-ExH" secondAttribute="bottom" constant="10" id="4va-id-7oK"/>
                                         <constraint firstItem="Sff-LB-KbB" firstAttribute="centerX" secondItem="Fjr-ub-dzn" secondAttribute="centerX" id="8yS-jg-zVz"/>
                                         <constraint firstItem="Xxe-UH-bco" firstAttribute="centerX" secondItem="Fjr-ub-dzn" secondAttribute="centerX" id="D7q-P7-h6k"/>
-                                        <constraint firstAttribute="trailing" secondItem="dx5-uL-ExH" secondAttribute="trailing" id="DQv-VF-ka0"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="MHN-8v-uxF" secondAttribute="bottom" id="EnN-85-Y1s"/>
                                         <constraint firstItem="Xxe-UH-bco" firstAttribute="top" secondItem="Sff-LB-KbB" secondAttribute="bottom" constant="10" id="Fd4-A3-5TV"/>
-                                        <constraint firstItem="dx5-uL-ExH" firstAttribute="leading" secondItem="Fjr-ub-dzn" secondAttribute="leading" id="N4F-o7-68T"/>
-                                        <constraint firstItem="dx5-uL-ExH" firstAttribute="centerX" secondItem="Fjr-ub-dzn" secondAttribute="centerX" id="PUZ-wu-g1X"/>
+                                        <constraint firstItem="eMc-89-zPr" firstAttribute="leading" secondItem="MHN-8v-uxF" secondAttribute="trailing" constant="10" id="H9L-ag-tM8"/>
+                                        <constraint firstItem="MHN-8v-uxF" firstAttribute="top" secondItem="Xxe-UH-bco" secondAttribute="bottom" constant="5" id="HWn-Vh-2pU"/>
+                                        <constraint firstItem="eMc-89-zPr" firstAttribute="centerY" secondItem="MHN-8v-uxF" secondAttribute="centerY" id="T93-IW-73Q"/>
+                                        <constraint firstItem="MHN-8v-uxF" firstAttribute="leading" secondItem="LRf-YK-BJZ" secondAttribute="trailing" constant="10" id="VzN-nh-RYu"/>
+                                        <constraint firstItem="MHN-8v-uxF" firstAttribute="centerX" secondItem="Fjr-ub-dzn" secondAttribute="centerX" id="Wae-CE-8bK"/>
+                                        <constraint firstItem="LRf-YK-BJZ" firstAttribute="centerY" secondItem="MHN-8v-uxF" secondAttribute="centerY" id="e4t-OX-pef"/>
                                         <constraint firstItem="Sff-LB-KbB" firstAttribute="top" secondItem="Fjr-ub-dzn" secondAttribute="topMargin" constant="10" id="meN-JO-yvK"/>
+                                        <constraint firstItem="eMc-89-zPr" firstAttribute="top" secondItem="MHN-8v-uxF" secondAttribute="top" id="mq6-dM-39k"/>
+                                        <constraint firstItem="LRf-YK-BJZ" firstAttribute="top" secondItem="MHN-8v-uxF" secondAttribute="top" id="seF-Lq-c6U"/>
                                     </constraints>
                                 </collectionReusableView>
                                 <connections>
@@ -1566,6 +1574,9 @@
         <image name="checkbox_checked" width="20" height="20"/>
         <image name="checkbox_unchecked" width="20" height="20"/>
         <image name="delete" width="50" height="50"/>
+        <image name="icon-Facebook" width="40" height="40"/>
+        <image name="icon-Twitter" width="40" height="40"/>
+        <image name="icon-YouTube" width="40" height="40"/>
         <image name="new" width="64" height="64"/>
     </resources>
 </document>
