@@ -30,7 +30,6 @@ struct CellIdentifiers {
     static let CategoryCellId = "CategoryCell"
     static let OrderCellId = "OrderCell"
     static let SubProductCell = "ProductCell"
-    
     static let SubCategoryCell = "SubCatCell"
 }
 
@@ -39,6 +38,14 @@ struct MyAccountOptionStrings{
     static let MyAccOpt2 = "My Orders"
     static let MyAccOpt3 = "Shipping Address"
     static let MyAccOpt4 = "WishList"
+    
+}
+
+struct HomeHeaderText {
+    static let Header1 = "New Arrivals"
+    static let Header2 = "Featured Products"
+    static let Header3 = "Shop by Category"
+    static let Header4 = "Recent View"
     
 }
 

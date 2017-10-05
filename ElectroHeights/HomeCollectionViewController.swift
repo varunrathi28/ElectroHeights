@@ -16,15 +16,17 @@ class HomeCollectionViewController: UIViewController {
     @IBOutlet weak var scrollView:UIScrollView!
     var CustomerID:String = "5253"
     
-    var arrNewProducts:[FeaturedProduct] = []
+    var arrNewArrivals:[FeaturedProduct] = []
     var arrFeaturedProducts:[FeaturedProduct] = []
     var arrAllCategories:[Category] = []
+    var arrHeaderText:[String] = [HomeHeaderText.Header1,HomeHeaderText.Header2,HomeHeaderText.Header3,HomeHeaderText.Header4]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         
-        collectionView.contentInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        let flowLayout:UICollectionViewFlowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        flowLayout.sectionInset = UIEdgeInsetsMake(0, 5, 10, 5)
         callWebServicesToFetchData()
         
         // Do any additional setup after loading the view.
@@ -51,6 +53,18 @@ class HomeCollectionViewController: UIViewController {
         
     }
     
+    @IBAction func btnViewAllClicked(sender:AnyObject)
+    {
+        let btn = sender as! UIButton
+        switch btn.tag {
+        case 0:
+            break
+        default:
+            break
+        }
+        
+    }
+    
     
     //MARK:- Network Requests
     
@@ -58,6 +72,7 @@ class HomeCollectionViewController: UIViewController {
     {
         callWebServiceToFetchAllCategories()
         callWebServiceToFetchProducts(type: .FeaturedProduct)
+        callWebServiceToFetchProducts(type: .NewProducts)
     
     }
     
@@ -116,11 +131,16 @@ class HomeCollectionViewController: UIViewController {
                         break
                         
                     case .NewProducts:
-                        for (obj) in productArray
-                        {
+                       
+                        self.arrNewArrivals = productArray.map{
                         
-                            
+                        return FeaturedProduct.build(json: $0)!
                         }
+                        
+                        DispatchQueue.main.async {
+                            self.collectionView.reloadData()
+                        }
+                        
                         break
                     default:
                         break
@@ -172,7 +192,7 @@ class HomeCollectionViewController: UIViewController {
 extension HomeCollectionViewController:UICollectionViewDataSource
 {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return arrHeaderText.count
     }
     
     
@@ -180,13 +200,60 @@ extension HomeCollectionViewController:UICollectionViewDataSource
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.SubProductCell, for: indexPath) as! ProductCollectionCell
         
-        let product = arrFeaturedProducts[indexPath.row]
-        cell.updateData(with: product)
+        if indexPath.section == 0
+        {
+            let newProduct = arrNewArrivals[indexPath.row]
+            cell.updateData(with: newProduct)
+        }
+        else
+        {
+            let product = arrFeaturedProducts[indexPath.row]
+            cell.updateData(with: product)
+        }
+    
         return cell
         
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         return arrFeaturedProducts.count
+        return min(arrFeaturedProducts.count, arrHeaderText.count)//  return arrFeaturedProducts.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        let reUsableView:UICollectionReusableView = UICollectionReusableView()
+        
+        if kind == UICollectionElementKindSectionHeader
+        {
+            let headerView:HomeCollectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderView", for: indexPath) as! HomeCollectionHeader
+            
+                headerView.btnViewAll.tag = 100 + indexPath.section
+                headerView.btnViewAll.addTarget(self, action: #selector(btnViewAllClicked(sender:)), for: .touchUpInside)
+                headerView.lblTitle.text = arrHeaderText[indexPath.section]
+                headerView.btnViewAll.setTitle("View All", for: .normal)
+                return headerView
+            
+        }
+        
+        if kind == UICollectionElementKindSectionFooter
+        {
+                let view = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "FooterView", for: indexPath)
+                return view
+            
+        }
+        
+        return reUsableView
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        
+        if section == arrHeaderText.count - 1
+        {
+            return CGSize(width: collectionView.frame.size.width, height: 200)
+        }
+        else
+        {
+            return  CGSize(width: 0, height: 0  )
+        }
     }
     
 }
