@@ -19,7 +19,7 @@ class ProductCollectionCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        setUp()
+      //  setUp()
     }
     
     
