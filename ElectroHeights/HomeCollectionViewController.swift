@@ -53,11 +53,18 @@ class HomeCollectionViewController: UIViewController {
         
     }
     
-    @IBAction func btnViewAllClicked(sender:AnyObject)
+    @IBAction func btnViewAllClicked(sender:AnyObject? = nil)
     {
         let btn = sender as! UIButton
         switch btn.tag {
         case 0:
+            break
+            
+        case 1:
+            break
+            
+        case 2:
+            openAllCategoriesClicked(sender:self.arrAllCategories as AnyObject)
             break
         default:
             break
@@ -227,6 +234,7 @@ extension HomeCollectionViewController:UICollectionViewDataSource
             let headerView:HomeCollectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderView", for: indexPath) as! HomeCollectionHeader
             
                 headerView.btnViewAll.tag = 100 + indexPath.section
+                headerView.section = indexPath.section
                 headerView.btnViewAll.addTarget(self, action: #selector(btnViewAllClicked(sender:)), for: .touchUpInside)
                 headerView.lblTitle.text = arrHeaderText[indexPath.section]
                 headerView.btnViewAll.setTitle("View All", for: .normal)
@@ -256,6 +264,17 @@ extension HomeCollectionViewController:UICollectionViewDataSource
         }
     }
     
+}
+
+
+extension HomeCollectionViewController:UICollectionViewDelegate
+{
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        openAllCategoriesClicked(sender:self.arrAllCategories as AnyObject)
+    }
 }
 
 extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout
