@@ -19,6 +19,7 @@ struct StoryBoardID
     static let WishListController = "WishList"
     static let LoginController = "Login"
     static let CategoryListController = "CategoryList"
+    static let MyProfileController =  "MyProfile"
 }
 
 struct CellIdentifiers {
@@ -31,6 +32,11 @@ struct CellIdentifiers {
     static let OrderCellId = "OrderCell"
     static let SubProductCell = "ProductCell"
     static let SubCategoryCell = "SubCatCell"
+    
+    static let MyProfileRadioCell = "MyProfileRadioCell"
+    static let MyProfileEditCell = "MyProfileEditCell"
+    static let MyProfilePickerCell = "MyProfilePickerCell"
+    
 }
 
 struct MyAccountOptionStrings{

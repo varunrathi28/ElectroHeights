@@ -15,6 +15,16 @@ class MyProfileImageHeader: UIView {
     @IBOutlet weak var ivProfile:UIImageView!
     @IBOutlet weak var btnAddImage:UIButton!
     
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        ivProfile.layer.cornerRadius = ivProfile.bounds.size.height/2
+        ivProfile.clipsToBounds = true
+        
+        btnAddImage.setImage(UIImage(named: ""), for: .normal)
+    }
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

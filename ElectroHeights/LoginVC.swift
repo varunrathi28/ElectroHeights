@@ -137,6 +137,12 @@ class LoginVC: UIViewController , LeftMenuProtocol {
             return
         }
         
+        self.pushTestScreen()
+        return
+            
+        //
+        
+        
         code = code.replacingOccurrences(of: "+", with: "")
         
         var bodyDic = [String:String]()
@@ -150,7 +156,7 @@ class LoginVC: UIViewController , LeftMenuProtocol {
             
             if status == true
             {
-                self.openHomeCollection()
+             self.openHomeCollection()
                 let user = User(with: json)
                     
                if let userid = user.CustomerID
@@ -176,6 +182,12 @@ class LoginVC: UIViewController , LeftMenuProtocol {
     @IBAction func btnGoogleLoginClicked(sender:AnyObject)
     {
         
+    }
+    
+    func pushTestScreen()
+    {
+        let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.MyProfileController) as! MyProfileViewController
+        present(vc, animated: true, completion: nil)
     }
     
     func openHomeCollection()

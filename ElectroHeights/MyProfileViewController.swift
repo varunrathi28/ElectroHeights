@@ -10,10 +10,17 @@ import UIKit
 
 class MyProfileViewController: UIViewController {
 
+    
+    @IBOutlet weak var tableView:UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.estimatedRowHeight = 60
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +29,35 @@ class MyProfileViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
+extension MyProfileViewController : UITableViewDataSource
+{
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+        switch indexPath.row {
+        case 2:
+           let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.MyProfileRadioCell, for: indexPath) as! MyProfileRadioCell
+            return cell
+
+        case 3:
+            let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.MyProfilePickerCell, for: indexPath) as! MyProfilePickerCell
+            return cell
+        default:
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.MyProfileEditCell, for: indexPath) as! MyProfileEditingCell
+            return cell
+            
+        }
     }
-    */
-
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5;
+    }
 }

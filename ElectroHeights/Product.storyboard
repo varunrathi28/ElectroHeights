@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="765.60000000000002" y="141.67916041979012"/>
         </scene>
-        <!--View Controller-->
+        <!--My Profile View Controller-->
         <scene sceneID="c7l-B7-fGJ">
             <objects>
-                <viewController id="ERU-VU-Udn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyProfile" id="ERU-VU-Udn" customClass="MyProfileViewController" customModule="ElectroHeights" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DoH-P6-1TB"/>
                         <viewControllerLayoutGuide type="bottom" id="Yzb-mo-ik2"/>
@@ -143,10 +143,10 @@
                                                 <constraint firstAttribute="width" constant="35" id="hKD-hi-hle"/>
                                                 <constraint firstAttribute="height" constant="35" id="q1s-yL-fMu"/>
                                             </constraints>
-                                            <state key="normal" title="on"/>
+                                            <state key="normal" image="icon_camera"/>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="clQ-vS-m4V" firstAttribute="top" secondItem="45P-AC-aub" secondAttribute="top" id="C3t-7c-12m"/>
                                         <constraint firstItem="2Cv-ZI-v8P" firstAttribute="leading" secondItem="45P-AC-aub" secondAttribute="leading" constant="8" id="GIl-tN-9Su"/>
@@ -170,11 +170,11 @@
                                     </connections>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="6nS-G6-e2q" customClass="MyProfileRadioCell" customModule="ElectroHeights" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyProfileRadioCell" rowHeight="89" id="6nS-G6-e2q" customClass="MyProfileRadioCell" customModule="ElectroHeights" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="217" width="375" height="89"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6nS-G6-e2q" id="Lpd-wD-Fdf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="88.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="omB-ff-Kc4">
@@ -212,21 +212,21 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="Nqa-Fa-gKf" customClass="MyProfileEditingCell" customModule="ElectroHeights" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="305.5" width="375" height="107"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyProfileEditCell" rowHeight="88" id="Nqa-Fa-gKf" customClass="MyProfileEditingCell" customModule="ElectroHeights" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="306" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nqa-Fa-gKf" id="DMf-ko-qIZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyT-D7-uec">
-                                                    <rect key="frame" x="16" y="16" width="42" height="27.5"/>
+                                                    <rect key="frame" x="16" y="16" width="42" height="23.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D9r-Fg-vts" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                    <rect key="frame" x="16" y="53.5" width="341" height="35"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D9r-Fg-vts">
+                                                    <rect key="frame" x="16" y="44.5" width="341" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="Qoq-7E-O2Y"/>
                                                     </constraints>
@@ -237,8 +237,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MyT-D7-uec" firstAttribute="leading" secondItem="DMf-ko-qIZ" secondAttribute="leadingMargin" constant="8" id="99C-sw-aDI"/>
-                                                <constraint firstItem="D9r-Fg-vts" firstAttribute="top" secondItem="MyT-D7-uec" secondAttribute="bottom" constant="10" id="hPN-6O-GEs"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="D9r-Fg-vts" secondAttribute="bottom" constant="10" id="jXs-fA-yuq"/>
+                                                <constraint firstItem="D9r-Fg-vts" firstAttribute="top" secondItem="MyT-D7-uec" secondAttribute="bottom" constant="5" id="hPN-6O-GEs"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="D9r-Fg-vts" secondAttribute="bottom" id="jXs-fA-yuq"/>
                                                 <constraint firstItem="MyT-D7-uec" firstAttribute="top" secondItem="DMf-ko-qIZ" secondAttribute="topMargin" constant="8" id="mdR-5x-Cxf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="D9r-Fg-vts" secondAttribute="trailing" constant="10" id="vnP-vM-cHd"/>
                                                 <constraint firstItem="D9r-Fg-vts" firstAttribute="leading" secondItem="MyT-D7-uec" secondAttribute="leading" id="wuj-qZ-3Ve"/>
@@ -249,11 +249,11 @@
                                             <outlet property="tfEntry" destination="D9r-Fg-vts" id="bVi-mr-yxp"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="uWN-eL-IA6" customClass="MyProfilePickerCell" customModule="ElectroHeights" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="412.5" width="375" height="86"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyProfilePickerCell" rowHeight="86" id="uWN-eL-IA6" customClass="MyProfilePickerCell" customModule="ElectroHeights" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="394" width="375" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uWN-eL-IA6" id="SwN-qI-vK0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oT-V5-Mnw">
@@ -321,6 +321,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ERU-VU-Udn" id="mFK-GV-maj"/>
+                                    <outlet property="delegate" destination="ERU-VU-Udn" id="wJe-PN-1p3"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -331,6 +335,9 @@
                             <constraint firstItem="XJw-Mk-SdW" firstAttribute="top" secondItem="DoH-P6-1TB" secondAttribute="bottom" id="nF2-GK-mPV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="XJw-Mk-SdW" id="ZGY-H5-duE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K24-7r-4w0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2191,6 +2198,7 @@
         <image name="icon-Facebook" width="40" height="40"/>
         <image name="icon-Twitter" width="40" height="40"/>
         <image name="icon-YouTube" width="40" height="40"/>
+        <image name="icon_camera" width="30" height="30"/>
         <image name="new" width="64" height="64"/>
     </resources>
 </document>

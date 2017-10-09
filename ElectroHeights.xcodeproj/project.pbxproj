@@ -33,6 +33,11 @@
 		3749D0271F878DD7002EA3DB /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0261F878DD7002EA3DB /* HomePage.swift */; };
 		3749D0291F878EE4002EA3DB /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0281F878EE4002EA3DB /* Banner.swift */; };
 		3749D02B1F878FB9002EA3DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D02A1F878FB9002EA3DB /* User.swift */; };
+		3749D02D1F8B9066002EA3DB /* MyProfileEditingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D02C1F8B9066002EA3DB /* MyProfileEditingCell.swift */; };
+		3749D02F1F8B907E002EA3DB /* MyProfileRadioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D02E1F8B907E002EA3DB /* MyProfileRadioCell.swift */; };
+		3749D0311F8B9094002EA3DB /* MyProfilePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0301F8B9094002EA3DB /* MyProfilePickerCell.swift */; };
+		3749D0331F8B90C5002EA3DB /* MyProfileImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0321F8B90C5002EA3DB /* MyProfileImageHeader.swift */; };
+		3749D0351F8B960F002EA3DB /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0341F8B960F002EA3DB /* MyProfileViewController.swift */; };
 		374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04481F6141CF006B1E04 /* WishListVC.swift */; };
 		374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044A1F6141E7006B1E04 /* MyAccountVC.swift */; };
 		374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */; };
@@ -93,6 +98,11 @@
 		3749D0261F878DD7002EA3DB /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		3749D0281F878EE4002EA3DB /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		3749D02A1F878FB9002EA3DB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3749D02C1F8B9066002EA3DB /* MyProfileEditingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileEditingCell.swift; sourceTree = "<group>"; };
+		3749D02E1F8B907E002EA3DB /* MyProfileRadioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileRadioCell.swift; sourceTree = "<group>"; };
+		3749D0301F8B9094002EA3DB /* MyProfilePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfilePickerCell.swift; sourceTree = "<group>"; };
+		3749D0321F8B90C5002EA3DB /* MyProfileImageHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileImageHeader.swift; sourceTree = "<group>"; };
+		3749D0341F8B960F002EA3DB /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		374C04481F6141CF006B1E04 /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		374C044A1F6141E7006B1E04 /* MyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
 		374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
@@ -227,6 +237,7 @@
 				378A4AFD1F692F8300E04E25 /* SignUpVC.swift */,
 				378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */,
 				378A4B061F6944E900E04E25 /* SubCategoryCollectionViewController.swift */,
+				3749D0341F8B960F002EA3DB /* MyProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -247,6 +258,10 @@
 				3747EB1D1F7B97C90038DB6C /* CheckBox.swift */,
 				3747EB281F7FAFF60038DB6C /* ImageHeaderView.swift */,
 				3749D0221F862BFD002EA3DB /* HomeCollectionHeader.swift */,
+				3749D02C1F8B9066002EA3DB /* MyProfileEditingCell.swift */,
+				3749D02E1F8B907E002EA3DB /* MyProfileRadioCell.swift */,
+				3749D0301F8B9094002EA3DB /* MyProfilePickerCell.swift */,
+				3749D0321F8B90C5002EA3DB /* MyProfileImageHeader.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -444,6 +459,7 @@
 			files = (
 				378A4AFE1F692F8300E04E25 /* SignUpVC.swift in Sources */,
 				3749D0271F878DD7002EA3DB /* HomePage.swift in Sources */,
+				3749D0311F8B9094002EA3DB /* MyProfilePickerCell.swift in Sources */,
 				373B1DA21F8159250006836A /* OnBoardingVC.swift in Sources */,
 				3747EB271F7F95820038DB6C /* DataManager.swift in Sources */,
 				3725F8851F67DC8A00F2ED4B /* AppTheme.swift in Sources */,
@@ -455,6 +471,7 @@
 				378A4B001F692F9E00E04E25 /* PasswordResetVC.swift in Sources */,
 				374C045B1F615B8E006B1E04 /* StringConstants.swift in Sources */,
 				374C044F1F614227006B1E04 /* MyProfileVC.swift in Sources */,
+				3749D02D1F8B9066002EA3DB /* MyProfileEditingCell.swift in Sources */,
 				374C04651F62AFE6006B1E04 /* ShoppingCartCell.swift in Sources */,
 				374C04691F62B1EC006B1E04 /* CustomAccordianView.swift in Sources */,
 				374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */,
@@ -464,13 +481,16 @@
 				374C045D1F6165B2006B1E04 /* MyAccountOptionTableCell.swift in Sources */,
 				3749D02B1F878FB9002EA3DB /* User.swift in Sources */,
 				3747EB201F7F8CEF0038DB6C /* Extensions.swift in Sources */,
+				3749D0331F8B90C5002EA3DB /* MyProfileImageHeader.swift in Sources */,
 				374C046E1F66705E006B1E04 /* ShippingAddressCell.swift in Sources */,
 				3725F88C1F67F4AE00F2ED4B /* CategoryCell.swift in Sources */,
 				378A4B051F69444A00E04E25 /* SubCategoryCollectionCell.swift in Sources */,
 				3725F88A1F67F48100F2ED4B /* CategoryListVC.swift in Sources */,
 				374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */,
 				374C045F1F62840B006B1E04 /* ProductListVC.swift in Sources */,
+				3749D02F1F8B907E002EA3DB /* MyProfileRadioCell.swift in Sources */,
 				3747EB1E1F7B97C90038DB6C /* CheckBox.swift in Sources */,
+				3749D0351F8B960F002EA3DB /* MyProfileViewController.swift in Sources */,
 				3725F8901F6800A200F2ED4B /* OrderListVC.swift in Sources */,
 				374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */,
 				3749D0231F862BFD002EA3DB /* HomeCollectionHeader.swift in Sources */,
