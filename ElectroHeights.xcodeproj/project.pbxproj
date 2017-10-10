@@ -38,10 +38,12 @@
 		3749D0311F8B9094002EA3DB /* MyProfilePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0301F8B9094002EA3DB /* MyProfilePickerCell.swift */; };
 		3749D0331F8B90C5002EA3DB /* MyProfileImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0321F8B90C5002EA3DB /* MyProfileImageHeader.swift */; };
 		3749D0351F8B960F002EA3DB /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0341F8B960F002EA3DB /* MyProfileViewController.swift */; };
+		3749D0371F8CF54F002EA3DB /* MyProfileTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0361F8CF54F002EA3DB /* MyProfileTableController.swift */; };
+		3749D0391F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0381F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift */; };
+		3749D03B1F8D012C002EA3DB /* CustomStretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D03A1F8D012C002EA3DB /* CustomStretchyHeader.swift */; };
 		374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04481F6141CF006B1E04 /* WishListVC.swift */; };
 		374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044A1F6141E7006B1E04 /* MyAccountVC.swift */; };
 		374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */; };
-		374C044F1F614227006B1E04 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044E1F614227006B1E04 /* MyProfileVC.swift */; };
 		374C04511F614289006B1E04 /* AddressFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04501F614289006B1E04 /* AddressFormVC.swift */; };
 		374C04531F6142CA006B1E04 /* ShippingAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04521F6142CA006B1E04 /* ShippingAddressVC.swift */; };
 		374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04541F61430B006B1E04 /* OrderConfirmationViewController.swift */; };
@@ -103,10 +105,12 @@
 		3749D0301F8B9094002EA3DB /* MyProfilePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfilePickerCell.swift; sourceTree = "<group>"; };
 		3749D0321F8B90C5002EA3DB /* MyProfileImageHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileImageHeader.swift; sourceTree = "<group>"; };
 		3749D0341F8B960F002EA3DB /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		3749D0361F8CF54F002EA3DB /* MyProfileTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableController.swift; sourceTree = "<group>"; };
+		3749D0381F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfilePickerAccessoryCell.swift; sourceTree = "<group>"; };
+		3749D03A1F8D012C002EA3DB /* CustomStretchyHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStretchyHeader.swift; sourceTree = "<group>"; };
 		374C04481F6141CF006B1E04 /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		374C044A1F6141E7006B1E04 /* MyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
 		374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
-		374C044E1F614227006B1E04 /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		374C04501F614289006B1E04 /* AddressFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressFormVC.swift; sourceTree = "<group>"; };
 		374C04521F6142CA006B1E04 /* ShippingAddressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingAddressVC.swift; sourceTree = "<group>"; };
 		374C04541F61430B006B1E04 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
@@ -223,7 +227,6 @@
 				374C04481F6141CF006B1E04 /* WishListVC.swift */,
 				374C044A1F6141E7006B1E04 /* MyAccountVC.swift */,
 				374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */,
-				374C044E1F614227006B1E04 /* MyProfileVC.swift */,
 				374C04501F614289006B1E04 /* AddressFormVC.swift */,
 				374C04521F6142CA006B1E04 /* ShippingAddressVC.swift */,
 				374C04541F61430B006B1E04 /* OrderConfirmationViewController.swift */,
@@ -238,6 +241,7 @@
 				378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */,
 				378A4B061F6944E900E04E25 /* SubCategoryCollectionViewController.swift */,
 				3749D0341F8B960F002EA3DB /* MyProfileViewController.swift */,
+				3749D0361F8CF54F002EA3DB /* MyProfileTableController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -262,6 +266,8 @@
 				3749D02E1F8B907E002EA3DB /* MyProfileRadioCell.swift */,
 				3749D0301F8B9094002EA3DB /* MyProfilePickerCell.swift */,
 				3749D0321F8B90C5002EA3DB /* MyProfileImageHeader.swift */,
+				3749D0381F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift */,
+				3749D03A1F8D012C002EA3DB /* CustomStretchyHeader.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -460,21 +466,23 @@
 				378A4AFE1F692F8300E04E25 /* SignUpVC.swift in Sources */,
 				3749D0271F878DD7002EA3DB /* HomePage.swift in Sources */,
 				3749D0311F8B9094002EA3DB /* MyProfilePickerCell.swift in Sources */,
+				3749D0371F8CF54F002EA3DB /* MyProfileTableController.swift in Sources */,
 				373B1DA21F8159250006836A /* OnBoardingVC.swift in Sources */,
 				3747EB271F7F95820038DB6C /* DataManager.swift in Sources */,
 				3725F8851F67DC8A00F2ED4B /* AppTheme.swift in Sources */,
 				378A4B071F6944E900E04E25 /* SubCategoryCollectionViewController.swift in Sources */,
 				373B1DA41F819C0B0006836A /* Product.swift in Sources */,
+				3749D03B1F8D012C002EA3DB /* CustomStretchyHeader.swift in Sources */,
 				3747EB2B1F7FB9DB0038DB6C /* Enums.swift in Sources */,
 				378A4B0F1F6949F900E04E25 /* URLConstants.swift in Sources */,
 				374C04511F614289006B1E04 /* AddressFormVC.swift in Sources */,
 				378A4B001F692F9E00E04E25 /* PasswordResetVC.swift in Sources */,
 				374C045B1F615B8E006B1E04 /* StringConstants.swift in Sources */,
-				374C044F1F614227006B1E04 /* MyProfileVC.swift in Sources */,
 				3749D02D1F8B9066002EA3DB /* MyProfileEditingCell.swift in Sources */,
 				374C04651F62AFE6006B1E04 /* ShoppingCartCell.swift in Sources */,
 				374C04691F62B1EC006B1E04 /* CustomAccordianView.swift in Sources */,
 				374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */,
+				3749D0391F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift in Sources */,
 				3747EB251F7F94C10038DB6C /* LeftMenuController.swift in Sources */,
 				374C04671F62B019006B1E04 /* ShoppingCartVC.swift in Sources */,
 				374C04531F6142CA006B1E04 /* ShippingAddressVC.swift in Sources */,

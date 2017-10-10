@@ -40,5 +40,23 @@ class DataManager: NSObject {
         
         return imageDic
     }
+    
+    static func  getDataDicForMyProfile()->[MyProfileMenu:String]
+    {
+        let dataDic = [MyProfileMenu.name : "Name",
+                       MyProfileMenu.email:"Email ID",
+                       MyProfileMenu.mobileNo:"Mobile No",
+                       MyProfileMenu.whatsAppNo:"WhatsApp No",
+                       MyProfileMenu.gender: "Gender",
+                       MyProfileMenu.state: "State",
+                       MyProfileMenu.city: "City",
+                       MyProfileMenu.pincode : "Pincode",
+                       MyProfileMenu.address : "Address",
+                       MyProfileMenu.companyName: "Company Name",
+                       MyProfileMenu.CTSNo : "CTS No",
+                       MyProfileMenu.tinNo: "TIN No",
+                       MyProfileMenu.customerServiceTaxNo: "Customer Serice Tax No"]
+        return dataDic
+    }
 
 }
