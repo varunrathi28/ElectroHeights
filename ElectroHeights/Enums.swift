@@ -44,6 +44,7 @@ public enum MyProfileMenu:Int, Hashable {
         switch self {
         case .name:
             return 0
+            
         case .email:
                 return 1
             

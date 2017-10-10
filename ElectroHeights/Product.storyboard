@@ -215,15 +215,24 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-oy-tdW" customClass="CheckBox" customModule="ElectroHeights" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="78.5" height="34"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" title="Male"/>
+                                                    <connections>
+                                                        <action selector="radioButtonClickedWithSender:" destination="6nS-G6-e2q" eventType="touchUpInside" id="Fm9-jb-qKM"/>
+                                                    </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20S-G4-CSI" customClass="CheckBox" customModule="ElectroHeights" customModuleProvider="target">
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20S-G4-CSI" customClass="CheckBox" customModule="ElectroHeights" customModuleProvider="target">
                                                     <rect key="frame" x="108.5" y="0.0" width="78" height="34"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" title="Female"/>
+                                                    <connections>
+                                                        <action selector="radioButtonClickedWithSender:" destination="6nS-G6-e2q" eventType="touchUpInside" id="Kro-Dz-ZiQ"/>
+                                                    </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTg-6Z-wwG" customClass="CheckBox" customModule="ElectroHeights" customModuleProvider="target">
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTg-6Z-wwG" customClass="CheckBox" customModule="ElectroHeights" customModuleProvider="target">
                                                     <rect key="frame" x="216.5" y="0.0" width="78.5" height="34"/>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="radioButtonClickedWithSender:" destination="6nS-G6-e2q" eventType="touchUpInside" id="04g-2e-NPc"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </stackView>
@@ -246,6 +255,9 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="lblTitle" destination="c91-dK-P8Z" id="r3x-gW-GzS"/>
+                                    <outletCollection property="btnCollection" destination="AFF-oy-tdW" collectionClass="NSMutableArray" id="QNR-jd-yiO"/>
+                                    <outletCollection property="btnCollection" destination="20S-G4-CSI" collectionClass="NSMutableArray" id="yZG-MH-Ipe"/>
+                                    <outletCollection property="btnCollection" destination="vTg-6Z-wwG" collectionClass="NSMutableArray" id="Rpe-Oi-GnF"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyProfileEditCell" rowHeight="88" id="Nqa-Fa-gKf" customClass="MyProfileEditingCell" customModule="ElectroHeights" customModuleProvider="target">

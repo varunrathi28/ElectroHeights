@@ -17,7 +17,7 @@ class MyProfileTableController: UITableViewController {
     @IBOutlet weak var myProfileStretchyHeader:MyProfileImageHeader!
     @IBOutlet weak var headerHeightConstraint:NSLayoutConstraint!
     
-    var arrMenuOptions:[MyProfileMenu] = [.name, .email, .whatsAppNo, .gender , .state , .city, .pincode, .address, .tinNo, .customerServiceTaxNo]
+    var arrMenuOptions:[MyProfileMenu] = [.name, .email,.mobileNo, .whatsAppNo, .gender , .state , .city, .pincode, .address,.companyName, .CTSNo, .tinNo, .customerServiceTaxNo]
     var dataDic:[MyProfileMenu:String] = DataManager.getDataDicForMyProfile()
 
     override func viewDidLoad() {
@@ -56,14 +56,14 @@ class MyProfileTableController: UITableViewController {
         
          let title = self.dataDic[MyProfileMenu(rawValue: indexPath.row)!]
         switch indexPath.row {
-        case 2:
+        case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.MyProfileRadioCell, for: indexPath) as! MyProfileRadioCell
 
             cell.lblTitle.text = title
             return cell
             
             
-        case 3:
+        case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.MyProfilePickerCell, for: indexPath) as! MyProfilePickerCell
         
             cell.lblTitle.text = title

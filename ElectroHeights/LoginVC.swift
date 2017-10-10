@@ -186,7 +186,7 @@ class LoginVC: UIViewController , LeftMenuProtocol {
     
     func pushTestScreen()
     {
-        let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.MyProfileController) as! MyProfileViewController
+        let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.MyProfileController) as! MyProfileTableController
         present(vc, animated: true, completion: nil)
     }
     

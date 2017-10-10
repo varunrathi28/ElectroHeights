@@ -10,12 +10,21 @@ import UIKit
 
 class MyProfileRadioCell: UITableViewCell {
 
-    @IBOutlet  var btnCollection:[UIButton]!
+    @IBOutlet  var btnCollection:[CheckBox]!
     @IBOutlet weak var lblTitle:UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    @IBAction func radioButtonClicked(sender:CheckBox)
+    {
+        for btn in btnCollection
+        {
+          btn.isChecked = false
+        }
+        sender.isChecked = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
