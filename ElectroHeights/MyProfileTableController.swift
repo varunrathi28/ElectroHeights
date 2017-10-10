@@ -25,6 +25,7 @@ class MyProfileTableController: UITableViewController {
         
         tableView.estimatedRowHeight = 60
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.allowsSelection = false
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -53,22 +54,33 @@ class MyProfileTableController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+         let title = self.dataDic[MyProfileMenu(rawValue: indexPath.row)!]
         switch indexPath.row {
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.MyProfileRadioCell, for: indexPath) as! MyProfileRadioCell
+
+            cell.lblTitle.text = title
             return cell
+            
             
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.MyProfilePickerCell, for: indexPath) as! MyProfilePickerCell
+        
+            cell.lblTitle.text = title
+            
             return cell
         default:
             
             let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.MyProfileEditCell, for: indexPath) as! MyProfileEditingCell
+
+            cell.lblTitle.text = title
             return cell
             
         }
 
     }
+    
+    /*
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
@@ -94,7 +106,7 @@ class MyProfileTableController: UITableViewController {
             return view
         }
     }
-    
+    */
     
     
 
@@ -193,4 +205,12 @@ class MyProfileTableController: UITableViewController {
 
 }
 
+
+extension MyProfileTableController:UITextFieldDelegate
+{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
 

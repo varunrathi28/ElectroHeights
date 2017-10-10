@@ -15,6 +15,8 @@ class MyProfilePickerCell: UITableViewCell {
     @IBOutlet weak var ivCountry:UIImageView!
     @IBOutlet weak var lblCountryCode:UILabel!
     @IBOutlet weak var lblPhCode:UILabel!
+    
+    @IBOutlet weak var lblTitle:UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

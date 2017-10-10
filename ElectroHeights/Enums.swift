@@ -14,7 +14,7 @@ enum ProductType:Int {
     case FeaturedProduct = 0, NewProducts , SubCategory
 }
 
-enum MyProfileMenu:Hashable {
+public enum MyProfileMenu:Int, Hashable {
     case name
     case email
     case mobileNo
@@ -28,6 +28,16 @@ enum MyProfileMenu:Hashable {
     case CTSNo
     case tinNo
     case customerServiceTaxNo
+    
+    public var hashValue : Int {
+        return self.toInt()
+    }
+
+    
+    static public func == (lhs: MyProfileMenu, rhs: MyProfileMenu) -> Bool {
+        return lhs.toInt() == rhs.toInt()
+    }
+
     
     private func toInt()->Int
     {
@@ -71,7 +81,11 @@ enum MyProfileMenu:Hashable {
                 return 12
         }
         
+        
+        
     }
+    
+    
     
     
 }
