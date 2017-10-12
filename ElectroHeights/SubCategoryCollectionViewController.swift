@@ -13,6 +13,7 @@ import UIKit
 class SubCategoryCollectionViewController: UICollectionViewController {
 
     var arrSubCategoryList:[SubCategory] = []
+    let CellPadding:CGFloat = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,9 @@ class SubCategoryCollectionViewController: UICollectionViewController {
         
         
         collectionView?.backgroundColor = AppTheme.kBackgroundColorLightGray
+        let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumLineSpacing = CellPadding
+        layout.minimumInteritemSpacing = CellPadding
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -55,6 +59,18 @@ class SubCategoryCollectionViewController: UICollectionViewController {
     
         return cell
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let width = collectionView.bounds.size.width
+        
+        let cellWidth  = width - 3 * CellPadding
+        
+        return CGSize(width: cellWidth, height: 250)
+        
+    }
+    
     
     
     

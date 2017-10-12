@@ -41,6 +41,7 @@
 		3749D0371F8CF54F002EA3DB /* MyProfileTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0361F8CF54F002EA3DB /* MyProfileTableController.swift */; };
 		3749D0391F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0381F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift */; };
 		3749D03B1F8D012C002EA3DB /* CustomStretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D03A1F8D012C002EA3DB /* CustomStretchyHeader.swift */; };
+		3749D03D1F8E61A1002EA3DB /* OTPVerficationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D03C1F8E61A0002EA3DB /* OTPVerficationVC.swift */; };
 		374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04481F6141CF006B1E04 /* WishListVC.swift */; };
 		374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044A1F6141E7006B1E04 /* MyAccountVC.swift */; };
 		374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */; };
@@ -108,6 +109,7 @@
 		3749D0361F8CF54F002EA3DB /* MyProfileTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableController.swift; sourceTree = "<group>"; };
 		3749D0381F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfilePickerAccessoryCell.swift; sourceTree = "<group>"; };
 		3749D03A1F8D012C002EA3DB /* CustomStretchyHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStretchyHeader.swift; sourceTree = "<group>"; };
+		3749D03C1F8E61A0002EA3DB /* OTPVerficationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPVerficationVC.swift; sourceTree = "<group>"; };
 		374C04481F6141CF006B1E04 /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		374C044A1F6141E7006B1E04 /* MyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
 		374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				378A4B061F6944E900E04E25 /* SubCategoryCollectionViewController.swift */,
 				3749D0341F8B960F002EA3DB /* MyProfileViewController.swift */,
 				3749D0361F8CF54F002EA3DB /* MyProfileTableController.swift */,
+				3749D03C1F8E61A0002EA3DB /* OTPVerficationVC.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				3725F1241F2F5215006CDF0C /* ViewController.swift in Sources */,
 				374C04571F614ED5006B1E04 /* WishListTableCell.swift in Sources */,
 				378A4AFC1F692F6500E04E25 /* LoginVC.swift in Sources */,
+				3749D03D1F8E61A1002EA3DB /* OTPVerficationVC.swift in Sources */,
 				378A4B0A1F69489900E04E25 /* Utility.swift in Sources */,
 				378A4B0D1F69494C00E04E25 /* RestApiManager.swift in Sources */,
 				3725F8871F67E97E00F2ED4B /* Model.swift in Sources */,

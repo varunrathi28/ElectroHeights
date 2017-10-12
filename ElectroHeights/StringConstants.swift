@@ -20,6 +20,8 @@ struct StoryBoardID
     static let LoginController = "Login"
     static let CategoryListController = "CategoryList"
     static let MyProfileController =  "MyProfile"
+    static let ShippingAddress =  "ShippingAddress"
+    static let OTPVerification = "OTPVerification"
 }
 
 struct CellIdentifiers {
@@ -62,4 +64,5 @@ struct StringConstants
     static let CategotiesListTitle = "All Categories"
     static let OrderListTitle = "My Order"
     static let ShippingAddressTitle = "Shipping Address"
+    static let kOtpInfo = "Sit Relax for 1 min for the OTP! If you are not getting OTP within 1 min, then please try again."
 }

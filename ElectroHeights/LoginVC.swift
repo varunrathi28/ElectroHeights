@@ -137,7 +137,8 @@ class LoginVC: UIViewController , LeftMenuProtocol {
             return
         }
         
-        self.pushTestScreen()
+        self.openHomeCollection()
+       // self.pushTestScreen()
         return
             
         //

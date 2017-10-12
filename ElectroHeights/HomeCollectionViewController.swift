@@ -222,7 +222,17 @@ extension HomeCollectionViewController:UICollectionViewDataSource
         
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return min(arrFeaturedProducts.count, arrHeaderText.count)//  return arrFeaturedProducts.count
+        
+        if section == 0
+        {
+               return min(arrNewArrivals.count, arrHeaderText.count)
+        }
+        else
+        {
+               return min(arrFeaturedProducts.count, arrHeaderText.count)
+        }
+        
+     //  return arrFeaturedProducts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

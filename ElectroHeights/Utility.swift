@@ -59,6 +59,11 @@ public class Utility:NSObject
     }
     
     
+    static func getUrlForEndPoint(endPoint:String)->String
+    {
+        return URLConstant.kBaseURL + endPoint
+    }
+    
   //  var indicator:NVActivityIndicatorView = ProgressHUDManager.sharedInstance
     
     // MARK: - Main Story board helpers

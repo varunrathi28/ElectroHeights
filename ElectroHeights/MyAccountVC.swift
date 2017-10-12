@@ -57,9 +57,9 @@ class MyAccountVC: UIViewController {
         let opt3 = CellData(text: MyAccountOptionStrings.MyAccOpt3, imageName: "acc_img3")
         let opt4 = CellData(text: MyAccountOptionStrings.MyAccOpt4, imageName: "acc_img4")
         arrDatasource.append(opt1)
-         arrDatasource.append(opt2)
-         arrDatasource.append(opt3)
-         arrDatasource.append(opt4)
+        arrDatasource.append(opt2)
+        arrDatasource.append(opt3)
+        arrDatasource.append(opt4)
         
     }
     
@@ -143,6 +143,30 @@ extension MyAccountVC : UITableViewDelegate
         loginButton.setTitle("Sign Out", for: .normal)
         footerView.addSubview(loginButton)
         return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+        case 0:
+            let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.MyProfileController) as! MyProfileTableController
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 1:
+            
+            let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.OrdersListController) as! OrderListVC
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        case 2:
+            
+            let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.ShippingAddress) as! ShippingAddressVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        
+         default:
+            let vc = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.WishListController) as! WishListVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
     
     

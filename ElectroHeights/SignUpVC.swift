@@ -19,6 +19,8 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var viewPicker:UIView!
     @IBOutlet weak var picker:CountryPicker!
     
+    
+     var phoneCd:String?
     // Screen
     @IBOutlet weak var ivLogo:UIImageView!
     @IBOutlet weak var btnSubmit:UIButton!
@@ -27,11 +29,9 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var tfPassword: SkyFloatingLabelTextField!
     
     
-    var phoneCd:String?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tfMobNo.keyboardType = .numberPad
         setUpPicker()
 
         // Do any additional setup after loading the view.
@@ -118,16 +118,19 @@ class SignUpVC: UIViewController {
     {
         guard let mobile = tfMobNo.text,
         let password = tfPassword.text,
-        let name = tfName.text
+        let name = tfName.text,
+        var code = phoneCd
         else
         {
             return
         }
         
+        code = code.replacingOccurrences(of: "+", with: "")
         var reqDic = [String:String]()
-        reqDic["MobileNo"] = mobile
+        reqDic["MobileNo"] = code + mobile
         reqDic["Password"] = password
         reqDic["Name"] = name
+        reqDic["EmailAddress"] = ""
         
         callWebServiceForValidatingPhone(with: reqDic as [String : AnyObject])
 
@@ -155,12 +158,32 @@ class SignUpVC: UIViewController {
         let apiManager = RestApiManager.sharedInstance
         apiManager.post(urlString: URLConstant.kBaseURL + URLEndPoints.kValidateMobile, parameters: bodyStr) { (json, error, status) in
             
-            let status = json.boolValue
-            
-            if status
+            if status == true
             {
-                self.callWebServiceForInserting(with: info)
+                let statusValue = json.boolValue
+                
+                if statusValue
+                {
+                
+                    let vc = Utility.getViewControllerFromMainStoryBoard(with: StoryBoardID.OTPVerification) as! OTPVerficationVC
+                    vc.userInfoDic = info
+                    
+                    DispatchQueue.main.async {
+                        self.present(vc, animated: true, completion: nil)
+                    }
+                }
+                else
+                {
+                    // Phone already exists/ Invalid
+                }
+
+                
             }
+            else
+            {
+                
+            }
+            
         }
         
     }
@@ -176,6 +199,7 @@ extension SignUpVC:CountryPickerDelegate
         lblCountryCode.text = countryCode
         lblPhCode.text = phoneCode
         ivCountry.image = flag
+        phoneCd = phoneCode
     }
 }
 
