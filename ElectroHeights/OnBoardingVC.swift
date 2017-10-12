@@ -21,6 +21,14 @@ class OnBoardingVC: UIViewController {
                                     "This screen shows the list of products added to your shopping cart",
                                     "This screen shows the list of all ordered products"]
     
+    let arrImages:[UIImage]! = [
+                              UIImage(named: "swipe_home")!,
+                              UIImage(named: "swipe_jst_4u")!,
+                              UIImage(named: "swipe_product_details")!,
+                              UIImage(named: "swipe_cart")!,
+                              UIImage(named: "swipe_order")!
+                            ]
+    
     var gradiant: CAGradientLayer = {
         //Gradiant for the background view
         let blue = UIColor(red: 69/255, green: 127/255, blue: 202/255, alpha: 1.0).cgColor
@@ -38,9 +46,11 @@ class OnBoardingVC: UIViewController {
         super.viewDidLoad()
          UIApplication.shared.statusBarStyle = .lightContent
         
-        onBoardView = SwiftyOnboard(frame: view.frame)
+       
+        onBoardView = SwiftyOnboard(frame: view.frame, style: .light)
         onBoardView.shouldSwipe = true
         onBoardView.fadePages = true
+        onBoardView.backgroundColor = UIColor.black
         view.addSubview(onBoardView)
         onBoardView.delegate = self
         onBoardView.dataSource = self
@@ -80,12 +90,13 @@ extension OnBoardingVC:SwiftyOnboardDataSource
     func swiftyOnboardPageForIndex(_ swiftyOnboard: SwiftyOnboard, index: Int) -> SwiftyOnboardPage? {
         let view = SwiftyOnboardPage()
         
+       
         //Set the image on the page:
-        view.imageView.image = UIImage(named: "electro_heights")
+        view.imageView.image = arrImages[index]
         
         //Set the font and color for the labels:
-        view.title.font = UIFont(name: "Lato-Heavy", size: 22)
-        view.subTitle.font = UIFont(name: "Lato-Regular", size: 16)
+        view.title.font = UIFont.boldSystemFont(ofSize: 22)
+        view.subTitle.font = UIFont.boldSystemFont(ofSize: 16)
         
         //Set the text in the page:
         view.title.text = titleArray[index]
@@ -103,12 +114,14 @@ extension OnBoardingVC:SwiftyOnboardDelegate
         let overlay = SwiftyOnboardOverlay()
         
         overlay.skipButton.addTarget(self, action: #selector(handleSkip(sender:)), for: .touchUpInside)
+        overlay.skipButton.tintColor = UIColor.white
         //Setup targets for the buttons on the overlay view:
         overlay.continueButton.addTarget(self, action: #selector(handleContinue), for: .touchUpInside)
         
         //Setup for the overlay buttons:
         overlay.continueButton.titleLabel?.font = UIFont(name: "Lato-Bold", size: 16)
         overlay.continueButton.setTitleColor(UIColor.white, for: .normal)
+        overlay.continueButton.tintColor = UIColor.white
   
         //Return the overlay view:
         return overlay
