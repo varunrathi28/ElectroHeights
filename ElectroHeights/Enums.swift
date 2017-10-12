@@ -11,7 +11,7 @@ import UIKit
 
 
 enum ProductType:Int {
-    case FeaturedProduct = 0, NewProducts , SubCategory
+    case FeaturedProduct = 0, NewProducts , SubCategory, Banners
 }
 
 public enum MyProfileMenu:Int, Hashable {

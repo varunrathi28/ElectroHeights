@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-struct Banner
+class Banner
 {
     var BannerId:Int!
     var BannerUrl:String!
     var ImageLocation:String!
+    
+    init(fromJSON: JSON) {
+        
+        self.BannerId = fromJSON["BannerId"].intValue
+        self.BannerUrl = fromJSON["BannerUrl"].stringValue
+        self.ImageLocation = fromJSON["ImageLocation"].stringValue
+    }
+   
     
 }

@@ -19,7 +19,8 @@ class HomeCollectionViewController: UIViewController {
     var arrNewArrivals:[FeaturedProduct] = []
     var arrFeaturedProducts:[FeaturedProduct] = []
     var arrAllCategories:[Category] = []
-    var arrHeaderText:[String] = [HomeHeaderText.Header1,HomeHeaderText.Header2,HomeHeaderText.Header3,HomeHeaderText.Header4]
+    var arrHeaderText:[String] = [" ", HomeHeaderText.Header1,HomeHeaderText.Header2,HomeHeaderText.Header3,HomeHeaderText.Header4]
+    var arrBanners:[Banner] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,9 +78,10 @@ class HomeCollectionViewController: UIViewController {
     
     func callWebServicesToFetchData()
     {
-        callWebServiceToFetchAllCategories()
+        callWebServiceToFetchProducts(type: .Banners)
         callWebServiceToFetchProducts(type: .FeaturedProduct)
         callWebServiceToFetchProducts(type: .NewProducts)
+        callWebServiceToFetchAllCategories()
     
     }
     
@@ -149,14 +151,23 @@ class HomeCollectionViewController: UIViewController {
                         }
                         
                         break
+                        
+                    case .Banners:
+                        
+                        self.arrBanners = productArray.map({ (json) -> Banner in
+                            
+                            return Banner.init(fromJSON: json)
+                        })
+                        
+                        
+                        DispatchQueue.main.async {
+                            self.collectionView.reloadData()
+                        }
                     default:
                         break
                         
                         
                     }
-                    
-                    
-                    
                 }
                 
             }
@@ -186,7 +197,11 @@ class HomeCollectionViewController: UIViewController {
             
         case .SubCategory:
              urlStr = urlStr + URLEndPoints.kFetchShopByCategory
-            break
+            
+            
+        case .Banners:
+            urlStr = urlStr + URLEndPoints.kFetchBanners
+            
         default:
             break
         }
@@ -205,25 +220,45 @@ extension HomeCollectionViewController:UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.SubProductCell, for: indexPath) as! ProductCollectionCell
-        
         if indexPath.section == 0
         {
-            let newProduct = arrNewArrivals[indexPath.row]
-            cell.updateData(with: newProduct)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.HomeBannerCell, for: indexPath) as! BannerContainerCell
+            
+            if arrBanners.count > 0
+            {
+                cell.updateDataWithBanners(banners: arrBanners)
+            }
+            
+            return cell
         }
         else
+        
         {
-            let product = arrFeaturedProducts[indexPath.row]
-            cell.updateData(with: product)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.SubProductCell, for: indexPath) as! ProductCollectionCell
+            
+            if indexPath.section == 1
+            {
+                let newProduct = arrNewArrivals[indexPath.row]
+                cell.updateData(with: newProduct)
+            }
+            else
+            {
+                let product = arrFeaturedProducts[indexPath.row]
+                cell.updateData(with: product)
+            }
+            
+            return cell
         }
-    
-        return cell
         
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if section == 0
+        {
+            return 1
+        }
+            
+        else if section == 1
         {
                return min(arrNewArrivals.count, arrHeaderText.count)
         }
@@ -274,6 +309,20 @@ extension HomeCollectionViewController:UICollectionViewDataSource
         }
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        if section == 0
+        {
+            return CGSize(width: 0, height: 0)
+            
+        }
+        else
+        {
+            return CGSize(width: collectionView.frame.size.width, height: 60)
+        }
+    }
+    
 }
 
 
@@ -292,11 +341,23 @@ extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = collectionView.frame.size.width
-        
-        let cellWidth = (width - 3 * 5)/2
-        
-        return CGSize(width: cellWidth, height: 300.0)
+        if indexPath.section == 0
+        {
+            let width = collectionView.frame.size.width
+            let height:CGFloat = 250
+            
+            return CGSize(width: width, height: height)
+            
+        }
+        else
+        {
+            
+            let width = collectionView.frame.size.width
+            
+            let cellWidth = (width - 3 * 5)/2
+            
+            return CGSize(width: cellWidth, height: 300.0)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

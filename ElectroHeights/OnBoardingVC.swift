@@ -122,6 +122,7 @@ extension OnBoardingVC:SwiftyOnboardDelegate
         overlay.continueButton.titleLabel?.font = UIFont(name: "Lato-Bold", size: 16)
         overlay.continueButton.setTitleColor(UIColor.white, for: .normal)
         overlay.continueButton.tintColor = UIColor.white
+
   
         //Return the overlay view:
         return overlay
@@ -136,7 +137,7 @@ extension OnBoardingVC:SwiftyOnboardDelegate
             overlay.skipButton.setTitle("Skip", for: .normal)
             overlay.skipButton.isHidden = false
         } else {
-            overlay.continueButton.setTitle("Done", for: .normal)
+           overlay.continueButton.setTitle("Done", for: .normal)
             overlay.skipButton.isHidden = true
         }
     }

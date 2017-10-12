@@ -42,6 +42,8 @@
 		3749D0391F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0381F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift */; };
 		3749D03B1F8D012C002EA3DB /* CustomStretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D03A1F8D012C002EA3DB /* CustomStretchyHeader.swift */; };
 		3749D03D1F8E61A1002EA3DB /* OTPVerficationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D03C1F8E61A0002EA3DB /* OTPVerficationVC.swift */; };
+		3749D03F1F8F6BCD002EA3DB /* BannerContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D03E1F8F6BCD002EA3DB /* BannerContainerCell.swift */; };
+		3749D0411F8F9199002EA3DB /* BaseAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3749D0401F8F9199002EA3DB /* BaseAPIClient.swift */; };
 		374C04491F6141CF006B1E04 /* WishListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04481F6141CF006B1E04 /* WishListVC.swift */; };
 		374C044B1F6141E7006B1E04 /* MyAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044A1F6141E7006B1E04 /* MyAccountVC.swift */; };
 		374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */; };
@@ -110,6 +112,8 @@
 		3749D0381F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfilePickerAccessoryCell.swift; sourceTree = "<group>"; };
 		3749D03A1F8D012C002EA3DB /* CustomStretchyHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStretchyHeader.swift; sourceTree = "<group>"; };
 		3749D03C1F8E61A0002EA3DB /* OTPVerficationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPVerficationVC.swift; sourceTree = "<group>"; };
+		3749D03E1F8F6BCD002EA3DB /* BannerContainerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerContainerCell.swift; sourceTree = "<group>"; };
+		3749D0401F8F9199002EA3DB /* BaseAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPIClient.swift; sourceTree = "<group>"; };
 		374C04481F6141CF006B1E04 /* WishListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListVC.swift; sourceTree = "<group>"; };
 		374C044A1F6141E7006B1E04 /* MyAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountVC.swift; sourceTree = "<group>"; };
 		374C044C1F6141FB006B1E04 /* MyOrdersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrdersVC.swift; sourceTree = "<group>"; };
@@ -271,6 +275,7 @@
 				3749D0321F8B90C5002EA3DB /* MyProfileImageHeader.swift */,
 				3749D0381F8CF8D7002EA3DB /* MyProfilePickerAccessoryCell.swift */,
 				3749D03A1F8D012C002EA3DB /* CustomStretchyHeader.swift */,
+				3749D03E1F8F6BCD002EA3DB /* BannerContainerCell.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				378A4B0C1F69494C00E04E25 /* RestApiManager.swift */,
+				3749D0401F8F9199002EA3DB /* BaseAPIClient.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				3749D0271F878DD7002EA3DB /* HomePage.swift in Sources */,
 				3749D0311F8B9094002EA3DB /* MyProfilePickerCell.swift in Sources */,
 				3749D0371F8CF54F002EA3DB /* MyProfileTableController.swift in Sources */,
+				3749D0411F8F9199002EA3DB /* BaseAPIClient.swift in Sources */,
 				373B1DA21F8159250006836A /* OnBoardingVC.swift in Sources */,
 				3747EB271F7F95820038DB6C /* DataManager.swift in Sources */,
 				3725F8851F67DC8A00F2ED4B /* AppTheme.swift in Sources */,
@@ -478,6 +485,7 @@
 				3749D03B1F8D012C002EA3DB /* CustomStretchyHeader.swift in Sources */,
 				3747EB2B1F7FB9DB0038DB6C /* Enums.swift in Sources */,
 				378A4B0F1F6949F900E04E25 /* URLConstants.swift in Sources */,
+				3749D03F1F8F6BCD002EA3DB /* BannerContainerCell.swift in Sources */,
 				374C04511F614289006B1E04 /* AddressFormVC.swift in Sources */,
 				378A4B001F692F9E00E04E25 /* PasswordResetVC.swift in Sources */,
 				374C045B1F615B8E006B1E04 /* StringConstants.swift in Sources */,

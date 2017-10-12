@@ -39,6 +39,8 @@ struct CellIdentifiers {
     static let MyProfileEditCell = "MyProfileEditCell"
     static let MyProfilePickerCell = "MyProfilePickerCell"
     
+    static let HomeBannerCell = "BannerCell"
+    
 }
 
 struct MyAccountOptionStrings{
