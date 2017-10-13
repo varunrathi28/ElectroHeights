@@ -23,6 +23,17 @@ class WishListTableCell: UITableViewCell {
         // Initialization code
     }
 
+    func updateCell(with product:WishListProduct)
+    {
+        if let imageUrl = product.ImageLocation
+        {
+            ivProduct.kf.setImage(with: URL(string: imageUrl))
+        }
+        
+        lblProductName.text = product.ProductSubTitle
+        lblProductPrice.text = "Discounted Price : " + String(format: "%.2f", product.DiscountMRP)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

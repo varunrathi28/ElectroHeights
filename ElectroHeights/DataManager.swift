@@ -28,15 +28,15 @@ class DataManager: NSObject {
     
    static func getImageNameDicForLeftMenu()->[String:[String]]
     {
-        let imageDic = ["0":["menu_0opt0",
-                             "menu_0opt1",
-                             "menu_0opt2",
-                             "menu_0opt3",
-                             "menu_0opt4"],
-                        "1":["menu_1opt0",
-                             "menu_1opt1",
-                             "menu_1opt2",
-                             "menu_1opt3"]]
+        let imageDic = ["0":["nav_home",
+                             "nav_account",
+                             "nav_order",
+                             "nav_cart",
+                             "nav_wish"],
+                        "1":["nav_setting",
+                             "nav_suggest",
+                             "nav_help",
+                             "nav_about"]]
         
         return imageDic
     }

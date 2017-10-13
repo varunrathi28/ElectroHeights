@@ -14,6 +14,9 @@ class WishListVC: UIViewController {
     
     // MARK:- View Controller Life Cycle
     
+    let CustomerID = "5253"
+    var arrWishListItems:[WishListProduct] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
@@ -28,6 +31,7 @@ class WishListVC: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        callWebServiceToFetchWishList()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -64,6 +68,43 @@ class WishListVC: UIViewController {
     {
         
     }
+    
+    
+    func callWebServiceToFetchWishList()
+    {
+        let apiManager = RestApiManager.sharedInstance
+        let url = Utility.getUrlForEndPoint(endPoint: URLEndPoints.kFetchWishlistProducts)
+        var dic = [String:AnyObject]()
+        dic["CustomerID"] = CustomerID as AnyObject 
+        let params = Utility.getStringForRequestBodyWithPararmeters(dict: dic)
+        apiManager.post(urlString: url, parameters: params) { (json, error, status) in
+            if status == true
+            {
+                
+               if  let array = json.array
+                {
+                    
+                    self.arrWishListItems = array.map({ (json) -> WishListProduct in
+                        
+                        return WishListProduct(with: json)
+                    })
+                    
+                    DispatchQueue.main.async {
+                          self.tableView.reloadData()
+                    }
+                  
+                    
+                }
+                
+            }
+            else
+            {
+                
+            }
+        }
+        
+        
+    }
   
 
 }
@@ -74,13 +115,16 @@ extension WishListVC:UITableViewDataSource
         
         
         let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.WishCellId) as! WishListTableCell
+        let wishProduct = arrWishListItems[indexPath.section]
+        cell.updateCell(with: wishProduct)
+
         return cell
     }
     
     
      func numberOfSections(in tableView: UITableView) -> Int {
         
-        return 5
+        return arrWishListItems.count
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

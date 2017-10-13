@@ -47,11 +47,8 @@ class LeftMenuController: UIViewController {
     {
         
         let orderVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.OrdersListController) as! OrderListVC
-        
         let accountsVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.MyAccountsController) as! MyAccountVC
-        
         let shoppingCartVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.ShoppingCartController) as! ShoppingCartVC
-        
         let wishVC = Utility.getViewControllerFromProductStoryBoard(with: StoryBoardID.WishListController) as! WishListVC
         
         self.myOrdersVc = UINavigationController(rootViewController: orderVC)
@@ -116,6 +113,9 @@ extension LeftMenuController:UITableViewDataSource
         
         tableCell.textLabel?.text = arr?[indexPath.row]
         tableCell.imageView?.image = UIImage(named: (imgArr?[indexPath.row])!)
+        tableCell.imageView?.contentMode = .scaleAspectFit
+        tableCell.imageView?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        
         return tableCell
     }
     

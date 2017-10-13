@@ -9,7 +9,15 @@
 import UIKit
 import Kingfisher
 
+
+protocol DockOptionViewDelegate {
+
+    func dockClicked(index:Int)
+}
 class BannerContainerCell: UICollectionViewCell {
+    
+    
+    var delegate:DockOptionViewDelegate?
     
     @IBOutlet weak var scrollView:UIScrollView!
     @IBOutlet weak var containerView:UIView!
@@ -49,10 +57,29 @@ class BannerContainerCell: UICollectionViewCell {
             scrollView.addSubview(imageView)
             var contentSize = scrollView.contentSize
             contentSize.width += width
-         //   scrollView.contentSize = contentSize
+            scrollView.contentSize = contentSize
             
         }
         
+        scrollView.contentSize = CGSize(width:CGFloat(banners.count) * width, height: height)
+        
     }
     
+    @IBAction func dockBtnClicked(sender:UIButton)
+    {
+        
+        switch sender.tag {
+        case 1:
+            delegate?.dockClicked(index: 1)
+            
+        case 2:
+            delegate?.dockClicked(index: 2)
+            
+        case 3:
+            delegate?.dockClicked(index: 3)
+            
+        default:
+            delegate?.dockClicked(index: 4)
+        }
+    }
 }

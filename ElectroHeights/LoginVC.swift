@@ -52,6 +52,7 @@ class LoginVC: UIViewController , LeftMenuProtocol {
         super.viewWillAppear(animated)
         picker.countryPickerDelegate = self
         hidePickerWithoutAnimation()
+        setUpPicker()
         
        
         

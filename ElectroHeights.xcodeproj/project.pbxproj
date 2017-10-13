@@ -61,6 +61,7 @@
 		374C04691F62B1EC006B1E04 /* CustomAccordianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C04681F62B1EC006B1E04 /* CustomAccordianView.swift */; };
 		374C046C1F62B313006B1E04 /* CustomAccordianView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374C046B1F62B313006B1E04 /* CustomAccordianView.xib */; };
 		374C046E1F66705E006B1E04 /* ShippingAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */; };
+		374D93D01F90BCAE009C18BC /* WishListProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D93CF1F90BCAE009C18BC /* WishListProduct.swift */; };
 		378A4AFC1F692F6500E04E25 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFB1F692F6500E04E25 /* LoginVC.swift */; };
 		378A4AFE1F692F8300E04E25 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFD1F692F8300E04E25 /* SignUpVC.swift */; };
 		378A4B001F692F9E00E04E25 /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */; };
@@ -131,6 +132,7 @@
 		374C04681F62B1EC006B1E04 /* CustomAccordianView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAccordianView.swift; sourceTree = "<group>"; };
 		374C046B1F62B313006B1E04 /* CustomAccordianView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAccordianView.xib; sourceTree = "<group>"; };
 		374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingAddressCell.swift; sourceTree = "<group>"; };
+		374D93CF1F90BCAE009C18BC /* WishListProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListProduct.swift; sourceTree = "<group>"; };
 		378A4AFB1F692F6500E04E25 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		378A4AFD1F692F8300E04E25 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				3749D0261F878DD7002EA3DB /* HomePage.swift */,
 				3749D0281F878EE4002EA3DB /* Banner.swift */,
 				3749D02A1F878FB9002EA3DB /* User.swift */,
+				374D93CF1F90BCAE009C18BC /* WishListProduct.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				3747EB271F7F95820038DB6C /* DataManager.swift in Sources */,
 				3725F8851F67DC8A00F2ED4B /* AppTheme.swift in Sources */,
 				378A4B071F6944E900E04E25 /* SubCategoryCollectionViewController.swift in Sources */,
+				374D93D01F90BCAE009C18BC /* WishListProduct.swift in Sources */,
 				373B1DA41F819C0B0006836A /* Product.swift in Sources */,
 				3749D03B1F8D012C002EA3DB /* CustomStretchyHeader.swift in Sources */,
 				3747EB2B1F7FB9DB0038DB6C /* Enums.swift in Sources */,

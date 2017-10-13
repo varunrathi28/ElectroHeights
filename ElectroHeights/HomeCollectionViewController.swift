@@ -44,6 +44,13 @@ class HomeCollectionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func awakeFromNib()
+    {
+        super.awakeFromNib()
+       
+    }
+    
     //MARK: - Actions
     
     @IBAction func openAllCategoriesClicked(sender:AnyObject)
@@ -224,6 +231,8 @@ extension HomeCollectionViewController:UICollectionViewDataSource
         {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.HomeBannerCell, for: indexPath) as! BannerContainerCell
             
+            
+            cell.delegate = self
             if arrBanners.count > 0
             {
                 cell.updateDataWithBanners(banners: arrBanners)
@@ -402,6 +411,21 @@ extension HomeCollectionViewController : SlideMenuControllerDelegate {
     
     func rightDidClose() {
         print("SlideMenuControllerDelegate: rightDidClose")
+    }
+}
+
+extension HomeCollectionViewController:DockOptionViewDelegate
+{
+    func dockClicked(index:Int)
+    {
+        switch index {
+        case 4:
+             self.openAllCategoriesClicked(sender:self.arrAllCategories as AnyObject)
+            
+        default:
+            break
+        }
+        
     }
 }
 
