@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372561BA1FB5EAE0001B113B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372561B91FB5EAE0001B113B /* Protocols.swift */; };
 		3725F1221F2F5215006CDF0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F1211F2F5215006CDF0C /* AppDelegate.swift */; };
 		3725F1241F2F5215006CDF0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F1231F2F5215006CDF0C /* ViewController.swift */; };
 		3725F1271F2F5215006CDF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3725F1251F2F5215006CDF0C /* Main.storyboard */; };
@@ -62,6 +63,8 @@
 		374C046C1F62B313006B1E04 /* CustomAccordianView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374C046B1F62B313006B1E04 /* CustomAccordianView.xib */; };
 		374C046E1F66705E006B1E04 /* ShippingAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */; };
 		374D93D01F90BCAE009C18BC /* WishListProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D93CF1F90BCAE009C18BC /* WishListProduct.swift */; };
+		374D93D21F90F776009C18BC /* ShoppingCartProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D93D11F90F776009C18BC /* ShoppingCartProduct.swift */; };
+		374D93D41F94A15F009C18BC /* MenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374D93D31F94A15F009C18BC /* MenTableViewCell.swift */; };
 		378A4AFC1F692F6500E04E25 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFB1F692F6500E04E25 /* LoginVC.swift */; };
 		378A4AFE1F692F8300E04E25 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFD1F692F8300E04E25 /* SignUpVC.swift */; };
 		378A4B001F692F9E00E04E25 /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */; };
@@ -76,6 +79,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		372561B91FB5EAE0001B113B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		3725F11E1F2F5214006CDF0C /* ElectroHeights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroHeights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3725F1211F2F5215006CDF0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3725F1231F2F5215006CDF0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 		374C046B1F62B313006B1E04 /* CustomAccordianView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAccordianView.xib; sourceTree = "<group>"; };
 		374C046D1F66705E006B1E04 /* ShippingAddressCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShippingAddressCell.swift; sourceTree = "<group>"; };
 		374D93CF1F90BCAE009C18BC /* WishListProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListProduct.swift; sourceTree = "<group>"; };
+		374D93D11F90F776009C18BC /* ShoppingCartProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartProduct.swift; sourceTree = "<group>"; };
+		374D93D31F94A15F009C18BC /* MenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenTableViewCell.swift; sourceTree = "<group>"; };
 		378A4AFB1F692F6500E04E25 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		378A4AFD1F692F8300E04E25 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		378A4AFF1F692F9E00E04E25 /* PasswordResetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
@@ -207,6 +213,7 @@
 				3749D0281F878EE4002EA3DB /* Banner.swift */,
 				3749D02A1F878FB9002EA3DB /* User.swift */,
 				374D93CF1F90BCAE009C18BC /* WishListProduct.swift */,
+				374D93D11F90F776009C18BC /* ShoppingCartProduct.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -224,6 +231,7 @@
 			children = (
 				3747EB221F7F8DBB0038DB6C /* ExSlideMenuController.swift */,
 				3747EB241F7F94C10038DB6C /* LeftMenuController.swift */,
+				374D93D31F94A15F009C18BC /* MenTableViewCell.swift */,
 			);
 			name = "Menu Controller";
 			sourceTree = "<group>";
@@ -318,6 +326,7 @@
 				378A4B091F69489900E04E25 /* Utility.swift */,
 				3747EB1F1F7F8CEF0038DB6C /* Extensions.swift */,
 				3747EB261F7F95820038DB6C /* DataManager.swift */,
+				372561B91FB5EAE0001B113B /* Protocols.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -478,6 +487,7 @@
 				378A4AFE1F692F8300E04E25 /* SignUpVC.swift in Sources */,
 				3749D0271F878DD7002EA3DB /* HomePage.swift in Sources */,
 				3749D0311F8B9094002EA3DB /* MyProfilePickerCell.swift in Sources */,
+				374D93D21F90F776009C18BC /* ShoppingCartProduct.swift in Sources */,
 				3749D0371F8CF54F002EA3DB /* MyProfileTableController.swift in Sources */,
 				3749D0411F8F9199002EA3DB /* BaseAPIClient.swift in Sources */,
 				373B1DA21F8159250006836A /* OnBoardingVC.swift in Sources */,
@@ -513,6 +523,7 @@
 				374C045F1F62840B006B1E04 /* ProductListVC.swift in Sources */,
 				3749D02F1F8B907E002EA3DB /* MyProfileRadioCell.swift in Sources */,
 				3747EB1E1F7B97C90038DB6C /* CheckBox.swift in Sources */,
+				374D93D41F94A15F009C18BC /* MenTableViewCell.swift in Sources */,
 				3749D0351F8B960F002EA3DB /* MyProfileViewController.swift in Sources */,
 				3725F8901F6800A200F2ED4B /* OrderListVC.swift in Sources */,
 				374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */,
@@ -532,6 +543,7 @@
 				374C044D1F6141FB006B1E04 /* MyOrdersVC.swift in Sources */,
 				3747EB291F7FAFF60038DB6C /* ImageHeaderView.swift in Sources */,
 				3725F1221F2F5215006CDF0C /* AppDelegate.swift in Sources */,
+				372561BA1FB5EAE0001B113B /* Protocols.swift in Sources */,
 				3747EB231F7F8DBB0038DB6C /* ExSlideMenuController.swift in Sources */,
 				3749D0291F878EE4002EA3DB /* Banner.swift in Sources */,
 			);
@@ -657,6 +669,8 @@
 			baseConfigurationReference = EB96D2613A7CAB5F69176957 /* Pods-ElectroHeights.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DevelopmentEnv;
 				INFOPLIST_FILE = ElectroHeights/Info.plist;
@@ -664,6 +678,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrat28.ElectroHeights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -673,6 +688,8 @@
 			baseConfigurationReference = 6E1F89D16B8E7B8AD63DBDFC /* Pods-ElectroHeights.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = ProductionEnv;
 				INFOPLIST_FILE = ElectroHeights/Info.plist;
@@ -680,6 +697,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrat28.ElectroHeights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
