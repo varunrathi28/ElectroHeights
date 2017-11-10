@@ -31,6 +31,7 @@ class BannerContainerCell: UICollectionViewCell {
         
         btnOption1.setImage(UIImage(named: "dock_img1"), for: .normal)
         btnOption1.tag = 1
+        btnOption1.setTitle(StringConstants.HomeDockOpt1, for: .normal)
         btnOption2.setImage(UIImage(named: "dock_img2"), for: .normal)
         btnOption2.tag = 2
         btnOption3.setImage(UIImage(named: "dock_img3"), for: .normal)

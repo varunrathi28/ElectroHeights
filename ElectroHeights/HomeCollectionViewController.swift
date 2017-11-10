@@ -353,7 +353,7 @@ extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout
         if indexPath.section == 0
         {
             let width = collectionView.frame.size.width
-            let height:CGFloat = 250
+            let height:CGFloat = 290
             
             return CGSize(width: width, height: height)
             

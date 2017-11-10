@@ -14,6 +14,8 @@ class ShoppingCartVC: UIViewController {
     
     //MARK:- View Controller Life cycle methods
     
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -22,7 +24,6 @@ class ShoppingCartVC: UIViewController {
         tableView.estimatedRowHeight = 250
         tableView.rowHeight = UITableViewAutomaticDimension
         //tableView.register(UI, forCellReuseIdentifier: <#T##String#>)
-        
         self.setNavigationBarItem()
         
         
@@ -32,6 +33,8 @@ class ShoppingCartVC: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -42,6 +45,11 @@ class ShoppingCartVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func callWebServiceFetchCartProducts()
+    {
+        
     }
 
 }
@@ -70,5 +78,17 @@ extension ShoppingCartVC:UITableViewDataSource
 extension ShoppingCartVC : UITableViewDelegate
 {
     
+    
+}
+
+extension ShoppingCartVC : ShopCartCellDelegate
+{
+    func btnRemoveClicked(index: Int) {
+        
+    }
+    
+    func productIconClicked(index: Int) {
+        
+    }
     
 }

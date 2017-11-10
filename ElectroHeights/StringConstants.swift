@@ -67,4 +67,10 @@ struct StringConstants
     static let OrderListTitle = "My Order"
     static let ShippingAddressTitle = "Shipping Address"
     static let kOtpInfo = "Sit Relax for 1 min for the OTP! If you are not getting OTP within 1 min, then please try again."
+    
+    static let HomeDockOpt1 = "Electrical"
+    static let HomeDockOpt2 = "Electronics"
+    static let HomeDockOpt3 = "Hardware"
+    static let HomeDockOpt4 = "View All"
+    
 }

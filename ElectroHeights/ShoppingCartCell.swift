@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ShoppingCartCell: UITableViewCell {
 
     @IBOutlet weak var btnRemove:UIButton!
@@ -22,6 +23,9 @@ class ShoppingCartCell: UITableViewCell {
     @IBOutlet weak var lblQuantityDetail:UILabel!
     @IBOutlet weak var ivProduct:UIImageView!
     
+    var index:Int!
+    var delegate:ShopCartCellDelegate?
+    
     
     // Section 2
     
@@ -34,13 +38,29 @@ class ShoppingCartCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: <#T##Selector?#>)
+        ivProduct.addGestureRecognizer(<#T##gestureRecognizer: UIGestureRecognizer##UIGestureRecognizer#>)
+        
         // Initialization code
     }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func productIconClicked(sender:AnyObject)
+    {
+        delegate?.productIconClicked(index: self.index)
+    }
+    
+    func btnRemoveClicked(sender:UIButton)
+    {
+        delegate?.btnRemoveClicked(index: self.index)
+        
     }
 
 }
