@@ -92,8 +92,6 @@ class WishListVC: UIViewController {
                     DispatchQueue.main.async {
                           self.tableView.reloadData()
                     }
-                  
-                    
                 }
                 
             }
@@ -105,6 +103,41 @@ class WishListVC: UIViewController {
         
         
     }
+    
+    
+    func callWebServiceToDeleteProduct(at index:Int)
+    {
+        
+        let apiManager = RestApiManager.sharedInstance
+        
+        let url = Utility.getUrlForEndPoint(endPoint: URLEndPoints.kDeleteWishlistProduct)
+        var dic = [String:AnyObject]()
+        let productToDelete = arrWishListItems[index]
+        dic["CustomerID"] = CustomerID as AnyObject
+        
+        var parameters = Utility.getStringForRequestBodyWithPararmeters(dict: dic)
+        
+        parameters  = parameters + "&ProductVariationID=" +  String(productToDelete.ProductVariationID)
+        apiManager.post(urlString: url, parameters: parameters) { (json, error, status) in
+            
+            if status == true
+            {
+                let responseCode = json.intValue
+                
+                if responseCode > 0
+                {
+                    self.tableView.beginUpdates()
+                    let indexPath = IndexPath(row: index, section: 0)
+                    self.tableView.deleteRows(at: [indexPath], with: .fade)
+                    self.tableView.endUpdates()
+                }
+            }
+            else
+            {
+                
+            }
+        }
+    }
   
 
 }
@@ -115,21 +148,22 @@ extension WishListVC:UITableViewDataSource
         
         
         let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.WishCellId) as! WishListTableCell
-        let wishProduct = arrWishListItems[indexPath.section]
+        let wishProduct = arrWishListItems[indexPath.row]
         cell.updateCell(with: wishProduct)
-
+        cell.index = indexPath.row
+        cell.delegate = self
         return cell
     }
     
     
      func numberOfSections(in tableView: UITableView) -> Int {
         
-        return arrWishListItems.count
+        return 1
     }
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return arrWishListItems.count
     }
     
     
@@ -145,5 +179,21 @@ extension WishListVC:UITableViewDelegate
         return 1.0
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete{
+            self.arrWishListItems .remove(at: indexPath.row)
+            self.tableView.reloadData()
+        }
+    }
+    
+}
+
+extension WishListVC : WishListDelegate
+{
+    func deleteClickedWith(index: Int) {
+        
+        self.callWebServiceToDeleteProduct(at: index)
+    }
 }
 

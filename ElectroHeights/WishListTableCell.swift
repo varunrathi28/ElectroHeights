@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol WishListDelegate {
+    
+    func deleteClickedWith(index:Int)
+}
 class WishListTableCell: UITableViewCell {
 
     @IBOutlet weak var ivProduct:UIImageView!
@@ -15,6 +19,8 @@ class WishListTableCell: UITableViewCell {
     @IBOutlet weak var lblProductPrice:UILabel!
     @IBOutlet weak var btnDelete:UIButton!
     
+    var index:Int!
+    var delegate:WishListDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,6 +44,11 @@ class WishListTableCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func btnDeleteClicked(sender:UIButton)
+    {
+        delegate?.deleteClickedWith(index: index)
     }
 
 }
