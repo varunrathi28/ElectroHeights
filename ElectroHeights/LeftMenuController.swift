@@ -29,18 +29,28 @@ class LeftMenuController: UIViewController {
         var myOrdersVc:UIViewController!
         var shoppingCartVC:UIViewController!
         var wishListVC:UIViewController!
+    
+    var arrCellData:[CellData]!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
+        initDataSource()
         
         setUpMenuViewControllers()
 
         // Do any additional setup after loading the view.
     }
     
+    func initDataSource()
+    {
+      //  let
+        
+        let dataDic = DataManager.getDataDicForLeftMenu()
+        let imageDic = DataManager.getImageNameDicForLeftMenu()
+    }
     
     
     func setUpMenuViewControllers()
@@ -104,18 +114,16 @@ extension LeftMenuController:UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let tableCell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as UITableViewCell
+        let tableCell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MyAccountOptionTableCell
         
         let dataDic = DataManager.getDataDicForLeftMenu()
         let imageDic = DataManager.getImageNameDicForLeftMenu()
         let arr = dataDic["\(indexPath.section)"]
         let imgArr = imageDic["\(indexPath.section)"]
         
-        tableCell.textLabel?.text = arr?[indexPath.row]
-        tableCell.imageView?.image = UIImage(named: (imgArr?[indexPath.row])!)
-        tableCell.imageView?.contentMode = .scaleAspectFit
-        tableCell.imageView?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
-        
+        let cellData = CellData(text: arr?[indexPath.row], imageName: (imgArr?[indexPath.row])!)
+       
+        tableCell.updateData(data: cellData)
         return tableCell
     }
     

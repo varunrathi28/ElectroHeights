@@ -10,6 +10,7 @@ import UIKit
 
 class DataManager: NSObject {
     
+   static let CustomerID = "5253"
    static  func getDataDicForLeftMenu()->[String:[String]]
     {
         let dataDic = ["0":["Home",

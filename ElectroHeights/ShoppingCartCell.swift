@@ -38,13 +38,11 @@ class ShoppingCartCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: <#T##Selector?#>)
-        ivProduct.addGestureRecognizer(<#T##gestureRecognizer: UIGestureRecognizer##UIGestureRecognizer#>)
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(productIconClicked(sender:)))
+     //   ivProduct.addGestureRecognizer(tapGestureRecognizer)
         
         // Initialization code
     }
-    
-    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

@@ -45,7 +45,7 @@ class CategoryListVC: UIViewController {
     func fetchAllSubCategories(forCategory: Category)
     {
         let ApiManager = RestApiManager.sharedInstance
-        let url = URLConstant.kBaseURL + URLEndPoints.kFetchProductSubCategories
+        let url = Utility.getUrlForEndPoint(endPoint: URLEndPoints.kFetchProductSubCategories)
         
         let parameterStr = "ProductCategoryID=" + String(forCategory.ProductCategoryID)
         ApiManager.post(urlString: url, parameters: parameterStr) { (json, error, status) in

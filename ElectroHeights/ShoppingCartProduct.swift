@@ -7,7 +7,54 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ShoppingCartProduct: NSObject {
 
+    var ProductName:String!
+    var MinOrderQty:Double!
+    var ProductLot:Double!
+    var ProductCode:String!
+    var ProductSubTitle:String!
+    var ImageLocation:String!
+    var UnitName:String!
+    var ProductURL:String!
+    
+    var TaxPer:Double!
+    var Amount:Double!
+    var TaxValue:Double?
+    var ProductQty:Double!
+    var ProductVariationID:Double!
+    var ProductMRP:Double!
+    var OfferDiscountRs:Double?
+    
+    
 }
+
+// init(with json:JSON)
+//{
+//   // self.prod
+//}
+
+/*
+{
+    "TaxPer" : 12,
+    "Amount" : 76160,
+    "ProductName" : "Led Panel light",
+    "MinOrderQty" : 50,
+    "ProductLot" : 50,
+    "ProductVariationID" : 157,
+    "ProductCode" : "6sslm",
+    "ProductMRP" : 100,
+    "ProductSubTitle" : "6 Watt Square slim Led Panel Light",
+    "ImageLocation" : "http:\/\/admin.electroheight.com\/uploads\/Product\/ProductImages\/188.jpg",
+    "DiscountRs" : 32000,
+    "OfferDiscountRs" : 0,
+    "TaxValue" : 8160,
+    "ProductQty" : 1000,
+    "UnitName" : "Piece",
+    "ProductURL" : "6-Watt-Square-slim-Led-Panel-Light"
+}
+
+ 
+ */

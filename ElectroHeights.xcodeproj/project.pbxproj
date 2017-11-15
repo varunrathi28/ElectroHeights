@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		372561BA1FB5EAE0001B113B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372561B91FB5EAE0001B113B /* Protocols.swift */; };
+		372561BC1FB5EC9E001B113B /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372561BB1FB5EC9E001B113B /* ProductDetailsViewController.swift */; };
 		3725F1221F2F5215006CDF0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F1211F2F5215006CDF0C /* AppDelegate.swift */; };
 		3725F1241F2F5215006CDF0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F1231F2F5215006CDF0C /* ViewController.swift */; };
 		3725F1271F2F5215006CDF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3725F1251F2F5215006CDF0C /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		372561B91FB5EAE0001B113B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		372561BB1FB5EC9E001B113B /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		3725F11E1F2F5214006CDF0C /* ElectroHeights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroHeights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3725F1211F2F5215006CDF0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3725F1231F2F5215006CDF0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				3749D0341F8B960F002EA3DB /* MyProfileViewController.swift */,
 				3749D0361F8CF54F002EA3DB /* MyProfileTableController.swift */,
 				3749D03C1F8E61A0002EA3DB /* OTPVerficationVC.swift */,
+				372561BB1FB5EC9E001B113B /* ProductDetailsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -392,7 +395,7 @@
 				TargetAttributes = {
 					3725F11D1F2F5214006CDF0C = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 5XUW2EJ8TL;
+						DevelopmentTeam = 2SL2J3FRZ6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -526,6 +529,7 @@
 				374D93D41F94A15F009C18BC /* MenTableViewCell.swift in Sources */,
 				3749D0351F8B960F002EA3DB /* MyProfileViewController.swift in Sources */,
 				3725F8901F6800A200F2ED4B /* OrderListVC.swift in Sources */,
+				372561BC1FB5EC9E001B113B /* ProductDetailsViewController.swift in Sources */,
 				374C04551F61430B006B1E04 /* OrderConfirmationViewController.swift in Sources */,
 				3749D0231F862BFD002EA3DB /* HomeCollectionHeader.swift in Sources */,
 				3725F8601F67C3F400F2ED4B /* HomeCollectionViewController.swift in Sources */,
@@ -671,7 +675,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
+				DEVELOPMENT_TEAM = 2SL2J3FRZ6;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DevelopmentEnv;
 				INFOPLIST_FILE = ElectroHeights/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -690,7 +694,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
+				DEVELOPMENT_TEAM = 2SL2J3FRZ6;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = ProductionEnv;
 				INFOPLIST_FILE = ElectroHeights/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

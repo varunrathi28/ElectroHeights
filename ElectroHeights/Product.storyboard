@@ -491,13 +491,38 @@
                                     </connections>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" id="Ure-uJ-TUu">
-                                        <rect key="frame" x="0.0" y="190" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="85" id="Rvr-HP-dUw" customClass="MyAccountOptionTableCell" customModule="ElectroHeights" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="190" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ure-uJ-TUu" id="fuZ-pn-PeX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rvr-HP-dUw" id="gEW-gQ-Wxd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cA9-VE-YV9">
+                                                    <rect key="frame" x="16" y="25" width="35" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="35" id="Puq-fT-M3B"/>
+                                                        <constraint firstAttribute="height" constant="35" id="Yt7-to-EQc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR9-go-QOD">
+                                                    <rect key="frame" x="66" y="32.5" width="42.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cA9-VE-YV9" firstAttribute="centerY" secondItem="gEW-gQ-Wxd" secondAttribute="centerY" id="IlU-BW-mqN"/>
+                                                <constraint firstItem="cA9-VE-YV9" firstAttribute="leading" secondItem="gEW-gQ-Wxd" secondAttribute="leading" constant="16" id="cXW-It-Lt4"/>
+                                                <constraint firstItem="GR9-go-QOD" firstAttribute="leading" secondItem="cA9-VE-YV9" secondAttribute="trailing" constant="15" id="jLH-dt-aAz"/>
+                                                <constraint firstItem="GR9-go-QOD" firstAttribute="centerY" secondItem="cA9-VE-YV9" secondAttribute="centerY" id="jhY-ck-Ep2"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ivOption" destination="cA9-VE-YV9" id="VdC-Om-4HW"/>
+                                            <outlet property="lblOptionName" destination="GR9-go-QOD" id="lz4-bj-b3Q"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
