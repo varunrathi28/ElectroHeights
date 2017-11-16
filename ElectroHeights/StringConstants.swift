@@ -8,6 +8,26 @@
 
 import UIKit
 
+struct OnBoardingText
+{
+    // Title
+    static let title1 = "Home Screen"
+    static let title2 = "Just For You Screen"
+    static let title3 = "Product Detail Screen"
+    static let title4 = "Shopping Cart"
+    static let title5 = "My Order"
+    
+    // Strings
+    static let desc1 =  "This screen shows all new Arrivals,Featured Products etc"
+    static let desc2 = "This screen shows the various offers avaiable to you"
+    static let desc3 = "This screen shows the detailed description of the product"
+    static let desc4 = "This screen shows the list of products added to your shopping cart"
+    static let desc5 = "This screen shows the list of all ordered products"
+    
+    
+}
+
+
 struct StoryBoardID
 {
     static let SubCategoryList = "SubCatList"

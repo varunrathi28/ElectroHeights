@@ -10,9 +10,7 @@ target 'ElectroHeights' do
  pod 'SlideMenuControllerSwift'
  pod 'SwiftyOnboard'
  pod 'Kingfisher', '~> 3.0'
+ pod 'Segmentio', '~> 2.1'
   # Pods for ElectroHeights
-
-  
-
 
 end

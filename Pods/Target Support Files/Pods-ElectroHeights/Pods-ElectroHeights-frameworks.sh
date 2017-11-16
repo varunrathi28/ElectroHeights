@@ -91,6 +91,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CountryPickerSwift/CountryPicker.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Segmentio/Segmentio.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SlideMenuControllerSwift/SlideMenuControllerSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
@@ -99,6 +100,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CountryPickerSwift/CountryPicker.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Segmentio/Segmentio.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SlideMenuControllerSwift/SlideMenuControllerSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"

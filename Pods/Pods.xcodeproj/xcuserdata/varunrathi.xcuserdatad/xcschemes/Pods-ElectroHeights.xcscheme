@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4ED91969F6B776AE8012F1D1E05E2C8A"
+               BlueprintIdentifier = "106230AC18D56DDA8B8CD5BA69D45044"
                BuildableName = "Pods_ElectroHeights.framework"
                BlueprintName = "Pods-ElectroHeights"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4ED91969F6B776AE8012F1D1E05E2C8A"
+            BlueprintIdentifier = "106230AC18D56DDA8B8CD5BA69D45044"
             BuildableName = "Pods_ElectroHeights.framework"
             BlueprintName = "Pods-ElectroHeights"
             ReferencedContainer = "container:Pods.xcodeproj">

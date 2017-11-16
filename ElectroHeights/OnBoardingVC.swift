@@ -9,17 +9,14 @@
 import UIKit
 import SwiftyOnboard
 
+
 class OnBoardingVC: UIViewController {
     
     var onBoardView:SwiftyOnboard!
     
-    var titleArray:[String] = ["Home Screen", "Just For You Screen", "Product Detail Screen", "Shopping Cart","My Order"]
+    var titleArray:[String] = [OnBoardingText.title1,OnBoardingText.title2, OnBoardingText.title3, OnBoardingText.title4, OnBoardingText.title5]
     
-    var subTitleArray:[String] = ["This screen shows all new Arrivals/Featured Products etc",
-                                    "This screen shows the various offers avaiable to you",
-                                    "This screen shows the detailed description of the product",
-                                    "This screen shows the list of products added to your shopping cart",
-                                    "This screen shows the list of all ordered products"]
+    var subTitleArray:[String] = [OnBoardingText.desc1, OnBoardingText.desc2 ,OnBoardingText.desc3, OnBoardingText.desc4, OnBoardingText.desc5]
     
     let arrImages:[UIImage]! = [
                               UIImage(named: "swipe_home")!,
@@ -67,11 +64,18 @@ class OnBoardingVC: UIViewController {
     
     func handleContinue(sender: UIButton) {
         let index = sender.tag
-        onBoardView.goToPage(index: index + 1, animated: true)
+        
+        if index == arrImages.count - 1 {
+            skipToLogin()
+        }
+        else {
+            onBoardView.goToPage(index: index + 1, animated: true)
+        }
+        
     }
 
     
-    func handleSkip(sender:UIButton)
+    func skipToLogin()
     {
         let vc = Utility.getViewControllerFromMainStoryBoard(with:StoryBoardID.LoginController) as! LoginVC
         present(vc, animated: true, completion: nil)
@@ -113,17 +117,19 @@ extension OnBoardingVC:SwiftyOnboardDelegate
     func swiftyOnboardViewForOverlay(_ swiftyOnboard: SwiftyOnboard) -> SwiftyOnboardOverlay? {
         let overlay = SwiftyOnboardOverlay()
         
-        overlay.skipButton.addTarget(self, action: #selector(handleSkip(sender:)), for: .touchUpInside)
-        overlay.skipButton.tintColor = UIColor.white
+       // overlay.skipButton.addTarget(self, action: #selector(handleSkip(sender:)), for: .touchUpInside)
+       // overlay.skipButton.tintColor = UIColor.white
         //Setup targets for the buttons on the overlay view:
         overlay.continueButton.addTarget(self, action: #selector(handleContinue), for: .touchUpInside)
+        
+        overlay.skipButton.isHidden = true
         
         //Setup for the overlay buttons:
         overlay.continueButton.titleLabel?.font = UIFont(name: "Lato-Bold", size: 16)
         overlay.continueButton.setTitleColor(UIColor.white, for: .normal)
         overlay.continueButton.tintColor = UIColor.white
+        overlay.continueButton.setTitle("Continue", for: .normal)
 
-  
         //Return the overlay view:
         return overlay
     }
@@ -131,15 +137,28 @@ extension OnBoardingVC:SwiftyOnboardDelegate
     func swiftyOnboardOverlayForPosition(_ swiftyOnboard: SwiftyOnboard, overlay: SwiftyOnboardOverlay, for position: Double) {
         let currentPage = round(position)
         overlay.continueButton.tag = Int(position)
-        
+
+        if currentPage == Double(arrImages.count - 1)
+        {
+             overlay.continueButton.setTitle("Done", for: .normal)
+        }
+        else
+        {
+            overlay.continueButton.setTitle("Continue", for: .normal)
+        }
+            
+       /*
         if currentPage == 0.0 || currentPage == 1.0 {
             overlay.continueButton.setTitle("Next", for: .normal)
             overlay.skipButton.setTitle("Skip", for: .normal)
             overlay.skipButton.isHidden = false
+            
+            overlay.continueButton.set
         } else {
            overlay.continueButton.setTitle("Done", for: .normal)
-            overlay.skipButton.isHidden = true
+            
         }
+ */
     }
 
     
