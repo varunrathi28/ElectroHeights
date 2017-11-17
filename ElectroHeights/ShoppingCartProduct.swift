@@ -27,15 +27,8 @@ class ShoppingCartProduct: NSObject {
     var ProductVariationID:Double!
     var ProductMRP:Double!
     var OfferDiscountRs:Double?
-    
-    
+
 }
-
-// init(with json:JSON)
-//{
-//   // self.prod
-//}
-
 /*
 {
     "TaxPer" : 12,

@@ -11,18 +11,18 @@ import UIKit
 class OrderListVC: UIViewController {
     
     @IBOutlet weak var tableView:UITableView!
-    var arrDataSource:[CellData] = []
+    var arrOrders:[CustomerOrder] = []
 
+    var PageIndex = "1"
+    var PageSize = "20"
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
-        
+        tableView.tableFooterView = UIView()
         setUpViews()
         //setupNavBar()
-        setUpDataSource()
-        
         self.setNavigationBarItem()
 
 
@@ -31,7 +31,7 @@ class OrderListVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadData()
+        callWebServiceForOrderList()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -69,20 +69,6 @@ class OrderListVC: UIViewController {
     }
     
     
-    func setUpDataSource()
-    {
-        arrDataSource = []
-        
-        let opt1 = CellData(text: "122131321")
-        let opt2 = CellData(text: "2313212332")
-        let opt3 = CellData(text: "33333")
-        
-        arrDataSource.append(opt1)
-        arrDataSource.append(opt2)
-        arrDataSource.append(opt3)
-  
-    }
-    
     //MARK:- Actions
     
     func btnCartPressed()
@@ -95,13 +81,49 @@ class OrderListVC: UIViewController {
         
     }
     
+    func callWebServiceForOrderList()
+    {
+        let apiManager = RestApiManager.sharedInstance
+        
+        let url = Utility.getUrlForEndPoint(endPoint: URLEndPoints.kFetchOrders)
+        var dic = [String:AnyObject]()
+        dic["CustomerID"] = DataManager.CustomerID as AnyObject
+        dic["PageIndex"] = PageIndex as AnyObject
+        dic["PageSize"] = PageSize as AnyObject
+        let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: dic)
+        apiManager.post(urlString: url, parameters: bodyStr) { (json, error, status) in
+            
+            if status == true{
+             
+                if let orderArr = json.array {
+                    
+                    self.arrOrders = orderArr.map { (json) in
+                        
+                        return CustomerOrder.init(with: json)
+                        
+                    }
+                    
+                    DispatchQueue.main.async {
+                         self.tableView.reloadData()
+                    }
+                   
+                }
+                
+            }
+            
+            else {
+                
+            }
+        }
+    }
+    
 }
 
 extension OrderListVC : UITableViewDataSource
 {
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        return arrDataSource.count
+        return arrOrders.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -110,8 +132,7 @@ extension OrderListVC : UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.OrderCellId, for: indexPath) as! OrderListCell
-        
-        cell.updateData(data: arrDataSource[indexPath.section])
+        cell.updateOrder(order: arrOrders[indexPath.section])
         return cell
     }
     

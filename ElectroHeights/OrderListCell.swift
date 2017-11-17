@@ -20,18 +20,16 @@ class OrderListCell: UITableViewCell {
         super.awakeFromNib()
         
         lblTimestamp.textColor = UIColor.lightGray
-        lblTimestamp.text = "2017-09-12  17:51"
-        
-        lblStatusDetail.text = "Pending"
         lblTimestamp.textColor = UIColor.lightGray
         
         // Initialization code
     }
     
-    func updateData(data:CellData)
+    func updateOrder(order:CustomerOrder?)
     {
-        lblOrderDetail.text = data.text
-        ivProduct.image = UIImage(named: data.imageName)
+        lblStatusDetail.text = order?.Status
+        lblTimestamp.text = (order?.AddedOn)!
+        lblOrderDetail.text = order?.OrderNo
         
     }
 
@@ -39,6 +37,14 @@ class OrderListCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        lblStatusDetail.text = " "
+        lblTimestamp.text = " "
+        lblOrderDetail.text = " "
     }
 
 }

@@ -11,15 +11,15 @@ import UIKit
 protocol CartProtocol {
     
     
-    func totalAmount()->Double
-    func totalProducts()->Int
-    func contents()->[AnyObject]
+    static  func totalAmount()->Double
+    static  func totalProducts()->Int
+    static  func contents()->[AnyObject]
     
-    func getProduct(productID:String)->CartItem
-    func removeProduct(product: ProductItem)->Bool
-    func addProduct(product:ProductItem)->Bool
-    func addProduct(product:ProductItem, quantity : Int)
-    func exists(product: ProductItem)->Bool
-    func isEmpty()->Bool
-    func clearCart()->Bool
+    static  func getProduct(productID:String)->CartItem
+    static  func removeProduct(product: ProductItem)->Bool
+    static   func addProduct(product:ProductItem)->Bool
+    static  func addProduct(product:ProductItem, quantity : Int)
+    static  func exists(product: ProductItem)->Bool
+    static  func isEmpty()->Bool
+    static  func clearCart()->Bool
 }

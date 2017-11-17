@@ -80,6 +80,7 @@
 		37D689361FBF01460019E869 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D689351FBF01460019E869 /* CartItem.swift */; };
 		37D689381FBF01580019E869 /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D689371FBF01580019E869 /* ProductItem.swift */; };
 		37D6893A1FBF029C0019E869 /* CartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D689391FBF029C0019E869 /* CartProtocol.swift */; };
+		37D6893D1FBF06C70019E869 /* ElectroHeights.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37D6893B1FBF06C70019E869 /* ElectroHeights.xcdatamodeld */; };
 		37F87F981F7939200081AE00 /* ProductCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F87F971F79391F0081AE00 /* ProductCollectionCell.swift */; };
 		C9236D5C0819CEA174F463C9 /* Pods_ElectroHeights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8565E8271D10B37C2979A57A /* Pods_ElectroHeights.framework */; };
 /* End PBXBuildFile section */
@@ -160,6 +161,7 @@
 		37D689351FBF01460019E869 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		37D689371FBF01580019E869 /* ProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
 		37D689391FBF029C0019E869 /* CartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProtocol.swift; sourceTree = "<group>"; };
+		37D6893C1FBF06C70019E869 /* ElectroHeights.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ElectroHeights.xcdatamodel; sourceTree = "<group>"; };
 		37F87F971F79391F0081AE00 /* ProductCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionCell.swift; sourceTree = "<group>"; };
 		6E1F89D16B8E7B8AD63DBDFC /* Pods-ElectroHeights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElectroHeights.release.xcconfig"; path = "Pods/Target Support Files/Pods-ElectroHeights/Pods-ElectroHeights.release.xcconfig"; sourceTree = "<group>"; };
 		8565E8271D10B37C2979A57A /* Pods_ElectroHeights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElectroHeights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +183,7 @@
 		3725F1151F2F5214006CDF0C = {
 			isa = PBXGroup;
 			children = (
+				37D6893B1FBF06C70019E869 /* ElectroHeights.xcdatamodeld */,
 				3725F1201F2F5214006CDF0C /* ElectroHeights */,
 				3725F11F1F2F5214006CDF0C /* Products */,
 				F408C1CB1271413EDD4DB6C9 /* Pods */,
@@ -515,6 +518,7 @@
 				3749D0311F8B9094002EA3DB /* MyProfilePickerCell.swift in Sources */,
 				374D93D21F90F776009C18BC /* ShoppingCartProduct.swift in Sources */,
 				3749D0371F8CF54F002EA3DB /* MyProfileTableController.swift in Sources */,
+				37D6893D1FBF06C70019E869 /* ElectroHeights.xcdatamodeld in Sources */,
 				3749D0411F8F9199002EA3DB /* BaseAPIClient.swift in Sources */,
 				373B1DA21F8159250006836A /* OnBoardingVC.swift in Sources */,
 				3747EB271F7F95820038DB6C /* DataManager.swift in Sources */,
@@ -756,6 +760,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37D6893B1FBF06C70019E869 /* ElectroHeights.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37D6893C1FBF06C70019E869 /* ElectroHeights.xcdatamodel */,
+			);
+			currentVersion = 37D6893C1FBF06C70019E869 /* ElectroHeights.xcdatamodel */;
+			path = ElectroHeights.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3725F1161F2F5214006CDF0C /* Project object */;
 }
