@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/LoginVC.swift"
-            timestampString = "528570633.454637"
+            timestampString = "529577581.491866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "submitButtonClicked(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/LoginVC.swift"
-            timestampString = "529340070.191474"
+            timestampString = "529577581.491866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "submitButtonClicked(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/RestApiManager.swift"
-            timestampString = "528718431.002709"
+            timestampString = "532092688.385967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/LoginVC.swift"
-            timestampString = "529340070.191474"
+            timestampString = "529577581.491866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "countryPhoneCodePicker(_:didSelectCountryWithName:countryCode:phoneCode:flag:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/LoginVC.swift"
-            timestampString = "529340070.191474"
+            timestampString = "529577581.491866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "submitButtonClicked(sender:)"
             landmarkType = "7">
             <Locations>
@@ -166,7 +166,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/Extensions.swift"
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/LoginVC.swift"
-            timestampString = "529340070.191474"
+            timestampString = "529577581.491866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
             landmarkName = "submitButtonClicked(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/LoginVC.swift"
-            timestampString = "528570633.454637"
+            timestampString = "529577581.491866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/LoginVC.swift"
-            timestampString = "528570633.454637"
+            timestampString = "529577581.491866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "hidePicker()"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/HomeCollectionViewController.swift"
-            timestampString = "529507346.514091"
+            timestampString = "532518758.664362"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "callWebServiceToFetchProducts(type:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/HomeCollectionViewController.swift"
-            timestampString = "529507346.514091"
+            timestampString = "532518758.66447"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "callWebServiceToFetchProducts(type:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -276,7 +276,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/RestApiManager.swift"
-            timestampString = "528718425.200602"
+            timestampString = "532092688.386642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -292,45 +292,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/HomeCollectionViewController.swift"
-            timestampString = "529507346.514091"
+            timestampString = "532518758.664616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "callWebServiceToFetchProducts(type:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ElectroHeights.HomeCollectionViewController.(callWebServiceToFetchProducts (type : ElectroHeights.ProductType) -&gt; ()).(closure #1)"
-                  moduleName = "ElectroHeights"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/HomeCollectionViewController.swift"
-                  timestampString = "529508338.575529"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "200">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ElectroHeights.HomeCollectionViewController.(callWebServiceToFetchProducts (type : ElectroHeights.ProductType) -&gt; ()).(closure #1)"
-                  moduleName = "ElectroHeights"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/HomeCollectionViewController.swift"
-                  timestampString = "529508338.577634"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "308">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -340,11 +308,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/HomeCollectionViewController.swift"
-            timestampString = "529507346.514091"
+            timestampString = "532518758.664721"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "callWebServiceToFetchProducts(type:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -404,7 +372,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/CategoryListVC.swift"
-            timestampString = "528815867.92471"
+            timestampString = "532018908.786152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -420,7 +388,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/CategoryListVC.swift"
-            timestampString = "528815755.62128"
+            timestampString = "532018908.786486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -432,26 +400,26 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ElectroHeights.CategoryListVC.fetchAllSubCategories (forCategory : ElectroHeights.Category) -&gt; ()"
+                  symbolName = "ElectroHeights.CategoryListVC.fetchAllSubCategories(forCategory: ElectroHeights.Category) -&gt; ()"
                   moduleName = "ElectroHeights"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/CategoryListVC.swift"
-                  timestampString = "529508338.590965"
+                  timestampString = "532518760.3469"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "51"
                   endingLineNumber = "51"
-                  offsetFromSymbolStart = "548">
+                  offsetFromSymbolStart = "468">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ElectroHeights.CategoryListVC.(fetchAllSubCategories (forCategory : ElectroHeights.Category) -&gt; ()).(closure #1)"
+                  symbolName = "closure #1 (SwiftyJSON.JSON, Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Bool) -&gt; () in ElectroHeights.CategoryListVC.fetchAllSubCategories(forCategory: ElectroHeights.Category) -&gt; ()"
                   moduleName = "ElectroHeights"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/CategoryListVC.swift"
-                  timestampString = "529508338.593099"
+                  timestampString = "532518760.350286"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "53"
@@ -468,7 +436,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/CategoryListVC.swift"
-            timestampString = "528816073.596204"
+            timestampString = "532018908.786778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
@@ -484,11 +452,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/HomeCollectionViewController.swift"
-            timestampString = "529507346.514091"
+            timestampString = "532518758.664986"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "btnViewAllClicked(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -500,11 +468,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/LoginVC.swift"
-            timestampString = "529340070.191474"
+            timestampString = "529577581.491866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
             landmarkName = "pushTestScreen()"
             landmarkType = "7">
          </BreakpointContent>
@@ -608,26 +576,26 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ElectroHeights.SignUpVC.callWebServiceForValidatingPhone (with : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()"
+                  symbolName = "ElectroHeights.SignUpVC.callWebServiceForValidatingPhone(with: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()"
                   moduleName = "ElectroHeights"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/SignUpVC.swift"
-                  timestampString = "529508338.648855"
+                  timestampString = "532518760.406362"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "159"
                   endingLineNumber = "159"
-                  offsetFromSymbolStart = "568">
+                  offsetFromSymbolStart = "580">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ElectroHeights.SignUpVC.(callWebServiceForValidatingPhone (with : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()).(closure #1)"
+                  symbolName = "closure #1 (SwiftyJSON.JSON, Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Bool) -&gt; () in ElectroHeights.SignUpVC.callWebServiceForValidatingPhone(with: Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()"
                   moduleName = "ElectroHeights"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/SignUpVC.swift"
-                  timestampString = "529508338.650972"
+                  timestampString = "532518760.41009"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "161"
@@ -692,11 +660,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/HomeCollectionViewController.swift"
-            timestampString = "529503727.228767"
+            timestampString = "532518758.665561"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "callWebServiceToFetchProducts(type:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -708,11 +676,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/HomeCollectionViewController.swift"
-            timestampString = "529508244.021071"
+            timestampString = "532518758.66565"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "callWebServiceToFetchProducts(type:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -740,12 +708,364 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ElectroHeights/BannerContainerCell.swift"
-            timestampString = "529508744.249444"
+            timestampString = "529587652.19092"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "updateDataWithBanners(banners:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListVC.swift"
+            timestampString = "529580923.977912"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "callWebServiceToFetchWishList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListVC.swift"
+            timestampString = "529580962.622924"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "callWebServiceToFetchWishList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyJSON.JSON, Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Bool) -&gt; () in ElectroHeights.WishListVC.callWebServiceToFetchWishList() -&gt; ()"
+                  moduleName = "ElectroHeights"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/WishListVC.swift"
+                  timestampString = "532518760.489735"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyJSON.JSON) -&gt; ElectroHeights.WishListProduct in closure #1 (SwiftyJSON.JSON, Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Bool) -&gt; () in ElectroHeights.WishListVC.callWebServiceToFetchWishList() -&gt; ()"
+                  moduleName = "ElectroHeights"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/WishListVC.swift"
+                  timestampString = "532518760.493849"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListVC.swift"
+            timestampString = "529580967.32464"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "callWebServiceToFetchWishList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListProduct.swift"
+            timestampString = "529581018.466112"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "init(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListVC.swift"
+            timestampString = "529584520.771406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "callWebServiceToDeleteProduct(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListVC.swift"
+            timestampString = "529586821.524605"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "deleteClickedWith(index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListVC.swift"
+            timestampString = "529585305.125009"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "callWebServiceToDeleteProduct(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListVC.swift"
+            timestampString = "529585305.125009"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "callWebServiceToDeleteProduct(at:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ElectroHeights.WishListVC.callWebServiceToDeleteProduct(at: Swift.Int) -&gt; ()"
+                  moduleName = "ElectroHeights"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/WishListVC.swift"
+                  timestampString = "532518760.535006"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "944">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyJSON.JSON, Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Bool) -&gt; () in ElectroHeights.WishListVC.callWebServiceToDeleteProduct(at: Swift.Int) -&gt; ()"
+                  moduleName = "ElectroHeights"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/WishListVC.swift"
+                  timestampString = "532518760.538393"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/WishListVC.swift"
+            timestampString = "529586267.984114"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
+            landmarkName = "callWebServiceToDeleteProduct(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/LeftMenuController.swift"
+            timestampString = "532447650.358155"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "changeViewController(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/ShoppingCartVC.swift"
+            timestampString = "532018908.787624"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "callWebServiceFetchCartProducts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/LeftMenuController.swift"
+            timestampString = "532447650.358271"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/LeftMenuController.swift"
+            timestampString = "532447650.358348"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ElectroHeights.LeftMenuController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "ElectroHeights"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/LeftMenuController.swift"
+                  timestampString = "532443396.484439"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "972">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ElectroHeights.LeftMenuController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "ElectroHeights"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/varunrathi/Documents/POC%20Projetcs/New/Demo/ElectroHeights/ElectroHeights/LeftMenuController.swift"
+                  timestampString = "532443396.488054"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "1868">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/HomeCollectionViewController.swift"
+            timestampString = "532518758.666669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "setUpSegmentedView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/MyOrdersVC.swift"
+            timestampString = "532516238.273578"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElectroHeights/OrderListVC.swift"
+            timestampString = "532518758.666852"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "callWebServiceForOrderList()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
