@@ -8,31 +8,69 @@
 
 import UIKit
 import SlideMenuControllerSwift
+import Segmentio
+
+struct HomeCollectionLayout {
+  static let  kMaxProductInSection = 4
+  static let kMaxCategoryInSection = 8
+}
 
 class HomeCollectionViewController: UIViewController {
 
     @IBOutlet weak var collectionView:UICollectionView!
-    @IBOutlet weak var viewSegmentedButtons:UIView!
-    @IBOutlet weak var scrollView:UIScrollView!
+    @IBOutlet weak var offerCollectionView:UICollectionView!
+   
+    @IBOutlet weak var containerView:UIView!
+    @IBOutlet weak var searchBar:UISearchBar!
+    @IBOutlet weak var contraintCollectionEnd:NSLayoutConstraint!
+    @IBOutlet weak var contraintCollectionStart:NSLayoutConstraint!
+    
+  
+    
+  @IBOutlet weak var segmentView:Segmentio!
     var CustomerID:String = "5253"
     
     var arrNewArrivals:[FeaturedProduct] = []
     var arrFeaturedProducts:[FeaturedProduct] = []
     var arrAllCategories:[Category] = []
+    var arrRecentView:[FeaturedProduct] = []
     var arrHeaderText:[String] = [" ", HomeHeaderText.Header1,HomeHeaderText.Header2,HomeHeaderText.Header3,HomeHeaderText.Header4]
     var arrBanners:[Banner] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
-        
         let flowLayout:UICollectionViewFlowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         flowLayout.sectionInset = UIEdgeInsetsMake(0, 5, 10, 5)
+        collectionView.alwaysBounceVertical = false
         callWebServicesToFetchData()
+        
         
         // Do any additional setup after loading the view.
     }
 
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    //   setUpSegmentedView()
+    }
+    func setUpSegmentedView()
+    {
+        var content = [SegmentioItem]()
+        
+        let optionNew = SegmentioItem(title: "What's New", image: nil)
+        let optionJustForYou = SegmentioItem(title: "JUST FOR YOU", image: nil)
+        content = [optionNew,optionJustForYou]
+       
+       segmentView.setup(content: content, style: SegmentioStyle.onlyLabel, options: nil)
+        segmentView.selectedSegmentioIndex = 0
+        segmentView.valueDidChange = { segmentio, segmentIndex in
+            print("Selected item: ", segmentIndex)
+            
+            
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setNavigationBarItem()
@@ -48,6 +86,7 @@ class HomeCollectionViewController: UIViewController {
     override func awakeFromNib()
     {
         super.awakeFromNib()
+     //   setUpSegmentedView()
        
     }
     
@@ -216,6 +255,43 @@ class HomeCollectionViewController: UIViewController {
         return urlStr
     }
 
+    
+    @IBAction func btnSwitchCollectionView(sender:UIButton)
+    {
+        let tag = sender.tag
+        
+        if tag == 1
+        {
+            animateCollectionViewSwitch(on:false)
+            
+        }
+        else
+        {
+            animateCollectionViewSwitch(on: true)
+        }
+        
+    }
+    
+    func animateCollectionViewSwitch(on: Bool)
+    {
+        
+        // On: True -> Animation to Left
+        let offSet:CGFloat = on ? -collectionView.bounds.width : 0
+        
+        collectionView.layoutIfNeeded()
+        offerCollectionView.layoutIfNeeded()
+        
+        UIView.animate(withDuration: 0.5) {
+            
+            self.contraintCollectionEnd.constant = offSet
+            self.contraintCollectionStart.constant = offSet
+//            self.collectionView.layoutIfNeeded()
+//            self.offerCollectionView.layoutIfNeeded()
+            
+        }
+    }
+    
+    
 }
 
 extension HomeCollectionViewController:UICollectionViewDataSource
@@ -227,8 +303,8 @@ extension HomeCollectionViewController:UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if indexPath.section == 0
-        {
+        switch indexPath.section {
+        case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.HomeBannerCell, for: indexPath) as! BannerContainerCell
             
             
@@ -239,44 +315,49 @@ extension HomeCollectionViewController:UICollectionViewDataSource
             }
             
             return cell
-        }
-        else
         
-        {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.SubProductCell, for: indexPath) as! ProductCollectionCell
+    default:
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.SubProductCell, for: indexPath) as! ProductCollectionCell
+                
+                if indexPath.section == 1
+                {
+                    let newProduct = arrNewArrivals[indexPath.row]
+                    cell.updateData(with: newProduct)
+                }
+                else if indexPath.section == 3
+                {
+                    let product = arrFeaturedProducts[indexPath.row]
+                    cell.updateData(with: product)
+                }
+                else
+                {
+                    let recentProduct = arrRecentView[indexPath.row]
+                    cell.updateData(with: recentProduct)
+                }
+                
+                return cell
             
-            if indexPath.section == 1
-            {
-                let newProduct = arrNewArrivals[indexPath.row]
-                cell.updateData(with: newProduct)
-            }
-            else
-            {
-                let product = arrFeaturedProducts[indexPath.row]
-                cell.updateData(with: product)
-            }
-            
-            return cell
         }
         
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if section == 0
-        {
+        switch section {
+        case 0:
             return 1
-        }
             
-        else if section == 1
-        {
-               return min(arrNewArrivals.count, arrHeaderText.count)
+        case 1:
+             return min(arrNewArrivals.count, HomeCollectionLayout.kMaxProductInSection)
+        case 2:
+            return min(arrFeaturedProducts.count, HomeCollectionLayout.kMaxProductInSection)
+            
+        case 3:
+            return min(arrAllCategories.count, HomeCollectionLayout.kMaxCategoryInSection)
+            
+        default:
+            
+            return min(arrRecentView.count, HomeCollectionLayout.kMaxProductInSection)
         }
-        else
-        {
-               return min(arrFeaturedProducts.count, arrHeaderText.count)
-        }
-        
-     //  return arrFeaturedProducts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

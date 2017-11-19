@@ -25,39 +25,57 @@ public struct URLConstant
 
 public class URLEndPoints :NSObject
 {
+    
+    // Login
+    
     static let kGetLoginEndPoint = "Login?"
     static let kForgotPasswordEndPoint = "ForgotPassword"
     static let kValidateMobile = "ValidateMobileNo"
     static let kSendOtpEndPoint = "SendOTP"
     static let kInsertCustomer = "InsertCustomer"
+    
+    //Home Screen
+    
     static let kFetchShopByCategory = "FetchShopByCategory"
     static let kFetchFeaturedProducts = "FetchFeaturedProducts"
     static let kFetchNewProducts = "FetchNewProducts"
     static let kFetchProductCategories = "FetchProductCategories"
     static let kFetchBanners = "FetchBanners"
-    static let kFetchCartProducts = "FetchCartProducts"
     static let kFetchProductSubCategories = "FetchProductSubCategories"
-   
     
+    // My Account
+    
+    static let kFetchStates = "FetchStates"
+    static let kFetchCities = "FetchCities"
+    static let kSendEmailConfirmOTP = "SendEmailConfirmOTP"
+    static let kSendMobileConfirmOTP = "SendMobileConfirmOTP"
+    static let kUpdateCustomerImage = "UpdateCustomerImage"
+    static let kUpdateCustomer = "UpdateCustomer"
+    static let kFetchCustomerDetails = "FetchCustomerDetails"
+    
+   // Product Details
+    
+    static let kAddToCart = "AddToCart"
+    static let kFetchProductVariations = "FetchProductVariations"
+    static let kUpdateWishlist = "UpdateWishlist"
+    static let kDeleteWishlistProduct = "DeleteWishlistProduct"
+    static let kFetchProductVariationDescriptionFields = "FetchProductVariationDescriptionFields"
+    static let kFetchOrders =  "FetchCustomerOrders"
 
-    // To be checked
-    static let kGetUserDetailsEndPoint = "GetCustomer_Infos"
-    static let kUpdateUserProfile = "putuserprofile"
-    static let kGetProductType = "getproducttype"
-    static let kGetCollection = "getcollection"
-    static let kGetCategory = "getcategory?Clid=0"
-    static let kGetSubCategory = "getsuubcategory?Caid="
-    static let kGetGoldCoins = "getgoldcoins"
-    static let kGetWedding = "getwedding"
-    static let kGetUphar = "getuphaarlist"
+
+    // My Cart Screen 
     
-    static let kGetOfferList = "getofferlist"
-    static let kMetalColor = "getmetalcolor"
-    static let kGetMetalPurityName = "getmetalpurityname"
-    static let kGetDiamondsColor = "getdiamondscolor"
-    static let kGetDiamondClarity = "getdiamondsclairitylist"
-    static let kGetColorStone = "getcolorstonelist"
-    static let kGetClarityList = "getclairitycsList"
+    static let kUpdateProductQty = "UpdateProductQty"
+    static let kRemoveCartProduct = "RemoveCartProduct"
+    static let kFetchCartProducts = "FetchCartProducts"
+    
+    //Wish List Screen
+    
+     static let kFetchWishlistProducts = "FetchWishlistProducts"
+    
+    // Order Confirmation
+    
+     static let kPlaceOrder = "PlaceOrder"
     
 }
 

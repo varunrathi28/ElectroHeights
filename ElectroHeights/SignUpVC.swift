@@ -19,7 +19,6 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var viewPicker:UIView!
     @IBOutlet weak var picker:CountryPicker!
     
-    
      var phoneCd:String?
     // Screen
     @IBOutlet weak var ivLogo:UIImageView!

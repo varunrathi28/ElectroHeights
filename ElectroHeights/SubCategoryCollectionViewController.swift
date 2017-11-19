@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class SubCategoryCollectionViewController: UICollectionViewController {
 
     var arrSubCategoryList:[SubCategory] = []
@@ -24,6 +22,10 @@ class SubCategoryCollectionViewController: UICollectionViewController {
         let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
         layout.minimumLineSpacing = CellPadding
         layout.minimumInteritemSpacing = CellPadding
+        
+        let width:CGFloat = view.bounds.size.width
+        let cellWidth  = width - 3 * CellPadding
+        layout.itemSize = CGSize(width: cellWidth, height: cellWidth * 0.75)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -61,19 +63,8 @@ class SubCategoryCollectionViewController: UICollectionViewController {
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let width = collectionView.bounds.size.width
-        
-        let cellWidth  = width - 3 * CellPadding
-        
-        return CGSize(width: cellWidth, height: 250)
-        
-    }
     
-    
-    
-    
+
     
 
     // MARK: UICollectionViewDelegate
