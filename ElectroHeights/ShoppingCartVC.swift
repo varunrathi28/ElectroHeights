@@ -61,12 +61,13 @@ class ShoppingCartVC: UIViewController {
             {
                 if let cartProductList = json.array
                 {
-//                    self.arrCartProducts = cartProductList.map({ (json) -> ShoppingCartProduct
-//                        in
-//                  //      return ShoppingCartProduct()
-//                    })
-                    
-                    self.tableView.reloadData()
+                    self.arrCartProducts = cartProductList.map({ (json) -> ShoppingCartProduct
+                        in
+                        return ShoppingCartProduct(with: json)
+                    })
+                    DispatchQueue.main.async {
+                          self.tableView.reloadData()
+                    }
                 }
                 
             }
@@ -90,7 +91,7 @@ extension ShoppingCartVC:UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return arrCartProducts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -98,6 +99,8 @@ extension ShoppingCartVC:UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier:CellIdentifiers.ShoppingCartCellId, for: indexPath) as! ShoppingCartCell
         cell.selectionStyle = .none
         
+        let cartProduct = arrCartProducts[indexPath.row]
+        cell.updateData(with: cartProduct)
         return cell
         
     }

@@ -8,27 +8,54 @@
 
 import UIKit
 
-class CustomAccordianView: UIView {
+struct AccordianHeading {
     
-    // HEADING
+    var heading1:String!
+    var heading2:String!
+    var heading3:String!
+    var heading4:String!
+}
+
+struct AccordianDetail
+{
+    var detail1:String?
+    var detail2:String?
+    var detail3:String?
+    var detail4:String?
     
-    @IBOutlet weak var headingView:UIView!
+}
+
+struct AccordianData
+{
     
-     @IBOutlet weak var lblHeading1:UILabel!
-     @IBOutlet weak var lblHeading2:UILabel!
-     @IBOutlet weak var lblHeading3:UILabel!
-     @IBOutlet weak var lblHeading4:UILabel!
-     @IBOutlet weak var lblHeading5:UILabel!
-    
+}
+
+class CustomAccordianDetailView:UIView
+{
     //DETAIL
     
     @IBOutlet weak var detailView:UIView!
     
-     @IBOutlet weak var lblDetail1:UILabel!
-     @IBOutlet weak var lblDetail2:UILabel!
-     @IBOutlet weak var lblDetail3:UILabel!
-     @IBOutlet weak var lblDetail4:UILabel!
-     @IBOutlet weak var lblDetail5:UILabel!
+    @IBOutlet weak var lblDetail1:UILabel!
+    @IBOutlet weak var lblDetail2:UILabel!
+    @IBOutlet weak var lblDetail3:UILabel!
+    @IBOutlet weak var lblDetail4:UILabel!
+    @IBOutlet weak var lblDetail5:UILabel!
+    
+}
+
+class CustomAccordianHeadView: UIView {
+    
+    // HEADING
+    
+    @IBOutlet weak var headingView:UIView!
+    @IBOutlet weak var lblHeading1:UILabel!
+    @IBOutlet weak var lblHeading2:UILabel!
+     @IBOutlet weak var lblHeading3:UILabel!
+     @IBOutlet weak var lblHeading4:UILabel!
+     @IBOutlet weak var lblHeading5:UILabel!
+    
+    
 
     /*
     // Only override draw() if you perform custom drawing.

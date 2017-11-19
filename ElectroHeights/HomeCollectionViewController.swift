@@ -324,11 +324,12 @@ extension HomeCollectionViewController:UICollectionViewDataSource
                     let newProduct = arrNewArrivals[indexPath.row]
                     cell.updateData(with: newProduct)
                 }
-                else if indexPath.section == 3
+                else if indexPath.section == 2
                 {
                     let product = arrFeaturedProducts[indexPath.row]
                     cell.updateData(with: product)
                 }
+                    
                 else
                 {
                     let recentProduct = arrRecentView[indexPath.row]

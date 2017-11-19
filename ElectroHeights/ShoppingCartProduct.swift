@@ -27,6 +27,25 @@ class ShoppingCartProduct: NSObject {
     var ProductVariationID:Double!
     var ProductMRP:Double!
     var OfferDiscountRs:Double?
+    
+    init(with json:JSON) {
+        
+        super.init()
+        self.ProductName = json["ProductName"].stringValue
+        self.MinOrderQty = json["MinOrderQty"].doubleValue
+        self.ProductLot = json["ProductLot"].doubleValue
+        self.ProductCode = json["ProductCode"].stringValue
+        self.ProductSubTitle = json["ProductSubTitle"].stringValue
+        self.ImageLocation = json["ImageLocation"].stringValue
+        self.UnitName = json["UnitName"].stringValue
+        self.ProductURL = json["ProductURL"].stringValue
+        self.TaxPer = json["TaxPer"].doubleValue
+        self.Amount = json["Amount"].doubleValue
+        self.ProductQty = json["ProductQty"].doubleValue
+        self.ProductVariationID = json["ProductVariationID"].doubleValue
+        self.ProductMRP = json["ProductMRP"].doubleValue
+        self.OfferDiscountRs = json["OfferDiscountRs"].doubleValue
+    }
 
 }
 /*

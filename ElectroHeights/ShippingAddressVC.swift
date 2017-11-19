@@ -14,6 +14,7 @@ class ShippingAddressVC: UIViewController {
     
     //MARK:-  View Controller Life cycle
     
+    var arrShippingAddress:[Address] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
@@ -71,6 +72,70 @@ class ShippingAddressVC: UIViewController {
         
     }
     
+    func callWebserviceFetchAddress()
+    {
+        
+    }
+
+    func callWebServiceDeleteAddress(with AddressID:String)
+    {
+        
+    }
+    
+    func setDefaultAddress(with AddressID:String)
+    {
+        
+    }
+    
+    func callWebServiceWithTask(for type: AddressRequestType, bodyStr:String)
+    {
+        let apiManager = RestApiManager()
+        let url = ""
+        apiManager.post(urlString: url, parameters: bodyStr) { (json, error, status) in
+            
+            if status == true
+            {
+                switch type
+                {
+                case .Fetch:
+                    
+                    if let addressArr  = json.array
+                    {
+                        self.arrShippingAddress = addressArr.map({ (json) -> Address in
+                            return Address(with: json)
+                        })
+                        
+                         Utility.reloadTableViewOnMainThread(with: self.tableView)
+                        
+                    }
+                    
+                    
+                case .Delete:
+                   
+                    if let status = json.int
+                    {
+                        print("Success")
+                        
+                    }
+                    
+                case .Update:
+                    if let status = json.int
+                    {
+                        print("Success")
+                        
+                    }
+                    
+                case .Add:
+                     print("Success")
+                }
+                
+                
+            }
+            
+        }
+        
+        
+    }
 
 }
 

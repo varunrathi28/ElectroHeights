@@ -9,6 +9,10 @@
 import UIKit
 
 
+enum AddressRequestType:Int
+{
+    case Fetch = 0, Delete , Update , Add
+}
 
 enum ProductType:Int {
     case FeaturedProduct = 0, NewProducts , SubCategory, Banners

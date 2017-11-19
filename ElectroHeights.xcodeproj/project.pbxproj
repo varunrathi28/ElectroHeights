@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3722B0AD1FC21FE8006C0639 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3722B0AC1FC21FE8006C0639 /* Address.swift */; };
 		372561BA1FB5EAE0001B113B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372561B91FB5EAE0001B113B /* Protocols.swift */; };
 		372561BC1FB5EC9E001B113B /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372561BB1FB5EC9E001B113B /* ProductDetailsViewController.swift */; };
 		3725F1221F2F5215006CDF0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725F1211F2F5215006CDF0C /* AppDelegate.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3722B0AC1FC21FE8006C0639 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		372561B91FB5EAE0001B113B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		372561BB1FB5EC9E001B113B /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		3725F11E1F2F5214006CDF0C /* ElectroHeights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectroHeights.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +233,7 @@
 				374D93CF1F90BCAE009C18BC /* WishListProduct.swift */,
 				374D93D11F90F776009C18BC /* ShoppingCartProduct.swift */,
 				37D689101FBD91520019E869 /* Order.swift */,
+				3722B0AC1FC21FE8006C0639 /* Address.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				3747EB201F7F8CEF0038DB6C /* Extensions.swift in Sources */,
 				3749D0331F8B90C5002EA3DB /* MyProfileImageHeader.swift in Sources */,
 				374C046E1F66705E006B1E04 /* ShippingAddressCell.swift in Sources */,
+				3722B0AD1FC21FE8006C0639 /* Address.swift in Sources */,
 				3725F88C1F67F4AE00F2ED4B /* CategoryCell.swift in Sources */,
 				378A4B051F69444A00E04E25 /* SubCategoryCollectionCell.swift in Sources */,
 				37D689111FBD91520019E869 /* Order.swift in Sources */,

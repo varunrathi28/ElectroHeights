@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 
 class ShoppingCartCell: UITableViewCell {
@@ -42,6 +43,18 @@ class ShoppingCartCell: UITableViewCell {
      //   ivProduct.addGestureRecognizer(tapGestureRecognizer)
         
         // Initialization code
+    }
+    
+    func updateData(with cartProduct:ShoppingCartProduct)
+    {
+        if let imageUrl = cartProduct.ImageLocation
+        {
+            ivProduct.kf.setImage(with: URL(string: imageUrl))
+        }
+        
+        lblProductName.text = cartProduct.ProductName
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

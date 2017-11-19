@@ -64,6 +64,13 @@ public class Utility:NSObject
         return URLConstant.kBaseURL + endPoint
     }
     
+    static func reloadTableViewOnMainThread(with tableview:UITableView)
+    {
+        DispatchQueue.main.async {
+            tableview.reloadData()
+        }
+    }
+    
   //  var indicator:NVActivityIndicatorView = ProgressHUDManager.sharedInstance
     
     // MARK: - Main Story board helpers
