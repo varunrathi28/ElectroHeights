@@ -33,4 +33,8 @@ class Address: NSObject {
         self.PhoneNo = json["PhoneNo"].stringValue
         self.IsDefault = json["IsDefault"].boolValue
     }
+    
+    override init() {
+        super.init()
+    }
 }
