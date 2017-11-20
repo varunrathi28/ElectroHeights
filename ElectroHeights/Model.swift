@@ -48,12 +48,12 @@ struct Category
 struct SubCategory {
     var ProductSubCategoryID:Int!
     var SubCategoryName:String!
-    var CategoryImageLocation:String!
+    var ImageLocation:String!
     
     init(with json :JSON) {
         self.ProductSubCategoryID = json["ProductSubCategoryID"].intValue
         self.SubCategoryName = json["SubCategoryName"].stringValue
-        self.CategoryImageLocation = json["CategoryImageLocation"].stringValue
+        self.ImageLocation = json["ImageLocation"].stringValue
     }
 }
 

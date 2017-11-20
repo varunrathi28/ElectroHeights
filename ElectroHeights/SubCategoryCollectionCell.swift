@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SubCategoryCollectionCell: UICollectionViewCell {
     
@@ -15,7 +16,7 @@ class SubCategoryCollectionCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
         contentView.backgroundColor = UIColor.white
         
     }
@@ -24,7 +25,7 @@ class SubCategoryCollectionCell: UICollectionViewCell {
     func updateSubCategory(with subcategory:SubCategory)
     {
         lblSubCategoryTitle.text = subcategory.SubCategoryName
-        ivSubcategory.kf.setImage(with: URL(string: subcategory.CategoryImageLocation))
+        ivSubcategory.kf.setImage(with: URL(string: subcategory.ImageLocation))
     }
     
 

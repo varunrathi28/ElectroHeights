@@ -61,6 +61,7 @@ struct CellIdentifiers {
     static let MyProfilePickerCell = "MyProfilePickerCell"
     
     static let HomeBannerCell = "BannerCell"
+    static let CategoryCollectionCellId = "CategoryCollectionCell"
     
 }
 

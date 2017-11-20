@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionCell" id="tKK-3K-48E" customClass="SubCategoryCollectionCell" customModule="ElectroHeights" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="234" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-MG-j1k">
+                        <rect key="frame" x="0.0" y="10" width="234" height="131"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGf-Bn-dmz">
+                        <rect key="frame" x="5" y="141" width="224" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottomMargin" secondItem="tGf-Bn-dmz" secondAttribute="bottom" constant="5" id="66g-2g-ZA3"/>
+                <constraint firstAttribute="trailing" secondItem="tGf-Bn-dmz" secondAttribute="trailing" constant="5" id="AXh-YL-PA4"/>
+                <constraint firstItem="YMb-MG-j1k" firstAttribute="top" secondItem="tKK-3K-48E" secondAttribute="top" constant="10" id="Hhl-51-Dzp"/>
+                <constraint firstAttribute="trailing" secondItem="YMb-MG-j1k" secondAttribute="trailing" id="NYs-eX-cgY"/>
+                <constraint firstItem="tGf-Bn-dmz" firstAttribute="leading" secondItem="tKK-3K-48E" secondAttribute="leading" constant="5" id="Npl-d7-LLM"/>
+                <constraint firstItem="tGf-Bn-dmz" firstAttribute="top" secondItem="YMb-MG-j1k" secondAttribute="bottom" id="beK-9t-lDb"/>
+                <constraint firstItem="YMb-MG-j1k" firstAttribute="leading" secondItem="tKK-3K-48E" secondAttribute="leading" id="rXg-h0-7LZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="g84-bY-dd7"/>
+            <size key="customSize" width="234" height="163"/>
+            <connections>
+                <outlet property="ivSubcategory" destination="YMb-MG-j1k" id="Vtn-K6-AQ5"/>
+                <outlet property="lblSubCategoryTitle" destination="tGf-Bn-dmz" id="EOk-w6-W9D"/>
+            </connections>
+            <point key="canvasLocation" x="87" y="69.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -33,6 +33,7 @@ class HomeCollectionViewController: UIViewController {
     var arrNewArrivals:[FeaturedProduct] = []
     var arrFeaturedProducts:[FeaturedProduct] = []
     var arrAllCategories:[Category] = []
+    var arrShopByCategory:[SubCategory] = []
     var arrRecentView:[FeaturedProduct] = []
     var arrHeaderText:[String] = [" ", HomeHeaderText.Header1,HomeHeaderText.Header2,HomeHeaderText.Header3,HomeHeaderText.Header4]
     var arrBanners:[Banner] = []
@@ -43,12 +44,15 @@ class HomeCollectionViewController: UIViewController {
         let flowLayout:UICollectionViewFlowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         flowLayout.sectionInset = UIEdgeInsetsMake(0, 5, 10, 5)
         collectionView.alwaysBounceVertical = false
-        callWebServicesToFetchData()
+        self.collectionView.register(UINib(nibName: "SubCategoryCollectionCell", bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.CategoryCollectionCellId)
+      
         
         
         // Do any additional setup after loading the view.
     }
 
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -74,6 +78,7 @@ class HomeCollectionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setNavigationBarItem()
+        callWebServicesToFetchData()
         
        
     }
@@ -127,6 +132,7 @@ class HomeCollectionViewController: UIViewController {
         callWebServiceToFetchProducts(type: .Banners)
         callWebServiceToFetchProducts(type: .FeaturedProduct)
         callWebServiceToFetchProducts(type: .NewProducts)
+        callWebServiceToFetchProducts(type: .SubCategory)
         callWebServiceToFetchAllCategories()
     
     }
@@ -171,49 +177,42 @@ class HomeCollectionViewController: UIViewController {
                 {
                     switch type
                     {
-                    case .FeaturedProduct:
-                
-                        
+                    case .Banners: // Section 0
+                        self.arrBanners = productArray.map({ (json) -> Banner in
+                            
+                            return Banner.init(fromJSON: json)
+                        })
+                    
+                    case .NewProducts: // section 1
+                        self.arrNewArrivals = productArray.map{
+                            
+                            return FeaturedProduct.build(json: $0)!
+                        }
+                    case .FeaturedProduct: // Section 2
                         self.arrFeaturedProducts = productArray.map{
                         
                             return FeaturedProduct.build(json: $0)!
                         }
                         
-                        DispatchQueue.main.async {
-                              self.collectionView.reloadData()
-                        }
-                    
-                        break
+         
                         
-                    case .NewProducts:
-                       
-                        self.arrNewArrivals = productArray.map{
-                        
-                        return FeaturedProduct.build(json: $0)!
-                        }
-                        
-                        DispatchQueue.main.async {
-                            self.collectionView.reloadData()
-                        }
-                        
-                        break
-                        
-                    case .Banners:
-                        
-                        self.arrBanners = productArray.map({ (json) -> Banner in
+                    case .SubCategory: // Section 3
+                        self.arrShopByCategory = productArray.map({ (json) -> SubCategory in
                             
-                            return Banner.init(fromJSON: json)
+                            return SubCategory.init(with: json)
+                            
                         })
                         
-                        
-                        DispatchQueue.main.async {
-                            self.collectionView.reloadData()
-                        }
                     default:
                         break
                         
                         
                     }
+                    
+                    DispatchQueue.main.async {
+                        self.collectionView.reloadData()
+                    }
+                    
                 }
                 
             }
@@ -285,8 +284,7 @@ class HomeCollectionViewController: UIViewController {
             
             self.contraintCollectionEnd.constant = offSet
             self.contraintCollectionStart.constant = offSet
-//            self.collectionView.layoutIfNeeded()
-//            self.offerCollectionView.layoutIfNeeded()
+
             
         }
     }
@@ -315,6 +313,14 @@ extension HomeCollectionViewController:UICollectionViewDataSource
             }
             
             return cell
+            
+        case 3:
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.CategoryCollectionCellId, for: indexPath) as! SubCategoryCollectionCell
+            
+                let subCategory = arrShopByCategory[indexPath.row]
+                cell.updateSubCategory(with: subCategory)
+                return cell
         
     default:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.SubProductCell, for: indexPath) as! ProductCollectionCell
@@ -353,10 +359,9 @@ extension HomeCollectionViewController:UICollectionViewDataSource
             return min(arrFeaturedProducts.count, HomeCollectionLayout.kMaxProductInSection)
             
         case 3:
-            return min(arrAllCategories.count, HomeCollectionLayout.kMaxCategoryInSection)
+           return min(arrShopByCategory.count, HomeCollectionLayout.kMaxCategoryInSection)
             
         default:
-            
             return min(arrRecentView.count, HomeCollectionLayout.kMaxProductInSection)
         }
     }
@@ -440,13 +445,17 @@ extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout
             return CGSize(width: width, height: height)
             
         }
+            
+        else if indexPath.section == 3
+        {
+             let width = collectionView.frame.size.width
+            let cellWidth = (width - 3 * 5)/2
+            return CGSize(width: cellWidth, height: cellWidth * 0.8)
+        }
         else
         {
-            
             let width = collectionView.frame.size.width
-            
             let cellWidth = (width - 3 * 5)/2
-            
             return CGSize(width: cellWidth, height: 300.0)
         }
     }
