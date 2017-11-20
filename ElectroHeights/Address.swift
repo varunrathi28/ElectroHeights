@@ -20,6 +20,8 @@ class Address: NSObject {
     var Pincode:String!
     var PhoneNo:String!
     var IsDefault:Bool?
+    var isSelected:Bool!
+   
     
     
     init(with json:JSON) {
@@ -32,9 +34,11 @@ class Address: NSObject {
         self.Pincode = json["Pincode"].stringValue
         self.PhoneNo = json["PhoneNo"].stringValue
         self.IsDefault = json["IsDefault"].boolValue
+        self.isSelected = false
     }
     
     override init() {
         super.init()
+       
     }
 }

@@ -65,22 +65,37 @@ class ShippingAddressVC: UIViewController {
     
     func btnDeletePressed()
     {
-        
-        let selectedPredicate = NSPredicate(format: "isSelected == %d",1)
-        let selectedArr:[Address] = (arrShippingAddress as NSArray).filtered(using: selectedPredicate) as! [Address]
-        
-        if selectedArr.count > 0
+        if !checkIfDefaultSelected()
         {
-            for obj in selectedArr
-            {
-                if  let index:Int = self.arrShippingAddress.index(of: obj)
-                {
-                    
-                    self.arrShippingAddress.remove(at: index)
-                }
+            let selectedArr:[Address] = arrShippingAddress.filter { (address) -> Bool in
+                address.isSelected == true
             }
             
+            let url = Utility.getUrlForEndPoint(endPoint:URLEndPoints.kDeleteShippingAddress)
+            if selectedArr.count > 0
+            {
+                for obj in selectedArr
+                {
+                    var dic = [String:String]()
+                    dic["ShippingAddressID"] = obj.ShippingAddressID
+                    
+                    let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: dic as [String:AnyObject])
+                    callWebServiceWithTask(for: .Delete, url: url, bodyStr: bodyStr)
+                }
+                
+                
+            }
         }
+       
+    }
+    
+    
+    func checkIfDefaultSelected()->Bool
+    {
+        let selectedArr:[Address] = arrShippingAddress.filter { (address) -> Bool in
+            address.isSelected == true && address.IsDefault == true
+        }
+        return selectedArr.count > 0
     }
     
     func btnBackPressed()
@@ -108,7 +123,7 @@ class ShippingAddressVC: UIViewController {
         
     }
     
-    func callWebServiceWithTask(for type: AddressRequestType,url:String, bodyStr:String,at row:Int? = 0)
+    func callWebServiceWithTask(for type: AddressRequestType,url:String, bodyStr:String)
     {
         let apiManager = RestApiManager()
         apiManager.post(urlString: url, parameters: bodyStr) { (json, error, status) in
@@ -134,7 +149,7 @@ class ShippingAddressVC: UIViewController {
                     if let status = json.int
                     {
                         print("Success: %d",status)
-                        self.arrShippingAddress.remove(at: row!)
+                        self.callWebserviceFetchAddress()
                         Utility.reloadTableViewOnMainThread(with: self.tableView)
                     }
                     
@@ -142,8 +157,9 @@ class ShippingAddressVC: UIViewController {
                     if let status = json.int
                     {
                         print("Success")
-                        let address = self.arrShippingAddress[row!]
-                        address.IsDefault = true
+                        
+                        
+                        self.callWebserviceFetchAddress()
                         Utility.reloadTableViewOnMainThread(with: self.tableView)
                         
                     }
@@ -174,13 +190,15 @@ extension ShippingAddressVC:UITableViewDataSource
         return arrShippingAddress.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.ShippingCellId, for: indexPath) as! ShippingAddressCell
         cell.selectionStyle = .none
         
         let address:Address = arrShippingAddress[indexPath.section]
-        cell.updateData(with: address)
+        cell.address = address
+        cell.updateData()
         return cell
         
     }

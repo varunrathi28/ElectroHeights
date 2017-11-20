@@ -20,6 +20,8 @@ class ShippingAddressCell: UITableViewCell {
     @IBOutlet weak var btnSelected:UIButton!
     @IBOutlet weak var segmentedControl:UISegmentedControl!
 
+    var address:Address!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         lblActiveText.isHidden = true
@@ -36,7 +38,7 @@ class ShippingAddressCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updateData(with address:Address)
+    func updateData()
     {
         lblAddName.text = address.Name
         lblAddPin.text = address.Pincode
@@ -63,6 +65,8 @@ class ShippingAddressCell: UITableViewCell {
     @IBAction func checkBoxToggled(sener:AnyObject)
     {
         btnSelected.isSelected = !btnSelected.isSelected
+        address.isSelected = btnSelected.isSelected
+        
     }
     
 
