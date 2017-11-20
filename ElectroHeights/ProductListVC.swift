@@ -20,6 +20,9 @@ class ProductListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.automaticallyAdjustsScrollViewInsets = false
+        tableView.estimatedRowHeight = 160
+        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.tableFooterView = UIView()
         // Do any additional setup after loading the view.
     }
@@ -106,7 +109,7 @@ extension ProductListVC : UITableViewDataSource
 extension ProductListVC: UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 3
+        return 5
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {

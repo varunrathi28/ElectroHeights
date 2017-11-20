@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class ProductListCell: UITableViewCell {
     
@@ -19,7 +20,7 @@ class ProductListCell: UITableViewCell {
     @IBOutlet weak var lblPriceOldDetail:UILabel!
     @IBOutlet weak var lblQtyTitle:UILabel!
     @IBOutlet weak var lblPieceText:UILabel!
-    @IBOutlet weak var tfQuantity:UITextField!
+    @IBOutlet weak var tfQuantity:SkyFloatingLabelTextField!
     @IBOutlet weak var btnAddToCard:UIButton!
     @IBOutlet weak var viewQuantityContainer:UIView!
 
@@ -29,6 +30,8 @@ class ProductListCell: UITableViewCell {
         btnAddToCard.setTitle("Add to Cart", for: .normal)
         btnAddToCard.layer.masksToBounds = true
         btnAddToCard.layer.cornerRadius = 5.0
+        viewQuantityContainer.layer.borderWidth = 1.0
+        viewQuantityContainer.layer.borderColor = UIColor.lightGray.cgColor
         // Initialization code
     }
     
@@ -36,7 +39,11 @@ class ProductListCell: UITableViewCell {
     func updateData(with product:FeaturedProduct)
     {
         lblCodeDetail.text = product.ProductCode
-        lblProductName.text = product.ProductDescription
+        if let subTitle = product.ProductSubTitle
+        {
+            lblProductName.text = subTitle
+        }
+
         if let imageUrl = product.ImageLocation
         {
             ivProduct.kf.setImage(with: URL(string:imageUrl))
@@ -44,7 +51,7 @@ class ProductListCell: UITableViewCell {
         
         if let quantity = product.OrderQty
         {
-             tfQuantity.text = String(quantity)
+            // tfQuantity.text = String(quantity)
         }
     }
 
