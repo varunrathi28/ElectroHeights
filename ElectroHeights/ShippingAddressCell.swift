@@ -22,10 +22,7 @@ class ShippingAddressCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-      
         lblActiveText.isHidden = true
-        setDummyText()
         btnSelected.setImage(UIImage(named: "checkbox_checked"), for: .selected)
         btnSelected.setImage(UIImage(named: "checkbox_unchecked"), for: .normal)
         
@@ -39,15 +36,29 @@ class ShippingAddressCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setDummyText()
+    func updateData(with address:Address)
     {
-        lblAddName.text = "Address"
-        lblAddPin.text = "Pin Code"
-        lblPhone.text = "+(101)58844"
-        lblAddState.text = "State"
-        lblAddCity.text = "City"
-        lblAddStreet.text = "Street Info"
+        lblAddName.text = address.Name
+        lblAddPin.text = address.Pincode
+        lblAddState.text = address.StateName
+        lblPhone.text = address.PhoneNo
+        if let streetName = address.StreetAddress
+        {
+              lblAddStreet.text = streetName
+        }
+        
+        if address.IsDefault == true
+        {
+            lblActiveText.isHidden = false
+            segmentedControl.isHidden = true
+        }
+        else
+        {
+            lblActiveText.isHidden = true
+            segmentedControl.isHidden = false
+        }
     }
+    
     
     @IBAction func checkBoxToggled(sener:AnyObject)
     {
@@ -67,5 +78,12 @@ class ShippingAddressCell: UITableViewCell {
             lblActiveText.isHidden = true
         }
         
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        segmentedControl.isHidden = false
+        lblActiveText.isHidden = true
     }
 }

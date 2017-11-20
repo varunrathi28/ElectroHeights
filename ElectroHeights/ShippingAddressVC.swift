@@ -30,6 +30,7 @@ class ShippingAddressVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        callWebserviceFetchAddress()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -65,16 +66,36 @@ class ShippingAddressVC: UIViewController {
     func btnDeletePressed()
     {
         
+        let selectedPredicate = NSPredicate(format: "isSelected == %d",1)
+        let selectedArr:[Address] = (arrShippingAddress as NSArray).filtered(using: selectedPredicate) as! [Address]
+        
+        if selectedArr.count > 0
+        {
+            for obj in selectedArr
+            {
+                if  let index:Int = self.arrShippingAddress.index(of: obj)
+                {
+                    
+                    self.arrShippingAddress.remove(at: index)
+                }
+            }
+            
+        }
     }
     
     func btnBackPressed()
     {
-        
+        self.navigationController?.popViewController(animated: true)
     }
     
     func callWebserviceFetchAddress()
     {
+        var dic = [String:String]()
+        dic[ConstUrl.CustomerID] = DataManager.CustomerID
         
+        let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: dic as! [String:AnyObject])
+        let url = Utility.getUrlForEndPoint(endPoint: URLEndPoints.kFetchAddresses)
+        callWebServiceWithTask(for: .Fetch,url: url, bodyStr: bodyStr)
     }
 
     func callWebServiceDeleteAddress(with AddressID:String)
@@ -87,10 +108,9 @@ class ShippingAddressVC: UIViewController {
         
     }
     
-    func callWebServiceWithTask(for type: AddressRequestType, bodyStr:String)
+    func callWebServiceWithTask(for type: AddressRequestType,url:String, bodyStr:String,at row:Int? = 0)
     {
         let apiManager = RestApiManager()
-        let url = ""
         apiManager.post(urlString: url, parameters: bodyStr) { (json, error, status) in
             
             if status == true
@@ -106,7 +126,6 @@ class ShippingAddressVC: UIViewController {
                         })
                         
                          Utility.reloadTableViewOnMainThread(with: self.tableView)
-                        
                     }
                     
                     
@@ -114,14 +133,18 @@ class ShippingAddressVC: UIViewController {
                    
                     if let status = json.int
                     {
-                        print("Success")
-                        
+                        print("Success: %d",status)
+                        self.arrShippingAddress.remove(at: row!)
+                        Utility.reloadTableViewOnMainThread(with: self.tableView)
                     }
                     
                 case .Update:
                     if let status = json.int
                     {
                         print("Success")
+                        let address = self.arrShippingAddress[row!]
+                        address.IsDefault = true
+                        Utility.reloadTableViewOnMainThread(with: self.tableView)
                         
                     }
                     
@@ -148,14 +171,16 @@ extension ShippingAddressVC:UITableViewDataSource
     
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        return 3
+        return arrShippingAddress.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.ShippingCellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.ShippingCellId, for: indexPath) as! ShippingAddressCell
         cell.selectionStyle = .none
         
+        let address:Address = arrShippingAddress[indexPath.section]
+        cell.updateData(with: address)
         return cell
         
     }
