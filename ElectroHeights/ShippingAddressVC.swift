@@ -63,6 +63,13 @@ class ShippingAddressVC: UIViewController {
     }
     
     
+    @IBAction func pushAddAddress(sender:UIButton)
+    {
+        let vc = Utility.getViewControllerFromStoryBoard(of:.Other, with: StoryBoardID.AddAddressController) as! AddAddressVC
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     func btnDeletePressed()
     {
         if !checkIfDefaultSelected()
@@ -82,8 +89,6 @@ class ShippingAddressVC: UIViewController {
                     let bodyStr = Utility.getStringForRequestBodyWithPararmeters(dict: dic as [String:AnyObject])
                     callWebServiceWithTask(for: .Delete, url: url, bodyStr: bodyStr)
                 }
-                
-                
             }
         }
        

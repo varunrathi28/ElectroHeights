@@ -75,6 +75,25 @@ public class Utility:NSObject
     
     // MARK: - Main Story board helpers
     
+    static func getViewControllerFromStoryBoard(of type:StoryboardType, with ID:String) -> AnyObject
+    {
+        var storyboard:UIStoryboard
+        switch type {
+        case .Main:
+            storyboard = getMainStoryBoard()
+ 
+        case .Product:
+            storyboard = getProductStoryboard()
+            
+        default:
+            storyboard = getOtherStoryboard()
+        }
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: ID)
+        return vc
+    }
+    
+    
     static func getViewControllerFromMainStoryBoard(with ID:String)->AnyObject
     {
         let storyboard = getMainStoryBoard()
@@ -102,6 +121,14 @@ public class Utility:NSObject
         let storyBoard = UIStoryboard.init(name: "Product", bundle: nil)
         return storyBoard
     }
+    
+    
+    static func getOtherStoryboard()->UIStoryboard
+    {
+        let storyBoard = UIStoryboard.init(name: "Other", bundle: nil)
+        return storyBoard
+    }
+    
     
     func checkStatusResponse(status:String)
     {

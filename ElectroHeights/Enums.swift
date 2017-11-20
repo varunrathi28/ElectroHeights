@@ -14,6 +14,11 @@ enum AddressRequestType:Int
     case Fetch = 0, Delete , Update , Add
 }
 
+enum StoryboardType : Int
+{
+    case Main = 0, Product, Other
+}
+
 enum ProductType:Int {
     case FeaturedProduct = 0, NewProducts , SubCategory, Banners
 }
