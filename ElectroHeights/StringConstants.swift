@@ -43,6 +43,7 @@ struct StoryBoardID
     static let ShippingAddress =  "ShippingAddress"
     static let OTPVerification = "OTPVerification"
     static let AddAddressController = "AddAddress"
+    static let AllProductListVC = "AllProductList"
 }
 
 struct CellIdentifiers {

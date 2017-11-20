@@ -23,6 +23,11 @@ enum ProductType:Int {
     case FeaturedProduct = 0, NewProducts , SubCategory, Banners
 }
 
+public  enum AllProductTypes:Int
+{
+    case NewProduct = 1, FeaturedProduct = 2, RecentViewed = 4
+}
+
 public enum MyProfileMenu:Int, Hashable {
     case name
     case email

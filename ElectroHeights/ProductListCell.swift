@@ -25,7 +25,27 @@ class ProductListCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        btnAddToCard.setTitle("Add to Cart", for: .normal)
+        btnAddToCard.layer.masksToBounds = true
+        btnAddToCard.layer.cornerRadius = 5.0
         // Initialization code
+    }
+    
+    
+    func updateData(with product:FeaturedProduct)
+    {
+        lblCodeDetail.text = product.ProductCode
+        lblProductName.text = product.ProductDescription
+        if let imageUrl = product.ImageLocation
+        {
+            ivProduct.kf.setImage(with: URL(string:imageUrl))
+        }
+        
+        if let quantity = product.OrderQty
+        {
+             tfQuantity.text = String(quantity)
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

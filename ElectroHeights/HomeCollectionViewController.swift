@@ -42,12 +42,9 @@ class HomeCollectionViewController: UIViewController {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         let flowLayout:UICollectionViewFlowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        flowLayout.sectionInset = UIEdgeInsetsMake(0, 5, 10, 5)
+        flowLayout.sectionInset = UIEdgeInsetsMake(5, 5, 10, 5)
         collectionView.alwaysBounceVertical = false
         self.collectionView.register(UINib(nibName: "SubCategoryCollectionCell", bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.CategoryCollectionCellId)
-      
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -105,20 +102,30 @@ class HomeCollectionViewController: UIViewController {
         
     }
     
+    func openProductListForType(type : AllProductTypes)
+    {
+        let vc = Utility.getViewControllerFromStoryBoard(of: .Product, with: StoryBoardID.AllProductListVC) as! ProductListVC
+        vc.productType = type
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+    }
+    
     @IBAction func btnViewAllClicked(sender:AnyObject? = nil)
     {
         let btn = sender as! UIButton
         switch btn.tag {
-        case 0:
-            break
-            
         case 1:
-            break
-            
+            openProductListForType(type: .NewProduct)
+        
         case 2:
+            openProductListForType(type: .FeaturedProduct)
+            
+        case 3:
             openAllCategoriesClicked(sender:self.arrAllCategories as AnyObject)
-            break
+            
         default:
+            openProductListForType(type: .RecentViewed)
             break
         }
         
@@ -208,7 +215,6 @@ class HomeCollectionViewController: UIViewController {
                         
                         
                     }
-                    
                     DispatchQueue.main.async {
                         self.collectionView.reloadData()
                     }
@@ -322,7 +328,7 @@ extension HomeCollectionViewController:UICollectionViewDataSource
                 cell.updateSubCategory(with: subCategory)
                 return cell
         
-    default:
+        default:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.SubProductCell, for: indexPath) as! ProductCollectionCell
                 
                 if indexPath.section == 1
@@ -374,7 +380,7 @@ extension HomeCollectionViewController:UICollectionViewDataSource
         {
             let headerView:HomeCollectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderView", for: indexPath) as! HomeCollectionHeader
             
-                headerView.btnViewAll.tag = 100 + indexPath.section
+                headerView.btnViewAll.tag = indexPath.section
                 headerView.section = indexPath.section
                 headerView.btnViewAll.addTarget(self, action: #selector(btnViewAllClicked(sender:)), for: .touchUpInside)
                 headerView.lblTitle.text = arrHeaderText[indexPath.section]
@@ -514,6 +520,7 @@ extension HomeCollectionViewController:DockOptionViewDelegate
              self.openAllCategoriesClicked(sender:self.arrAllCategories as AnyObject)
             
         default:
+            
             break
         }
         

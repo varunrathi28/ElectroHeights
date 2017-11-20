@@ -59,7 +59,7 @@ class FeaturedProduct: BaseProduct {
     var ProductLot:Double?
     var MinOrderQty:Double?
     var OrderQty:Double?
-    var ImageLocation:String!
+    var ImageLocation:String?
     var UnitName:String?
     var ProductCode:String!
     var WishlistClass:String?

@@ -61,6 +61,14 @@ public class URLEndPoints :NSObject
     static let kDeleteWishlistProduct = "DeleteWishlistProduct"
     static let kFetchProductVariationDescriptionFields = "FetchProductVariationDescriptionFields"
     static let kFetchOrders =  "FetchCustomerOrders"
+    
+    // Shipping Address
+    
+    static let kFetchAddresses = "FetchShippingAddresses"
+    static let kDeleteShippingAddress = "DeleteShippingAddress"
+    static let kAddNewAddress = "AddNewAddress"
+    static let kSetDefaultShippingAddress = "SetDefaultShippingAddress"
+    
 
 
     // My Cart Screen 
@@ -77,6 +85,12 @@ public class URLEndPoints :NSObject
     
      static let kPlaceOrder = "PlaceOrder"
     
+
+}
+
+public struct ConstUrl
+{
+    static let CustomerID = "CustomerID"
 }
 
 public struct ImageEndPoints
