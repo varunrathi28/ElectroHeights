@@ -14,6 +14,93 @@ enum Gender {
     case Female
 }
 
+
+class Customer : NSObject, NSCoding
+{
+    var CustomerID: Double!
+    var Name:String!
+    var Gender:String!
+    
+     init(customerID:Double, Name:String, Gender:String) {
+      super.init()
+        self.CustomerID = customerID
+        self.Name = Name
+        self.Gender = Gender
+      
+    }
+    
+    //MARK:- NSCoding
+    required init?(coder aDecoder: NSCoder) {
+        CustomerID = aDecoder.decodeObject(forKey: "CustomerID") as! Double
+        Name = aDecoder.decodeObject(forKey: "Name")  as! String
+        Gender = aDecoder.decodeObject(forKey: "Gender") as! String
+        
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        
+        aCoder.encode(Name, forKey: "Name")
+        aCoder.encode(Gender,forKey: "Gender")
+        aCoder.encode(CustomerID,forKey: "CustomerID")
+    }
+    
+   private static var _currentUser:User!
+    
+    
+    
+    
+    static var isLoggedIn:Bool
+    {
+        return currentUser != nil
+    }
+    
+    static var currentUser:User?
+    {
+        
+        get
+        {
+            if _currentUser != nil
+            {
+                return _currentUser
+            }
+            else
+            {
+                let defaults = UserDefaults.standard
+                
+                if let unArchivedObject = defaults.object(forKey: "currentUser") as? NSData
+                {
+                    _currentUser = NSKeyedUnarchiver.unarchiveObject(with: unArchivedObject as Data) as? User
+                    return _currentUser
+                }
+                
+                return nil
+            }
+            
+        }
+        set
+        {
+            _currentUser = newValue
+            let defaults = UserDefaults.standard
+            
+            if let user = newValue
+            {
+                let archivedObject = NSKeyedArchiver.archivedData(withRootObject: user)
+                defaults.set(archivedObject, forKey: "currentUser")
+                
+            }
+            else
+            {
+                defaults.removeObject(forKey: "currentUser")
+            }
+            
+            
+        }
+    }
+    
+    
+}
+
+
 class User : NSObject, NSCoding
 {
     // MARK: - Properties
@@ -88,6 +175,14 @@ class User : NSObject, NSCoding
     
     static var _currentUser:User!
     
+   
+    
+    
+    static var isLoggedIn:Bool
+    {
+        return currentUser != nil
+    }
+    
     static var currentUser:User?
     {
         
@@ -132,12 +227,6 @@ class User : NSObject, NSCoding
     }
     
     
-    static var isLoggedIn:Bool
-    {
-        return currentUser != nil
-    }
-    
-    
-    
-    
 }
+
+

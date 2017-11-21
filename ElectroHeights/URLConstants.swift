@@ -19,6 +19,7 @@ public struct URLConstant
     static let BasicAuth = "UmFodWw6MTIz"
     static let kBaseURL = "http://50.63.12.86:8003/ElectroHeightAPI/"
     static let FCMID = "123"
+   
 }
 
 // MARK: - API Service End Points
@@ -91,6 +92,8 @@ public class URLEndPoints :NSObject
 public struct ConstUrl
 {
     static let CustomerID = "CustomerID"
+    static let LoggedIn = "LoggedIn"
+    static let FirstTime = "firstTime"
 }
 
 public struct ImageEndPoints

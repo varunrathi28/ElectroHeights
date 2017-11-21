@@ -16,13 +16,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+     // Override point for customization after application launch.
+       // Navigation Color in Whole app
+      UINavigationBar.appearance().tintColor = AppTheme.kNavigationBarColor
+      
+        // If First Time : Show OnBoarding Screen
+        if isFirstTime() == false {
+        pushToLoginScreen(animated: false)
+        }
         
-       // UINavigationBar.appearance().tintColor = UIColor.white
+        // If loggedIn : Show LoginVC
         
-          UINavigationBar.appearance().tintColor = AppTheme.kNavigationBarColor
-        
-        // Override point for customization after application launch.
+        if AppData.isLoggedIn()
+        {
+            pushToHomeScreen()
+        }
+        // Else : Show HomeCollectionScreen
+
         return true
+    }
+    
+    func isFirstTime()->Bool
+    {
+        let userDefaults = UserDefaults.standard
+        if let _ = userDefaults.object(forKey: ConstUrl.FirstTime)
+        {
+            return true
+        }
+        return false
+    }
+    
+    func pushToLoginScreen(animated:Bool)
+    {
+       let vc = Utility.getViewControllerFromStoryBoard(of: .Main, with:StoryBoardID.LoginController) as! LoginVC
+        window?.makeKeyAndVisible()
+        window?.rootViewController?.present(vc, animated: animated, completion:nil)
+        
+    }
+    
+    func pushToHomeScreen()
+    {
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
